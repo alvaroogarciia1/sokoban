@@ -1,1 +1,9 @@
-es\upm\pproject\sokoban\App.class
+es\upm\pproject\sokoban\model\Tile.class
+es\upm\pproject\sokoban\model\LevelParser.class
+es\upm\pproject\sokoban\model\Entity.class
+es\upm\pproject\sokoban\model\WallTile.class
+es\upm\pproject\sokoban\model\FloorTile.class
+es\upm\pproject\sokoban\model\Level.class
+es\upm\pproject\sokoban\model\Box.class
+es\upm\pproject\sokoban\Main.class
+es\upm\pproject\sokoban\model\Player.class
