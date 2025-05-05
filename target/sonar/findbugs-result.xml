@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="0" timestamp="1746461416994" analysisTimestamp="1746461437466" release="">
+  <Project>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\Main.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\exceptions\InvalidLevelException.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\Box.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\Entity.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\FloorTile.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\Level.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\LevelParser.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\LevelValidator.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\Player.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\Tile.class</Jar>
+    <Jar>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes\es\upm\pproject\sokoban\model\WallTile.class</Jar>
+    <AuxClasspathEntry>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\sonar\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\sonar\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>C:\Users\Alvar\OneDrive\Escritorio\Uni\Asignaturas\3º\2º cuatri\Programming Project\Project\sokoban\target\sonar</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 5 May 2025 18:10:16 +0200" total_classes="11" referenced_classes="62" total_bugs="0" total_size="145" num_packages="3" java_version="19.0.2" vm_version="19.0.2+7-44" cpu_seconds="14.88" clock_seconds="4.18" peak_mbytes="378.70" alloc_mbytes="2028.00" gc_seconds="0.05">
+    <FileStats path="es/upm/pproject/sokoban/Main.java" bugCount="0" size="6"/>
+    <FileStats path="es/upm/pproject/sokoban/exceptions/InvalidLevelException.java" bugCount="0" size="4"/>
+    <FileStats path="es/upm/pproject/sokoban/model/Box.java" bugCount="0" size="3"/>
+    <FileStats path="es/upm/pproject/sokoban/model/Entity.java" bugCount="0" size="1"/>
+    <FileStats path="es/upm/pproject/sokoban/model/FloorTile.java" bugCount="0" size="17"/>
+    <FileStats path="es/upm/pproject/sokoban/model/Level.java" bugCount="0" size="37"/>
+    <FileStats path="es/upm/pproject/sokoban/model/LevelParser.java" bugCount="0" size="45"/>
+    <FileStats path="es/upm/pproject/sokoban/model/LevelValidator.java" bugCount="0" size="23"/>
+    <FileStats path="es/upm/pproject/sokoban/model/Player.java" bugCount="0" size="3"/>
+    <FileStats path="es/upm/pproject/sokoban/model/Tile.java" bugCount="0" size="3"/>
+    <FileStats path="es/upm/pproject/sokoban/model/WallTile.java" bugCount="0" size="3"/>
+    <PackageStats package="es.upm.pproject.sokoban" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="es.upm.pproject.sokoban.Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="es.upm.pproject.sokoban.exceptions" total_bugs="0" total_types="1" total_size="4">
+      <ClassStats class="es.upm.pproject.sokoban.exceptions.InvalidLevelException" sourceFile="InvalidLevelException.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="es.upm.pproject.sokoban.model" total_bugs="0" total_types="9" total_size="135">
+      <ClassStats class="es.upm.pproject.sokoban.model.Box" sourceFile="Box.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.Entity" sourceFile="Entity.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.FloorTile" sourceFile="FloorTile.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.Level" sourceFile="Level.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.LevelParser" sourceFile="LevelParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.LevelValidator" sourceFile="LevelValidator.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.Player" sourceFile="Player.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.Tile" sourceFile="Tile.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="es.upm.pproject.sokoban.model.WallTile" sourceFile="WallTile.java" interface="false" size="3" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="479" invocations="679" avgMicrosecondsPerInvocation="706" maxMicrosecondsPerInvocation="34305" standardDeviationMicrosecondsPerInvocation="1866"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="226" invocations="698" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="10531" standardDeviationMicrosecondsPerInvocation="487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="161" invocations="62" avgMicrosecondsPerInvocation="2601" maxMicrosecondsPerInvocation="20939" standardDeviationMicrosecondsPerInvocation="4407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="138" invocations="222" avgMicrosecondsPerInvocation="622" maxMicrosecondsPerInvocation="52097" standardDeviationMicrosecondsPerInvocation="3727"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="127" invocations="62" avgMicrosecondsPerInvocation="2058" maxMicrosecondsPerInvocation="18706" standardDeviationMicrosecondsPerInvocation="3369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="112" invocations="62" avgMicrosecondsPerInvocation="1807" maxMicrosecondsPerInvocation="10810" standardDeviationMicrosecondsPerInvocation="2712"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="96" invocations="224" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="5045" standardDeviationMicrosecondsPerInvocation="605"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectNullableMethodStatus" totalMilliseconds="75" invocations="62" avgMicrosecondsPerInvocation="1217" maxMicrosecondsPerInvocation="9032" standardDeviationMicrosecondsPerInvocation="2173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="62" avgMicrosecondsPerInvocation="1074" maxMicrosecondsPerInvocation="16885" standardDeviationMicrosecondsPerInvocation="2778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="53" invocations="26" avgMicrosecondsPerInvocation="2045" maxMicrosecondsPerInvocation="40120" standardDeviationMicrosecondsPerInvocation="7689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="636" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1778" standardDeviationMicrosecondsPerInvocation="148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="42" invocations="26" avgMicrosecondsPerInvocation="1647" maxMicrosecondsPerInvocation="24487" standardDeviationMicrosecondsPerInvocation="4888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="62" avgMicrosecondsPerInvocation="663" maxMicrosecondsPerInvocation="9228" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="40" invocations="26" avgMicrosecondsPerInvocation="1549" maxMicrosecondsPerInvocation="17680" standardDeviationMicrosecondsPerInvocation="4093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="39" invocations="26" avgMicrosecondsPerInvocation="1505" maxMicrosecondsPerInvocation="17148" standardDeviationMicrosecondsPerInvocation="4304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="36" invocations="62" avgMicrosecondsPerInvocation="587" maxMicrosecondsPerInvocation="15480" standardDeviationMicrosecondsPerInvocation="1981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="34" invocations="26" avgMicrosecondsPerInvocation="1309" maxMicrosecondsPerInvocation="21567" standardDeviationMicrosecondsPerInvocation="4217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="30" invocations="62" avgMicrosecondsPerInvocation="488" maxMicrosecondsPerInvocation="2503" standardDeviationMicrosecondsPerInvocation="632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="29" invocations="62" avgMicrosecondsPerInvocation="470" maxMicrosecondsPerInvocation="13983" standardDeviationMicrosecondsPerInvocation="1789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="27" invocations="26" avgMicrosecondsPerInvocation="1040" maxMicrosecondsPerInvocation="11213" standardDeviationMicrosecondsPerInvocation="2342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="25" invocations="62" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="6687" standardDeviationMicrosecondsPerInvocation="966"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
