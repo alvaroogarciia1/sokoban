@@ -60,4 +60,33 @@ class LevelValidatorTest {
         Exception e = assertThrows(InvalidLevelException.class, () -> LevelValidator.validate(level));
         assertTrue(e.getMessage().contains("boxes must equal the number of goal tiles"));
     }
+
+    @Test
+    public void testIsLevelCompleted_AllBoxesOnGoals_ShouldReturnTrue() {
+        Level level = new Level(2, 2);
+        FloorTile goal1 = new FloorTile(true);
+        goal1.setEntity(new Box());
+        FloorTile goal2 = new FloorTile(true);
+        goal2.setEntity(new Box());
+        FloorTile empty = new FloorTile(false);
+        level.setTile(0, 0, goal1);
+        level.setTile(0, 1, goal2);
+        level.setTile(1, 0, empty);
+        level.setTile(1, 1, empty);
+        assertTrue(level.isLevelCompleted());
+    }
+
+    @Test
+    public void testIsLevelCompleted_NotAllGoalsHaveBoxes_ShouldReturnFalse() {
+        Level level = new Level(2, 2);
+        FloorTile goal1 = new FloorTile(true);
+        goal1.setEntity(new Box());
+        FloorTile goal2 = new FloorTile(true); // No caja encima
+        FloorTile empty = new FloorTile(false);
+        level.setTile(0, 0, goal1);
+        level.setTile(0, 1, goal2);
+        level.setTile(1, 0, empty);
+        level.setTile(1, 1, empty);
+        assertFalse(level.isLevelCompleted());
+    }
 }

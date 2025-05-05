@@ -123,4 +123,29 @@ public class Level {
     private void resizeBoard() {
         this.board = new Tile[height][width];
     }
+
+    /**
+     * Checks whether the level is completed.
+     * A level is considered completed if all goal tiles contain a box.
+     *
+     * @return true if every goal tile has a box on it, false otherwise.
+     */
+    public boolean isLevelCompleted() {
+        for (int row = 0; row < height; row++) {
+            for (int col = 0; col < width; col++) {
+                Tile tile = board[row][col];
+                if (tile instanceof FloorTile) {
+                    FloorTile floor = (FloorTile) tile;
+                    if (floor.isGoal()) {
+                        Entity entity = floor.getEntity();
+                        if (!(entity instanceof Box)) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
 }
