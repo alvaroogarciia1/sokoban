@@ -12,7 +12,7 @@ sonarqube-check:
     paths:
       - .sonar/cache
   script: 
-    - mvn verify sonar:sonar -Dsonar.login=${SONAR_LOGIN} -Dsonar.id=${SONAR_ID}
+    - mvn verify sonar:sonar -Dsonar.login=210363 -Dsonar.id=squ_a342a0d44d8edf0dd77835ba1e87e10d29ddd0dd
   allow_failure: true
   only:
     - main # or master (the name of your main branch)
