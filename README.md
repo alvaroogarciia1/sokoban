@@ -21,7 +21,7 @@ For the development of this project, we have used:
    ```
 2. **Move to the project directory**
    ```sh
-   cd sokoban
+   cd project-sokoban-24-25
    ```
 3. **Run the tests**
    ```sh
