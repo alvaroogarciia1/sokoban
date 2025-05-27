@@ -87,4 +87,5 @@ class GameControllerTest {
         controller.undoMove();
         assertEquals(0, controller.getMoveCount());
     }
+
 }
