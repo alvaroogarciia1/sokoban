@@ -7815,3 +7815,211 @@
 10:27:43 [GameController] [WARN] No moves to undo.
 10:27:43 [MovementHistory] [WARN] Attempted to pop from empty history.
 10:27:43 [GameController] [WARN] No moves to undo.
+10:30:20 [MovementHistory] [INFO] Movement history initialized.
+10:30:20 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:20 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:30:20 [GameController] [INFO] Box push blocked: out of bounds.
+10:30:21 [MovementHistory] [INFO] Movement history initialized.
+10:30:21 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:21 [MovementHistory] [INFO] Movement history initialized.
+10:30:21 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:21 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:21 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+10:30:21 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:30:21 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:30:22 [MovementHistory] [INFO] Movement history initialized.
+10:30:22 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:22 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:22 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+10:30:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:30:22 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:30:22 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+10:30:22 [GameController] [INFO] Move undone. Restored to position (1, 1)
+10:30:22 [MovementHistory] [INFO] Movement history initialized.
+10:30:22 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:22 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:30:22 [GameController] [INFO] Movement blocked: wall at (0, 1)
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:23 [GameController] [INFO] Player initialized at position (1, 1)
+10:30:23 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:23 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:30:23 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:30:23 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:23 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:23 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:23 [LevelValidator] [INFO] Validating level...
+10:30:23 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 0
+10:30:23 [LevelValidator] [INFO] Validating level...
+10:30:23 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 2
+10:30:23 [LevelValidator] [INFO] Validating level...
+10:30:23 [LevelValidator] [INFO] Level is valid: 1 player, 1 boxes, 1 goals
+10:30:23 [LevelValidator] [INFO] Validating level...
+10:30:23 [LevelValidator] [ERROR] Invalid level: 1 boxes vs 0 goal tiles
+10:30:23 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:23 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:23 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:23 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:23 [MovementHistory] [INFO] Movement history cleared.
+10:30:23 [MovementHistory] [INFO] History is empty: true
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:23 [MovementHistory] [INFO] History is empty: true
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:23 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:30:23 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:23 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:23 [MovementHistory] [INFO] Movement history initialized.
+10:30:24 [MovementHistory] [INFO] Movement history initialized.
+10:30:24 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:24 [MovementHistory] [INFO] Movement history initialized.
+10:30:24 [MovementHistory] [INFO] Movement history initialized.
+10:30:24 [MovementHistory] [INFO] Movement history initialized.
+10:30:25 [MovementHistory] [INFO] Movement history initialized.
+10:30:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:25 [MovementHistory] [INFO] Movement history initialized.
+10:30:25 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:25 [MovementHistory] [INFO] Movement history initialized.
+10:30:25 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:26 [MovementHistory] [INFO] Movement history initialized.
+10:30:26 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:26 [LevelParser] [INFO] Parsing level from file: level2.txt
+10:30:26 [LevelParser] [ERROR] File not found: level2.txt
+10:30:59 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:59 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:59 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:30:59 [MovementHistory] [INFO] Movement history initialized.
+10:30:59 [GameController] [INFO] Player initialized at position (4, 2)
+10:30:59 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:30:59 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:30:59 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:00 [MovementHistory] [INFO] Movement history initialized.
+10:31:00 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:00 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:00 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:00 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:00 [MovementHistory] [INFO] Movement history initialized.
+10:31:00 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:00 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:00 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:00 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:00 [MovementHistory] [INFO] Movement history initialized.
+10:31:00 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:00 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:00 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:00 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:00 [MovementHistory] [INFO] Movement history initialized.
+10:31:00 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:17 [MovementHistory] [INFO] Movement history initialized.
+10:31:17 [GameController] [INFO] Player initialized at position (1, 1)
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:31:17 [GameController] [INFO] Box push blocked: out of bounds.
+10:31:17 [MovementHistory] [INFO] Movement history initialized.
+10:31:17 [GameController] [INFO] Player initialized at position (1, 1)
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+10:31:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:31:17 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:31:17 [MovementHistory] [INFO] Movement history initialized.
+10:31:17 [GameController] [INFO] Player initialized at position (1, 1)
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+10:31:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:31:17 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:31:17 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+10:31:17 [GameController] [INFO] Move undone. Restored to position (1, 1)
+10:31:17 [MovementHistory] [INFO] Movement history initialized.
+10:31:17 [GameController] [INFO] Player initialized at position (1, 1)
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:31:17 [GameController] [INFO] Movement blocked: wall at (0, 1)
+10:31:17 [MovementHistory] [INFO] Movement history initialized.
+10:31:17 [GameController] [INFO] Player initialized at position (1, 1)
+10:31:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:31:17 [GameController] [INFO] Player moved to empty tile (0, 1)
+10:31:18 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:18 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:18 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:18 [LevelValidator] [INFO] Validating level...
+10:31:18 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:18 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 0
+10:31:18 [LevelValidator] [INFO] Validating level...
+10:31:18 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 2
+10:31:18 [LevelValidator] [INFO] Validating level...
+10:31:18 [LevelValidator] [INFO] Level is valid: 1 player, 1 boxes, 1 goals
+10:31:18 [LevelValidator] [INFO] Validating level...
+10:31:18 [LevelValidator] [ERROR] Invalid level: 1 boxes vs 0 goal tiles
+10:31:18 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:18 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:18 [MovementHistory] [INFO] Movement history cleared.
+10:31:18 [MovementHistory] [INFO] History is empty: true
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [MovementHistory] [INFO] History is empty: true
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:31:18 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:18 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:18 [MovementHistory] [INFO] Movement history initialized.
+10:31:19 [MovementHistory] [INFO] Movement history initialized.
+10:31:19 [MovementHistory] [INFO] Movement history initialized.
+10:31:19 [MovementHistory] [INFO] Movement history initialized.
+10:31:19 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:19 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:19 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:19 [MovementHistory] [INFO] Movement history initialized.
+10:31:19 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:19 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:19 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:19 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:20 [MovementHistory] [INFO] Movement history initialized.
+10:31:20 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:20 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:20 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:20 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:20 [MovementHistory] [INFO] Movement history initialized.
+10:31:20 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:20 [LevelParser] [INFO] Parsing level from file: level2.txt
+10:31:20 [LevelParser] [ERROR] File not found: level2.txt
+10:31:23 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:23 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:23 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:24 [MovementHistory] [INFO] Movement history initialized.
+10:31:24 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:24 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:24 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:24 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:24 [MovementHistory] [INFO] Movement history initialized.
+10:31:24 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:24 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:24 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:24 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:24 [MovementHistory] [INFO] Movement history initialized.
+10:31:24 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:24 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:24 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:24 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:24 [MovementHistory] [INFO] Movement history initialized.
+10:31:24 [GameController] [INFO] Player initialized at position (4, 2)
+10:31:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:31:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:31:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:31:25 [MovementHistory] [INFO] Movement history initialized.
+10:31:25 [GameController] [INFO] Player initialized at position (4, 2)
