@@ -78,6 +78,7 @@ public class GameController implements Serializable {
      * @return true if the move was successful, false otherwise
      */
     public boolean movePlayer(int dx, int dy) {
+        saveState();
         logger.info("[INFO] Attempting to move player: dx={}, dy={}", dx, dy);
 
         int newRow = playerRow + dy;
@@ -179,16 +180,23 @@ public class GameController implements Serializable {
      */
     private void updateView() {
         boardPanel.setLevel(level);
+        boardPanel.setController(this);
+        boardPanel.repaint();
     }
 
     /**
-     * Saves the current game state to a file named "savegame.dat".
+     * Saves the current game state to a file.
      * This allows the player to resume later.
+     * 
+     * @param file the file where the game is saved
      */
-    public void saveGame() {
-        logger.info("[INFO] Saving game...");
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("savegame.dat"))) {
-            out.writeObject(new GameState(level, playerRow, playerCol, moveCount));
+    public static void saveGame(File file, GameController controller) {
+        logger.info("[INFO] Saving game to: {}", file.getName());
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
+            SaveData saveData = new SaveData(
+                    new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
+                    controller.history.getAll());
+            out.writeObject(saveData);
             logger.info("[INFO] Game saved successfully.");
         } catch (IOException e) {
             logger.error("[ERROR] Failed to save game: {}", e.getMessage());
@@ -196,18 +204,36 @@ public class GameController implements Serializable {
     }
 
     /**
-     * Loads a previously saved game state from the "savegame.dat" file.
+     * Loads a previously saved game state from the specified file.
+     *
+     * @param file the file to load the game from
      */
-    public void loadGame() {
-        logger.info("[INFO] Loading game...");
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("savegame.dat"))) {
-            GameState loaded = (GameState) in.readObject();
-            loadLevel(loaded.getLevel());
-            this.playerRow = loaded.getPlayerRow();
-            this.playerCol = loaded.getPlayerCol();
+    public void loadGame(File file) {
+        logger.info("[INFO] Loading game from: {}", file.getName());
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
+            SaveData saveData = (SaveData) in.readObject();
+            GameState loaded = saveData.getCurrentState();
+
+            this.history = new MovementHistory(saveData.getHistory());
+            this.level = loaded.getLevel();
             this.moveCount = loaded.getMoveCount();
-            saveState();
-            logger.info("[INFO] Game loaded. Player at ({}, {})", playerRow, playerCol);
+
+            // Buscar la posición real del jugador en el tablero cargado
+            for (int row = 0; row < level.getHeight(); row++) {
+                for (int col = 0; col < level.getWidth(); col++) {
+                    Tile tile = level.getTile(row, col);
+                    if (tile instanceof FloorTile && ((FloorTile) tile).getEntity() instanceof Player) {
+                        this.playerRow = row;
+                        this.playerCol = col;
+                        logger.info("[INFO] Player located at ({}, {}) after load", row, col);
+                        break;
+                    }
+                }
+            }
+
+            updateView();
+            logger.info("[INFO] Game loaded successfully.");
+
         } catch (IOException | ClassNotFoundException e) {
             logger.error("[ERROR] Failed to load game: {}", e.getMessage());
         }
@@ -229,5 +255,34 @@ public class GameController implements Serializable {
      */
     private void saveState() {
         history.push(new GameState(level, playerRow, playerCol, moveCount));
+    }
+
+    /**
+     * Sets the new position for the player.
+     * 
+     * @param row the new row
+     * @param col the new col
+     */
+    public void setPlayerPosition(int row, int col) {
+        this.playerRow = row;
+        this.playerCol = col;
+    }
+
+    /**
+     * Sets the new count of movements, based on the saved file.
+     * 
+     * @param moveCount the new count of movements
+     */
+    public void setMoveCount(int moveCount) {
+        this.moveCount = moveCount;
+    }
+
+    /**
+     * Sets the new movements history.
+     * 
+     * @param history the new history
+     */
+    public void setHistory(MovementHistory history) {
+        this.history = history;
     }
 }

@@ -260,4 +260,13 @@ public class BoardPanel extends JPanel {
     public void setController(GameController controller) {
         this.controller = controller;
     }
+
+    /**
+     * Returns the game controller.
+     * 
+     * @return the game controller
+     */
+    public GameController getController() {
+        return controller;
+    }
 }

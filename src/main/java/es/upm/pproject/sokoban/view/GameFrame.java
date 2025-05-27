@@ -1,9 +1,9 @@
 package es.upm.pproject.sokoban.view;
 
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import javax.swing.*;
-
 import es.upm.pproject.sokoban.controller.GameController;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.Level;
@@ -80,11 +80,31 @@ public class GameFrame extends JFrame {
                         }
                     },
                     e -> {
-                        controller.undoMove();
+                        boardPanel.getController().undoMove();
+                        updateMoveCount(boardPanel.getController().getMoveCount());
                         repaint();
                     },
-                    e -> controller.saveGame(),
-                    e -> controller.loadGame(),
+                    e -> {
+                        JFileChooser fileChooser = new JFileChooser();
+                        int result = fileChooser.showSaveDialog(this);
+                        if (result == JFileChooser.APPROVE_OPTION) {
+                            File file = fileChooser.getSelectedFile();
+                            GameController.saveGame(file, boardPanel.getController());
+                        }
+                    },
+                    e -> {
+                        JFileChooser fileChooser = new JFileChooser();
+                        int result = fileChooser.showOpenDialog(this);
+                        if (result == JFileChooser.APPROVE_OPTION) {
+                            File file = fileChooser.getSelectedFile();
+                            Level dummyLevel = new Level(1, 1); // Un nivel válido de 1x1 sin contenido
+                            GameController newController = new GameController(dummyLevel, boardPanel);
+                            newController.loadGame(file); // ⬅ ahora carga todo: estado, historial y jugador
+                            boardPanel.setController(newController); // actualiza el controlador en la vista
+                            updateMoveCount(newController.getMoveCount());
+                            repaint();
+                        }
+                    },
                     e -> System.exit(0));
             menuBar.setAlignmentX(Component.CENTER_ALIGNMENT);
 

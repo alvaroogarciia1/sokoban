@@ -6,7 +6,6 @@ import es.upm.pproject.sokoban.model.Level;
 import es.upm.pproject.sokoban.view.BoardPanel;
 import es.upm.pproject.sokoban.view.GameFrame;
 import javax.swing.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +15,7 @@ import org.slf4j.LoggerFactory;
 public class Main {
     /** Logger for Main operations. */
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {

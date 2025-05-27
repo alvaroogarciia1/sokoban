@@ -5483,3 +5483,2335 @@
 13:50:16 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
 13:50:16 [MovementHistory] [INFO] Movement history initialized.
 13:50:16 [GameController] [INFO] Player initialized at position (4, 2)
+21:07:34 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:07:34 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:07:34 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:07:35 [MovementHistory] [INFO] Movement history initialized.
+21:07:35 [GameController] [INFO] Player initialized at position (4, 2)
+21:07:35 [MovementHistory] [INFO] Movement history initialized.
+21:07:35 [GameController] [INFO] Player initialized at position (4, 2)
+21:07:36 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:07:36 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:36 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:07:36 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:07:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:36 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:07:36 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:07:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:36 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:07:36 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:07:36 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:36 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:37 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:37 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:07:37 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:07:37 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:37 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:37 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:07:37 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:07:37 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:37 [GameController] [INFO] Box push blocked: destination occupied.
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:38 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:38 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:38 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:38 [GameController] [INFO] Movement blocked: wall at (2, 6)
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:38 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:07:38 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:07:38 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:38 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:07:39 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:07:39 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:39 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:07:40 [GameController] [INFO] Saving game...
+21:07:40 [GameController] [INFO] Game saved successfully.
+21:07:42 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:07:42 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:07:42 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:07:42 [MovementHistory] [INFO] Movement history initialized.
+21:07:42 [GameController] [INFO] Player initialized at position (4, 2)
+21:07:43 [GameController] [INFO] Loading game...
+21:07:43 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:45 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:45 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:07:45 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:45 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:45 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:07:45 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:07:45 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:07:45 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:46 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:46 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:46 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:46 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:07:46 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:07:46 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:07:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:07:46 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:11:17 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:11:17 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:11:17 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:11:18 [MovementHistory] [INFO] Movement history initialized.
+21:11:18 [GameController] [INFO] Player initialized at position (4, 2)
+21:11:18 [MovementHistory] [INFO] Movement history initialized.
+21:11:18 [GameController] [INFO] Player initialized at position (4, 2)
+21:11:21 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:11:21 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:21 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:11:21 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:11:21 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:11:21 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:11:21 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:11:21 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:21 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:11:21 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:11:21 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:21 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:22 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:11:22 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:11:22 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:22 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:11:22 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:22 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:11:22 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:11:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:11:22 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:11:23 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:11:23 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:11:23 [GameController] [INFO] Movement blocked: wall at (2, 6)
+21:11:23 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:11:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:23 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:11:23 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:11:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:23 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:11:23 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:11:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:23 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:11:24 [GameController] [INFO] Saving game...
+21:11:24 [GameController] [INFO] Game saved successfully.
+21:11:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:11:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:11:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:11:25 [MovementHistory] [INFO] Movement history initialized.
+21:11:25 [GameController] [INFO] Player initialized at position (4, 2)
+21:11:25 [GameController] [INFO] Loading game...
+21:11:25 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:11:26 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:11:26 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:26 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:11:26 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:11:26 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:26 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:11:27 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:27 [GameController] [INFO] Movement blocked: wall at (5, 4)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:27 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:27 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:11:27 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:27 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:11:27 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:11:27 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:11:27 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:11:27 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:12:09 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:09 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:09 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:09 [MovementHistory] [INFO] Movement history initialized.
+21:12:09 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:10 [GameController] [INFO] Loading game...
+21:12:10 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:12 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:12 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:12 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:12 [MovementHistory] [INFO] Movement history initialized.
+21:12:12 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:14 [GameController] [INFO] Loading game...
+21:12:14 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:14 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:12:14 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:14 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:12:15 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:12:15 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:15 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:12:16 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:12:16 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:16 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:12:17 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:12:17 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:17 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:12:18 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:12:18 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:18 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:12:18 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:12:18 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:18 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:12:19 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:12:19 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:19 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:12:19 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:12:19 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:19 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:12:20 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:12:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:20 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:12:21 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:12:21 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:21 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:12:21 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:12:21 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:21 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Player pushed box to (3, 1) and moved to (3, 2)
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Box push blocked: destination occupied.
+21:12:22 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:12:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:22 [GameController] [INFO] Box push blocked: destination occupied.
+21:12:23 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:12:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:23 [GameController] [INFO] Box push blocked: destination occupied.
+21:12:23 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:12:23 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:23 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:12:23 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:12:23 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:23 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:12:23 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:12:23 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:23 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:12:23 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:12:23 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:23 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:24 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:24 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:24 [GameController] [INFO] Movement blocked: wall at (2, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:24 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:12:24 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+21:12:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:12:24 [GameController] [INFO] Movement blocked: wall at (2, 4)
+21:12:25 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+21:12:25 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:25 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:12:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:25 [MovementHistory] [INFO] Movement history initialized.
+21:12:25 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:25 [MovementHistory] [INFO] Movement history initialized.
+21:12:25 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:26 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:26 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:26 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:26 [MovementHistory] [INFO] Movement history initialized.
+21:12:26 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:26 [GameController] [INFO] Saving game...
+21:12:26 [GameController] [INFO] Game saved successfully.
+21:12:27 [GameController] [INFO] Loading game...
+21:12:27 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:27 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:12:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:27 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:12:27 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:12:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:27 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:12:27 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:12:27 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:27 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:12:28 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:12:28 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:28 [GameController] [INFO] Movement blocked: wall at (5, 4)
+21:12:28 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:12:28 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:28 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:12:28 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:12:28 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:28 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:12:28 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:12:28 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:28 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:12:28 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:12:28 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:28 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:12:28 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:28 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:28 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:28 [MovementHistory] [INFO] Movement history initialized.
+21:12:28 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:28 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:28 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:28 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:28 [MovementHistory] [INFO] Movement history initialized.
+21:12:28 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:29 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:29 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:29 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:29 [MovementHistory] [INFO] Movement history initialized.
+21:12:29 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:29 [GameController] [INFO] Saving game...
+21:12:29 [GameController] [INFO] Game saved successfully.
+21:12:30 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:30 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:30 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:30 [MovementHistory] [INFO] Movement history initialized.
+21:12:30 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:31 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:31 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:31 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:31 [MovementHistory] [INFO] Movement history initialized.
+21:12:31 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:31 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:31 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:31 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:31 [MovementHistory] [INFO] Movement history initialized.
+21:12:31 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:32 [GameController] [INFO] Saving game...
+21:12:32 [GameController] [INFO] Game saved successfully.
+21:12:32 [GameController] [INFO] Loading game...
+21:12:32 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:33 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:12:33 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:33 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:12:33 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:12:33 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:33 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:12:35 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:35 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:35 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:35 [MovementHistory] [INFO] Movement history initialized.
+21:12:35 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:35 [GameController] [INFO] Loading game...
+21:12:35 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:37 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:12:37 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:12:37 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:12:37 [MovementHistory] [INFO] Movement history initialized.
+21:12:37 [GameController] [INFO] Player initialized at position (4, 2)
+21:12:46 [GameController] [INFO] Saving game...
+21:12:46 [GameController] [INFO] Game saved successfully.
+21:12:48 [GameController] [INFO] Loading game...
+21:12:48 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:12:48 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:12:48 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:48 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:49 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:12:49 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:49 [GameController] [INFO] Movement blocked: wall at (5, 4)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:49 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:12:49 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:12:49 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:12:49 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:12:49 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:08 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:08 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:08 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:09 [MovementHistory] [INFO] Movement history initialized.
+21:17:09 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:09 [MovementHistory] [INFO] Movement history initialized.
+21:17:09 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:09 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:17:09 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:09 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:10 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:10 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:10 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:10 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:10 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:10 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:10 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:17:10 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:10 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:11 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:11 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:11 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:11 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:11 [GameController] [INFO] Movement blocked: wall at (2, 6)
+21:17:11 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:17:11 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:11 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:17:12 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:17:12 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:12 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:17:12 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:17:12 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:12 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:17:12 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:17:12 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:12 [GameController] [INFO] Player pushed box to (3, 1) and moved to (3, 2)
+21:17:12 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:17:12 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:12 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:17:12 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:17:12 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:12 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:13 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:17:13 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:13 [GameController] [INFO] Player moved to empty tile (6, 2)
+21:17:13 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:17:13 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:13 [GameController] [INFO] Movement blocked: wall at (7, 2)
+21:17:13 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:17:13 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:13 [GameController] [INFO] Movement blocked: wall at (7, 2)
+21:17:14 [GameController] [INFO] Saving game...
+21:17:14 [GameController] [INFO] Game saved successfully.
+21:17:15 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:15 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:15 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:15 [MovementHistory] [INFO] Movement history initialized.
+21:17:15 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:15 [GameController] [INFO] Loading game...
+21:17:15 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:16 [GameController] [INFO] Loading game...
+21:17:16 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:16 [GameController] [INFO] Loading game...
+21:17:16 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:16 [GameController] [INFO] Loading game...
+21:17:16 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:17 [GameController] [INFO] Loading game...
+21:17:17 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:17 [GameController] [INFO] Loading game...
+21:17:17 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:18 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:18 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:18 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:18 [MovementHistory] [INFO] Movement history initialized.
+21:17:18 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:19 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:19 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:19 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:19 [MovementHistory] [INFO] Movement history initialized.
+21:17:19 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:19 [GameController] [INFO] Loading game...
+21:17:19 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:20 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:17:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:20 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:20 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:17:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:20 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:20 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:17:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:20 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:20 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:17:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:20 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:21 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:17:21 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:21 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:21 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:17:21 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:21 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:21 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:17:21 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:21 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:17:21 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:17:21 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:21 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:17:21 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:17:21 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:21 [GameController] [INFO] Player moved to empty tile (4, 5)
+21:17:22 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:17:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:22 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:22 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:17:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:22 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:22 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:17:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:22 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:22 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:17:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:22 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:22 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:17:22 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:22 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:23 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:23 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:23 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:23 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:23 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:17:23 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:17:23 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:24 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:17:24 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:24 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:17:24 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:24 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+21:17:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:24 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:25 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+21:17:25 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:25 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:25 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+21:17:25 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:27 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+21:17:27 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:27 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:27 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+21:17:27 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:27 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:27 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+21:17:27 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:27 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:17:27 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+21:17:27 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:27 [GameController] [INFO] Movement blocked: wall at (4, 1)
+21:17:28 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+21:17:28 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:28 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:28 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+21:17:28 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:28 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+21:17:28 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:28 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:28 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+21:17:28 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:28 [GameController] [INFO] Player moved to empty tile (6, 1)
+21:17:29 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+21:17:29 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:29 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+21:17:29 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:29 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:29 [MovementHistory] [INFO] GameState pushed to history (36 total states).
+21:17:29 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:29 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:29 [MovementHistory] [INFO] GameState pushed to history (37 total states).
+21:17:29 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:29 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:30 [MovementHistory] [INFO] GameState pushed to history (38 total states).
+21:17:30 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:30 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:17:30 [MovementHistory] [INFO] GameState pushed to history (39 total states).
+21:17:30 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:30 [MovementHistory] [INFO] GameState pushed to history (40 total states).
+21:17:30 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:30 [MovementHistory] [INFO] GameState pushed to history (41 total states).
+21:17:30 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:30 [MovementHistory] [INFO] GameState pushed to history (42 total states).
+21:17:30 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:30 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:31 [MovementHistory] [INFO] GameState pushed to history (43 total states).
+21:17:31 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:31 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:31 [MovementHistory] [INFO] GameState pushed to history (44 total states).
+21:17:31 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:31 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:17:31 [MovementHistory] [INFO] GameState pushed to history (45 total states).
+21:17:31 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:31 [GameController] [INFO] Movement blocked: wall at (4, 1)
+21:17:31 [MovementHistory] [INFO] GameState pushed to history (46 total states).
+21:17:31 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:31 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:17:31 [MovementHistory] [INFO] GameState pushed to history (47 total states).
+21:17:31 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:31 [GameController] [INFO] Box push blocked: destination occupied.
+21:17:32 [MovementHistory] [INFO] GameState pushed to history (48 total states).
+21:17:32 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:32 [GameController] [INFO] Box push blocked: destination occupied.
+21:17:32 [MovementHistory] [INFO] GameState pushed to history (49 total states).
+21:17:32 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:32 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:17:32 [MovementHistory] [INFO] GameState pushed to history (50 total states).
+21:17:32 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:32 [GameController] [INFO] Player moved to empty tile (2, 1)
+21:17:33 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:33 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:33 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:33 [MovementHistory] [INFO] Movement history initialized.
+21:17:33 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:34 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:34 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:34 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:34 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:34 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:34 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:17:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:34 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:35 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:35 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:35 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:35 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:35 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:35 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:17:35 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:35 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:17:36 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:17:36 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:36 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:17:36 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:17:36 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:36 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:17:37 [GameController] [INFO] Loading game...
+21:17:37 [GameController] [INFO] Game loaded. Player at (4, 2)
+21:17:39 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:17:39 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:39 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:39 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:17:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:39 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:39 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:17:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:39 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:17:40 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:17:40 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:40 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:40 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:17:40 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:40 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:40 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:17:40 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:40 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:42 [GameController] [INFO] Saving game...
+21:17:42 [GameController] [INFO] Game saved successfully.
+21:17:42 [GameController] [INFO] Loading game...
+21:17:42 [GameController] [INFO] Game loaded. Player at (3, 6)
+21:17:43 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:43 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:43 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:43 [MovementHistory] [INFO] Movement history initialized.
+21:17:43 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:44 [GameController] [INFO] Loading game...
+21:17:44 [GameController] [INFO] Game loaded. Player at (3, 6)
+21:17:45 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:17:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:45 [GameController] [INFO] Movement blocked: wall at (3, 7)
+21:17:45 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:17:45 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:45 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:45 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:17:45 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:45 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:17:45 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:17:45 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:45 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:17:45 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:17:45 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:45 [GameController] [INFO] Player moved to empty tile (4, 5)
+21:17:46 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:17:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:46 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:46 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:17:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:46 [GameController] [INFO] Movement blocked: wall at (4, 4)
+21:17:46 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:17:46 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:46 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:46 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:17:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:46 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:46 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:17:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:46 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:47 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:17:47 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:47 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:17:47 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:17:47 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:47 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:17:47 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:17:47 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:47 [GameController] [INFO] Player moved to empty tile (1, 2)
+21:17:47 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:17:47 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:47 [GameController] [INFO] Player moved to empty tile (1, 1)
+21:17:47 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:17:47 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:47 [GameController] [INFO] Player moved to empty tile (2, 1)
+21:17:48 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:17:48 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:48 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:17:48 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+21:17:48 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:48 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:17:48 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+21:17:48 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:48 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:17:48 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+21:17:48 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:48 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:48 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+21:17:48 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:48 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:49 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+21:17:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:49 [GameController] [INFO] Player moved to empty tile (6, 1)
+21:17:49 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+21:17:49 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:49 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:49 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+21:17:49 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:49 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:49 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+21:17:49 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:49 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:49 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+21:17:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:49 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:50 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:50 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:50 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:50 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (36 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:50 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:50 [MovementHistory] [INFO] GameState pushed to history (37 total states).
+21:17:50 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:50 [GameController] [INFO] Player moved to empty tile (4, 5)
+21:17:51 [MovementHistory] [INFO] GameState pushed to history (38 total states).
+21:17:51 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:51 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:17:53 [GameController] [INFO] Saving game...
+21:17:53 [GameController] [INFO] Game saved successfully.
+21:17:54 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:17:54 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:17:54 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:17:54 [MovementHistory] [INFO] Movement history initialized.
+21:17:54 [GameController] [INFO] Player initialized at position (4, 2)
+21:17:54 [GameController] [INFO] Loading game...
+21:17:54 [GameController] [INFO] Game loaded. Player at (5, 5)
+21:17:55 [MovementHistory] [INFO] GameState pushed to history (39 total states).
+21:17:55 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:55 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:17:55 [MovementHistory] [INFO] GameState pushed to history (40 total states).
+21:17:55 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:55 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:17:55 [MovementHistory] [INFO] GameState pushed to history (41 total states).
+21:17:55 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:55 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:17:55 [MovementHistory] [INFO] GameState pushed to history (42 total states).
+21:17:55 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:55 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:17:56 [MovementHistory] [INFO] GameState pushed to history (43 total states).
+21:17:56 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:56 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:17:56 [MovementHistory] [INFO] GameState pushed to history (44 total states).
+21:17:56 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:56 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:17:56 [MovementHistory] [INFO] GameState pushed to history (45 total states).
+21:17:56 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:56 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:17:56 [MovementHistory] [INFO] GameState pushed to history (46 total states).
+21:17:56 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:56 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:17:57 [MovementHistory] [INFO] GameState pushed to history (47 total states).
+21:17:57 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:57 [GameController] [INFO] Player moved to empty tile (2, 1)
+21:17:57 [MovementHistory] [INFO] GameState pushed to history (48 total states).
+21:17:57 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:57 [GameController] [INFO] Player moved to empty tile (1, 1)
+21:17:57 [MovementHistory] [INFO] GameState pushed to history (49 total states).
+21:17:57 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:57 [GameController] [INFO] Player moved to empty tile (1, 2)
+21:17:57 [MovementHistory] [INFO] GameState pushed to history (50 total states).
+21:17:57 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:57 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:17:57 [MovementHistory] [INFO] GameState pushed to history (51 total states).
+21:17:57 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:57 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:17:58 [MovementHistory] [INFO] GameState pushed to history (52 total states).
+21:17:58 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:58 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:17:58 [MovementHistory] [INFO] GameState pushed to history (53 total states).
+21:17:58 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:58 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:58 [MovementHistory] [INFO] GameState pushed to history (54 total states).
+21:17:58 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:17:58 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:58 [MovementHistory] [INFO] GameState pushed to history (55 total states).
+21:17:58 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:58 [GameController] [INFO] Player moved to empty tile (6, 1)
+21:17:58 [MovementHistory] [INFO] GameState pushed to history (56 total states).
+21:17:58 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:59 [MovementHistory] [INFO] GameState pushed to history (57 total states).
+21:17:59 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:17:59 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:17:59 [MovementHistory] [INFO] GameState pushed to history (58 total states).
+21:17:59 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:59 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:17:59 [MovementHistory] [INFO] GameState pushed to history (59 total states).
+21:17:59 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:59 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:17:59 [MovementHistory] [INFO] GameState pushed to history (60 total states).
+21:17:59 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:17:59 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:17:59 [MovementHistory] [INFO] GameState pushed to history (61 total states).
+21:17:59 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:17:59 [GameController] [INFO] Movement blocked: wall at (6, 4)
+21:18:00 [MovementHistory] [INFO] GameState pushed to history (62 total states).
+21:18:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:18:00 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:18:00 [MovementHistory] [INFO] GameState pushed to history (63 total states).
+21:18:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:18:00 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:18:00 [MovementHistory] [INFO] GameState pushed to history (64 total states).
+21:18:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:18:00 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:18:00 [MovementHistory] [INFO] GameState pushed to history (65 total states).
+21:18:00 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:18:00 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:18:00 [MovementHistory] [INFO] GameState pushed to history (66 total states).
+21:18:00 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:18:00 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:18:01 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:01 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:01 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:01 [MovementHistory] [INFO] Movement history initialized.
+21:18:01 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:01 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:01 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:01 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:01 [MovementHistory] [INFO] Movement history initialized.
+21:18:01 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:02 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:02 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:02 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:02 [MovementHistory] [INFO] Movement history initialized.
+21:18:02 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:02 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:02 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:02 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:02 [MovementHistory] [INFO] Movement history initialized.
+21:18:02 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:03 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:18:03 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:18:03 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:18:03 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:18:03 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:18:03 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:18:03 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:18:03 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:18:03 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:18:03 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:18:03 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:18:03 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:18:04 [GameController] [INFO] Saving game...
+21:18:04 [GameController] [INFO] Game saved successfully.
+21:18:04 [GameController] [INFO] Loading game...
+21:18:04 [GameController] [INFO] Game loaded. Player at (3, 5)
+21:18:06 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:06 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:06 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:06 [MovementHistory] [INFO] Movement history initialized.
+21:18:06 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:07 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:07 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:07 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:07 [MovementHistory] [INFO] Movement history initialized.
+21:18:07 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:07 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:07 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:07 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:07 [MovementHistory] [INFO] Movement history initialized.
+21:18:07 [GameController] [INFO] Player initialized at position (4, 2)
+21:18:08 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:18:08 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:18:08 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:18:08 [MovementHistory] [INFO] Movement history initialized.
+21:18:08 [GameController] [INFO] Player initialized at position (4, 2)
+21:20:32 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:20:32 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:20:32 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:20:33 [MovementHistory] [INFO] Movement history initialized.
+21:20:33 [GameController] [INFO] Player initialized at position (4, 2)
+21:20:33 [MovementHistory] [INFO] Movement history initialized.
+21:20:33 [GameController] [INFO] Player initialized at position (4, 2)
+21:20:33 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:20:33 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:33 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:20:34 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:20:34 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:34 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:20:34 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:20:34 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:34 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:20:34 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:20:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:34 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:20:34 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:20:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:34 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:20:35 [GameController] [INFO] Saving game...
+21:20:35 [GameController] [INFO] Game saved successfully.
+21:20:35 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:20:35 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:20:35 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:20:35 [MovementHistory] [INFO] Movement history initialized.
+21:20:35 [GameController] [INFO] Player initialized at position (4, 2)
+21:20:36 [GameController] [INFO] Loading game...
+21:20:36 [GameController] [INFO] Player located at (3, 5) after load
+21:20:36 [GameController] [INFO] Game loaded. Player at (3, 5)
+21:20:37 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:20:37 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:37 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:20:37 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:20:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:37 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:20:37 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:20:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:37 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:20:37 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:20:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:37 [GameController] [INFO] Movement blocked: wall at (6, 6)
+21:20:37 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:20:37 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:37 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:20:38 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:20:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:38 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:20:38 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:20:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:38 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:20:38 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:20:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:38 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:20:38 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:20:38 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:38 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:20:38 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:20:38 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:38 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:20:39 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:20:39 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:39 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:20:39 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:20:39 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:39 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:20:39 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:20:39 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:39 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:20:39 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:20:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:39 [GameController] [INFO] Player pushed box to (2, 2) and moved to (3, 2)
+21:20:39 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:20:39 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:39 [GameController] [INFO] Player moved to empty tile (3, 1)
+21:20:40 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:20:40 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:40 [GameController] [INFO] Player moved to empty tile (2, 1)
+21:20:40 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:20:40 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:40 [GameController] [INFO] Player moved to empty tile (1, 1)
+21:20:40 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:20:40 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:40 [GameController] [INFO] Player moved to empty tile (1, 2)
+21:20:40 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:20:40 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:40 [GameController] [INFO] Player pushed box to (3, 2) and moved to (2, 2)
+21:20:40 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:20:40 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:40 [GameController] [INFO] Player pushed box to (4, 2) and moved to (3, 2)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:41 [GameController] [INFO] Player pushed box to (5, 2) and moved to (4, 2)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:41 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:41 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:41 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:41 [GameController] [INFO] Player moved to empty tile (6, 2)
+21:20:41 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+21:20:41 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:20:41 [GameController] [INFO] Player moved to empty tile (6, 1)
+21:20:42 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+21:20:42 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:42 [GameController] [INFO] Player moved to empty tile (5, 1)
+21:20:42 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+21:20:42 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:42 [GameController] [INFO] Player pushed box to (5, 3) and moved to (5, 2)
+21:20:42 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+21:20:42 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:20:42 [GameController] [INFO] Player moved to empty tile (6, 2)
+21:20:42 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+21:20:42 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:20:42 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:20:42 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+21:20:42 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:20:42 [GameController] [INFO] Player pushed box to (4, 3) and moved to (5, 3)
+21:20:47 [LevelParser] [INFO] Parsing level from file: level2.txt
+21:20:47 [LevelParser] [ERROR] File not found: level2.txt
+21:25:16 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:16 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:16 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:17 [MovementHistory] [INFO] Movement history initialized.
+21:25:17 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:17 [MovementHistory] [INFO] Movement history initialized.
+21:25:17 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:18 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:25:18 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:18 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:25:18 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:18 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:25:18 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:18 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:25:18 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:18 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:25:18 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:25:18 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:18 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:25:19 [GameController] [INFO] Saving game...
+21:25:19 [GameController] [INFO] Game saved successfully.
+21:25:20 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:20 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:20 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:20 [MovementHistory] [INFO] Movement history initialized.
+21:25:20 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:20 [MovementHistory] [INFO] Movement history initialized.
+21:25:20 [GameController] [INFO] Player initialized at position (3, 6)
+21:25:21 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:21 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:21 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:25:21 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:21 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:21 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:25:22 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:22 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:22 [GameController] [INFO] Movement blocked: wall at (6, 6)
+21:25:22 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:25:22 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:22 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:25:23 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:23 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:23 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:23 [MovementHistory] [INFO] Movement history initialized.
+21:25:23 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:23 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:23 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:23 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:25:24 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:24 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:25:24 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:24 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:24 [GameController] [INFO] Player moved to empty tile (1, 2)
+21:25:24 [GameController] [INFO] Saving game...
+21:25:24 [GameController] [INFO] Game saved successfully.
+21:25:25 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:25 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:25 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:25 [MovementHistory] [INFO] Movement history initialized.
+21:25:25 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:25 [MovementHistory] [INFO] Movement history initialized.
+21:25:25 [GameController] [INFO] Player initialized at position (3, 6)
+21:25:26 [MovementHistory] [INFO] Movement history initialized.
+21:25:26 [GameController] [INFO] Player initialized at position (3, 6)
+21:25:26 [MovementHistory] [INFO] Movement history initialized.
+21:25:26 [GameController] [INFO] Player initialized at position (3, 6)
+21:25:27 [MovementHistory] [INFO] Movement history initialized.
+21:25:27 [GameController] [INFO] Player initialized at position (3, 6)
+21:25:27 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:27 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:27 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:27 [MovementHistory] [INFO] Movement history initialized.
+21:25:27 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:39 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:39 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:39 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:39 [MovementHistory] [INFO] Movement history initialized.
+21:25:39 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:40 [MovementHistory] [INFO] Movement history initialized.
+21:25:40 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:40 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:40 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:40 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:25:40 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:40 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:40 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:25:40 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:40 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:40 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:25:41 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:25:41 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:41 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:25:41 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:25:41 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:41 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:25:41 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:25:41 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:41 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:25:46 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:25:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:46 [GameController] [INFO] Movement blocked: wall at (3, 7)
+21:25:46 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:25:46 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:46 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:47 [GameController] [INFO] Player moved to empty tile (5, 6)
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:47 [GameController] [INFO] Movement blocked: wall at (6, 6)
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:47 [GameController] [INFO] Player moved to empty tile (5, 5)
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:47 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:47 [GameController] [INFO] Box push blocked: destination occupied.
+21:25:47 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+21:25:47 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:47 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:25:48 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+21:25:48 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:48 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:25:48 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+21:25:48 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:48 [GameController] [INFO] Movement blocked: wall at (2, 6)
+21:25:48 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+21:25:48 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:48 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+21:25:48 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+21:25:48 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:48 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+21:25:48 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+21:25:48 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:48 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:49 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+21:25:49 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:49 [GameController] [INFO] Player pushed box to (2, 2) and moved to (3, 2)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:49 [GameController] [INFO] Player pushed box to (1, 2) and moved to (2, 2)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:49 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:25:49 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+21:25:49 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:49 [GameController] [INFO] Player moved to empty tile (4, 2)
+21:25:50 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+21:25:50 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:50 [GameController] [INFO] Player moved to empty tile (5, 2)
+21:25:50 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+21:25:50 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:50 [GameController] [INFO] Player moved to empty tile (6, 2)
+21:25:51 [GameController] [INFO] Saving game...
+21:25:51 [GameController] [INFO] Game saved successfully.
+21:25:52 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:52 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:52 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:52 [MovementHistory] [INFO] Movement history initialized.
+21:25:52 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:52 [MovementHistory] [INFO] Movement history initialized.
+21:25:52 [GameController] [INFO] Player initialized at position (6, 2)
+21:25:54 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:54 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:54 [GameController] [INFO] Player moved to empty tile (6, 3)
+21:25:54 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:54 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:54 [GameController] [INFO] Player moved to empty tile (5, 3)
+21:25:54 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:54 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:54 [GameController] [INFO] Player moved to empty tile (4, 3)
+21:25:54 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+21:25:54 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:54 [GameController] [INFO] Player moved to empty tile (3, 3)
+21:25:55 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+21:25:55 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:55 [GameController] [INFO] Movement blocked: wall at (2, 3)
+21:25:55 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+21:25:55 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:55 [GameController] [INFO] Player moved to empty tile (3, 4)
+21:25:55 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+21:25:55 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:55 [GameController] [INFO] Player moved to empty tile (3, 5)
+21:25:55 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+21:25:55 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+21:25:55 [GameController] [INFO] Player moved to empty tile (3, 6)
+21:25:55 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+21:25:55 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+21:25:55 [GameController] [INFO] Player moved to empty tile (4, 6)
+21:25:57 [MovementHistory] [INFO] Movement history initialized.
+21:25:57 [GameController] [INFO] Player initialized at position (6, 2)
+21:25:57 [MovementHistory] [INFO] Movement history initialized.
+21:25:57 [GameController] [INFO] Player initialized at position (6, 2)
+21:25:58 [MovementHistory] [INFO] Movement history initialized.
+21:25:58 [GameController] [INFO] Player initialized at position (6, 2)
+21:25:58 [MovementHistory] [INFO] Movement history initialized.
+21:25:58 [GameController] [INFO] Player initialized at position (6, 2)
+21:25:58 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:25:58 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:25:58 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:25:58 [MovementHistory] [INFO] Movement history initialized.
+21:25:58 [GameController] [INFO] Player initialized at position (4, 2)
+21:25:59 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:25:59 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:59 [GameController] [INFO] Player moved to empty tile (3, 2)
+21:25:59 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+21:25:59 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:59 [GameController] [INFO] Player moved to empty tile (2, 2)
+21:25:59 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+21:25:59 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+21:25:59 [GameController] [INFO] Player moved to empty tile (1, 2)
+21:26:00 [GameController] [INFO] Saving game...
+21:26:00 [GameController] [INFO] Game saved successfully.
+21:26:01 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:26:01 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:26:01 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:26:01 [MovementHistory] [INFO] Movement history initialized.
+21:26:01 [GameController] [INFO] Player initialized at position (4, 2)
+21:26:02 [MovementHistory] [INFO] Movement history initialized.
+21:26:02 [GameController] [INFO] Player initialized at position (6, 2)
+21:26:03 [MovementHistory] [INFO] Movement history initialized.
+21:26:03 [GameController] [INFO] Player initialized at position (6, 2)
+21:26:03 [MovementHistory] [INFO] Movement history initialized.
+21:26:03 [GameController] [INFO] Player initialized at position (6, 2)
+21:26:03 [MovementHistory] [INFO] Movement history initialized.
+21:26:03 [GameController] [INFO] Player initialized at position (6, 2)
+22:05:54 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:05:54 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:05:54 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:05:55 [MovementHistory] [INFO] Movement history initialized.
+22:05:55 [GameController] [INFO] Player initialized at position (4, 2)
+22:05:55 [MovementHistory] [INFO] Movement history initialized.
+22:05:55 [GameController] [INFO] Player initialized at position (4, 2)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:05:57 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:05:57 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:05:57 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:05:57 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:05:57 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:05:57 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:05:57 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:05:57 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:05:58 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:05:58 [GameController] [WARN] No moves to undo.
+22:05:59 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:05:59 [GameController] [WARN] No moves to undo.
+22:05:59 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:05:59 [GameController] [WARN] No moves to undo.
+22:05:59 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:05:59 [GameController] [WARN] No moves to undo.
+22:05:59 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:05:59 [GameController] [WARN] No moves to undo.
+22:06:00 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:06:00 [GameController] [WARN] No moves to undo.
+22:06:00 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:06:00 [GameController] [WARN] No moves to undo.
+22:06:00 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:06:00 [GameController] [WARN] No moves to undo.
+22:06:00 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:06:00 [GameController] [WARN] No moves to undo.
+22:06:01 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:06:01 [GameController] [WARN] No moves to undo.
+22:06:01 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+22:06:01 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:01 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:06:01 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+22:06:01 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:01 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:06:01 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+22:06:01 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:01 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:06:01 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+22:06:01 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:01 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:06:01 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+22:06:01 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:01 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:06:02 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+22:06:02 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:02 [GameController] [INFO] Player moved to empty tile (5, 6)
+22:06:02 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+22:06:02 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:02 [GameController] [INFO] Player moved to empty tile (5, 5)
+22:06:02 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+22:06:02 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:02 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+22:06:02 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:06:02 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:02 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:06:02 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+22:06:02 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:02 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:03 [GameController] [INFO] Movement blocked: wall at (2, 6)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:03 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:03 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:03 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:03 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:06:03 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+22:06:03 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:03 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:06:04 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+22:06:04 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:04 [GameController] [INFO] Player pushed box to (2, 2) and moved to (3, 2)
+22:06:04 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+22:06:04 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:06:04 [GameController] [INFO] Player moved to empty tile (3, 1)
+22:06:04 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+22:06:04 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:04 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:06:04 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+22:06:04 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:04 [GameController] [INFO] Player moved to empty tile (1, 1)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:06:05 [GameController] [INFO] Movement blocked: wall at (0, 1)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:05 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:05 [GameController] [INFO] Movement blocked: wall at (1, 3)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:05 [GameController] [INFO] Player pushed box to (3, 2) and moved to (2, 2)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:05 [GameController] [INFO] Player pushed box to (4, 2) and moved to (3, 2)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:05 [GameController] [INFO] Player pushed box to (5, 2) and moved to (4, 2)
+22:06:05 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+22:06:05 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:06:05 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:06:06 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+22:06:06 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:06 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:06:06 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+22:06:06 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:06:06 [GameController] [INFO] Player moved to empty tile (6, 3)
+22:06:16 [GameController] [INFO] Saving game to: Prueba2
+22:06:16 [GameController] [INFO] Game saved successfully.
+22:06:17 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:06:17 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:06:17 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:06:17 [MovementHistory] [INFO] Movement history initialized.
+22:06:17 [GameController] [INFO] Player initialized at position (4, 2)
+22:06:22 [MovementHistory] [INFO] Movement history initialized.
+22:08:16 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:16 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:16 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:17 [MovementHistory] [INFO] Movement history initialized.
+22:08:17 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:17 [MovementHistory] [INFO] Movement history initialized.
+22:08:17 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:17 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:08:17 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:17 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:08:17 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:08:17 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:17 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:08:18 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:08:18 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:18 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:08:18 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:18 [GameController] [WARN] No moves to undo.
+22:08:19 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:19 [GameController] [WARN] No moves to undo.
+22:08:19 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:19 [GameController] [WARN] No moves to undo.
+22:08:19 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:19 [GameController] [WARN] No moves to undo.
+22:08:19 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:19 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:19 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:19 [MovementHistory] [INFO] Movement history initialized.
+22:08:19 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:19 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:19 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:19 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:19 [MovementHistory] [INFO] Movement history initialized.
+22:08:19 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:20 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:20 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:20 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:20 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:20 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:08:20 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:08:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:20 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:08:21 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:21 [GameController] [WARN] No moves to undo.
+22:08:21 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:21 [GameController] [WARN] No moves to undo.
+22:08:21 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:21 [GameController] [WARN] No moves to undo.
+22:08:22 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:22 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:22 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:22 [MovementHistory] [INFO] Movement history initialized.
+22:08:22 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:22 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:08:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:22 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:08:22 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:08:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:22 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:08:22 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:08:22 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:22 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:08:23 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:23 [GameController] [WARN] No moves to undo.
+22:08:23 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:23 [GameController] [WARN] No moves to undo.
+22:08:23 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:08:23 [GameController] [WARN] No moves to undo.
+22:08:49 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:49 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:49 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:50 [MovementHistory] [INFO] Movement history initialized.
+22:08:50 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:50 [MovementHistory] [INFO] Movement history initialized.
+22:08:50 [GameController] [INFO] Player initialized at position (4, 2)
+22:08:56 [MovementHistory] [INFO] Movement history initialized.
+22:08:56 [GameController] [INFO] Loading game from: Prueba2
+22:08:56 [GameController] [INFO] Player located at (6, 3) after load
+22:08:56 [GameController] [INFO] Game loaded successfully.
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (36 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:58 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (37 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:58 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (38 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:58 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (39 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:08:58 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (40 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:58 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (41 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:58 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:08:58 [MovementHistory] [INFO] GameState pushed to history (42 total states).
+22:08:58 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:08:58 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:08:59 [MovementHistory] [INFO] GameState pushed to history (43 total states).
+22:08:59 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:08:59 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:08:59 [MovementHistory] [INFO] GameState pushed to history (44 total states).
+22:08:59 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:08:59 [GameController] [INFO] Player moved to empty tile (5, 6)
+22:08:59 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:08:59 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:08:59 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:08:59 [MovementHistory] [INFO] Movement history initialized.
+22:08:59 [GameController] [INFO] Player initialized at position (4, 2)
+22:09:00 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:09:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:00 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:09:03 [GameController] [INFO] Saving game to: A
+22:09:03 [GameController] [INFO] Game saved successfully.
+22:09:05 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:09:05 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:09:05 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:09:05 [MovementHistory] [INFO] Movement history initialized.
+22:09:05 [GameController] [INFO] Player initialized at position (4, 2)
+22:09:09 [MovementHistory] [INFO] Movement history initialized.
+22:09:09 [GameController] [INFO] Loading game from: A
+22:09:09 [GameController] [INFO] Player located at (3, 2) after load
+22:09:09 [GameController] [INFO] Game loaded successfully.
+22:09:10 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:09:10 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:10 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:09:10 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:09:10 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:10 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:09:10 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:09:10 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:10 [GameController] [INFO] Movement blocked: wall at (0, 2)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:11 [GameController] [INFO] Player moved to empty tile (1, 1)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:11 [GameController] [INFO] Movement blocked: wall at (1, 0)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:11 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:11 [GameController] [INFO] Player moved to empty tile (3, 1)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:11 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:09:11 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+22:09:11 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:11 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:09:12 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+22:09:12 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:12 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:09:12 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+22:09:12 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:12 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:09:12 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+22:09:12 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:12 [GameController] [INFO] Player moved to empty tile (6, 3)
+22:09:12 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+22:09:12 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:12 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:09:12 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:09:12 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:12 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:13 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:13 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:13 [GameController] [INFO] Movement blocked: wall at (4, 4)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:13 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:13 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:13 [GameController] [INFO] Movement blocked: wall at (2, 4)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:13 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:13 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:13 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:09:13 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+22:09:13 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:13 [GameController] [INFO] Player pushed box to (5, 5) and moved to (4, 5)
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:14 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:14 [GameController] [INFO] Player moved to empty tile (5, 6)
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:09:14 [GameController] [INFO] Movement blocked: wall at (5, 7)
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:14 [GameController] [INFO] Box push blocked: destination occupied.
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:14 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:09:14 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+22:09:14 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:09:14 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:09:15 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+22:09:15 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:15 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:09:15 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+22:09:15 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:15 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:09:15 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+22:09:15 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:15 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:09:15 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+22:09:15 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:09:15 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:09:15 [MovementHistory] [INFO] GameState pushed to history (36 total states).
+22:09:15 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:15 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:09:16 [MovementHistory] [INFO] GameState pushed to history (37 total states).
+22:09:16 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:16 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:09:16 [MovementHistory] [INFO] GameState pushed to history (38 total states).
+22:09:16 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:09:16 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:09:20 [GameController] [INFO] Saving game to: B
+22:09:20 [GameController] [INFO] Game saved successfully.
+22:09:21 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:09:21 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:09:21 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:09:21 [MovementHistory] [INFO] Movement history initialized.
+22:09:21 [GameController] [INFO] Player initialized at position (4, 2)
+22:09:25 [MovementHistory] [INFO] Movement history initialized.
+22:09:25 [GameController] [INFO] Loading game from: B
+22:09:25 [GameController] [INFO] Player located at (6, 2) after load
+22:09:25 [GameController] [INFO] Game loaded successfully.
+22:10:29 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:10:29 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:10:29 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:10:30 [MovementHistory] [INFO] Movement history initialized.
+22:10:30 [GameController] [INFO] Player initialized at position (4, 2)
+22:10:30 [MovementHistory] [INFO] Movement history initialized.
+22:10:30 [GameController] [INFO] Player initialized at position (4, 2)
+22:10:30 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:10:30 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:30 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:10:31 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:10:31 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:31 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:10:31 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+22:10:31 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:10:32 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+22:10:32 [GameController] [INFO] Move undone. Restored to position (4, 2)
+22:10:32 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:32 [GameController] [WARN] No moves to undo.
+22:10:33 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:33 [GameController] [WARN] No moves to undo.
+22:10:33 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:33 [GameController] [WARN] No moves to undo.
+22:10:33 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:10:33 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:33 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:10:33 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:10:33 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:33 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:10:33 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:10:33 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:33 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:10:34 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:10:34 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:10:34 [GameController] [INFO] Player moved to empty tile (1, 1)
+22:10:34 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:10:34 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:10:34 [GameController] [INFO] Movement blocked: wall at (1, 0)
+22:10:34 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:10:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:10:34 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:10:34 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+22:10:34 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:34 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:35 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:10:35 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:35 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:35 [GameController] [INFO] Player moved to empty tile (3, 4)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:35 [GameController] [INFO] Player moved to empty tile (3, 5)
+22:10:35 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+22:10:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:35 [GameController] [INFO] Player moved to empty tile (3, 6)
+22:10:36 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+22:10:36 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:10:36 [GameController] [INFO] Player moved to empty tile (4, 6)
+22:10:36 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:10:36 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:10:36 [GameController] [INFO] Player moved to empty tile (5, 6)
+22:10:36 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+22:10:36 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:10:36 [GameController] [INFO] Movement blocked: wall at (6, 6)
+22:10:36 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+22:10:36 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:10:36 [GameController] [INFO] Player moved to empty tile (5, 5)
+22:10:36 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+22:10:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:36 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+22:10:37 [MovementHistory] [INFO] GameState popped from history (17 remaining).
+22:10:37 [GameController] [INFO] Move undone. Restored to position (5, 5)
+22:10:37 [MovementHistory] [INFO] GameState popped from history (16 remaining).
+22:10:37 [GameController] [INFO] Move undone. Restored to position (5, 6)
+22:10:38 [MovementHistory] [INFO] GameState popped from history (15 remaining).
+22:10:38 [GameController] [INFO] Move undone. Restored to position (5, 6)
+22:10:38 [MovementHistory] [INFO] GameState popped from history (14 remaining).
+22:10:38 [GameController] [INFO] Move undone. Restored to position (4, 6)
+22:10:38 [MovementHistory] [INFO] GameState popped from history (13 remaining).
+22:10:38 [GameController] [INFO] Move undone. Restored to position (3, 6)
+22:10:39 [MovementHistory] [INFO] GameState popped from history (12 remaining).
+22:10:39 [GameController] [INFO] Move undone. Restored to position (3, 5)
+22:10:39 [MovementHistory] [INFO] GameState popped from history (11 remaining).
+22:10:39 [GameController] [INFO] Move undone. Restored to position (3, 4)
+22:10:39 [MovementHistory] [INFO] GameState popped from history (10 remaining).
+22:10:39 [GameController] [INFO] Move undone. Restored to position (3, 3)
+22:10:40 [MovementHistory] [INFO] GameState popped from history (9 remaining).
+22:10:40 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:10:40 [MovementHistory] [INFO] GameState popped from history (8 remaining).
+22:10:40 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:10:40 [MovementHistory] [INFO] GameState popped from history (7 remaining).
+22:10:40 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:10:40 [MovementHistory] [INFO] GameState popped from history (6 remaining).
+22:10:40 [GameController] [INFO] Move undone. Restored to position (2, 1)
+22:10:41 [MovementHistory] [INFO] GameState popped from history (5 remaining).
+22:10:41 [GameController] [INFO] Move undone. Restored to position (1, 1)
+22:10:41 [MovementHistory] [INFO] GameState popped from history (4 remaining).
+22:10:41 [GameController] [INFO] Move undone. Restored to position (1, 1)
+22:10:41 [MovementHistory] [INFO] GameState popped from history (3 remaining).
+22:10:41 [GameController] [INFO] Move undone. Restored to position (1, 2)
+22:10:41 [MovementHistory] [INFO] GameState popped from history (2 remaining).
+22:10:41 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:10:42 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+22:10:42 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:10:42 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+22:10:42 [GameController] [INFO] Move undone. Restored to position (4, 2)
+22:10:42 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:42 [GameController] [WARN] No moves to undo.
+22:10:42 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:42 [GameController] [WARN] No moves to undo.
+22:10:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:43 [GameController] [WARN] No moves to undo.
+22:10:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:43 [GameController] [WARN] No moves to undo.
+22:10:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:43 [GameController] [WARN] No moves to undo.
+22:10:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:10:43 [GameController] [WARN] No moves to undo.
+22:10:43 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:10:43 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:10:43 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:10:44 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:10:44 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:10:44 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:10:45 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:10:45 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:10:45 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:10:45 [MovementHistory] [INFO] Movement history initialized.
+22:10:45 [GameController] [INFO] Player initialized at position (4, 2)
+22:11:28 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:11:28 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:28 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:28 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:11:28 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:28 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:11:28 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:11:28 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:28 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:11:29 [MovementHistory] [INFO] GameState popped from history (2 remaining).
+22:11:29 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:11:29 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:11:29 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:29 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:11:29 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:11:29 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:29 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:11:30 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:11:30 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:30 [GameController] [INFO] Movement blocked: wall at (2, 0)
+22:11:30 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:11:30 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:30 [GameController] [INFO] Player moved to empty tile (3, 1)
+22:11:30 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+22:11:30 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:30 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:31 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+22:11:31 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:31 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:11:31 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+22:11:31 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:31 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:11:31 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+22:11:31 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:31 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:11:31 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+22:11:31 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:31 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:32 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+22:11:32 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:32 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:11:32 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+22:11:32 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:32 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:32 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+22:11:32 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:32 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:11:32 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:11:32 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:32 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:11:33 [MovementHistory] [INFO] GameState popped from history (14 remaining).
+22:11:33 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:11:34 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:11:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:34 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:34 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+22:11:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:34 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:11:34 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+22:11:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:34 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:34 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+22:11:34 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:34 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:11:35 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+22:11:35 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:35 [GameController] [INFO] Player moved to empty tile (6, 1)
+22:11:35 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+22:11:35 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:35 [GameController] [INFO] Player moved to empty tile (5, 1)
+22:11:35 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+22:11:35 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:35 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:35 [MovementHistory] [INFO] GameState pushed to history (22 total states).
+22:11:35 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:35 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:11:36 [MovementHistory] [INFO] GameState pushed to history (23 total states).
+22:11:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:36 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:36 [MovementHistory] [INFO] GameState pushed to history (24 total states).
+22:11:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:36 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:11:36 [MovementHistory] [INFO] GameState pushed to history (25 total states).
+22:11:36 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:36 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:11:36 [MovementHistory] [INFO] GameState pushed to history (26 total states).
+22:11:36 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:36 [GameController] [INFO] Player moved to empty tile (1, 1)
+22:11:37 [MovementHistory] [INFO] GameState pushed to history (27 total states).
+22:11:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:37 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:11:37 [MovementHistory] [INFO] GameState pushed to history (28 total states).
+22:11:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:37 [GameController] [INFO] Player moved to empty tile (3, 1)
+22:11:37 [MovementHistory] [INFO] GameState pushed to history (29 total states).
+22:11:37 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:37 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:11:37 [MovementHistory] [INFO] GameState pushed to history (30 total states).
+22:11:37 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:37 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:11:38 [MovementHistory] [INFO] GameState pushed to history (31 total states).
+22:11:38 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:38 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:38 [MovementHistory] [INFO] GameState pushed to history (32 total states).
+22:11:38 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:38 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:11:38 [MovementHistory] [INFO] GameState pushed to history (33 total states).
+22:11:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:38 [GameController] [INFO] Player moved to empty tile (6, 3)
+22:11:38 [MovementHistory] [INFO] GameState pushed to history (34 total states).
+22:11:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:38 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:11:39 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+22:11:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:39 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:11:39 [MovementHistory] [INFO] GameState popped from history (34 remaining).
+22:11:39 [GameController] [INFO] Move undone. Restored to position (5, 3)
+22:11:40 [MovementHistory] [INFO] GameState pushed to history (35 total states).
+22:11:40 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:40 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:41 [MovementHistory] [INFO] GameState pushed to history (36 total states).
+22:11:41 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:41 [GameController] [INFO] Player moved to empty tile (5, 1)
+22:11:41 [MovementHistory] [INFO] GameState pushed to history (37 total states).
+22:11:41 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:41 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:11:42 [MovementHistory] [INFO] GameState pushed to history (38 total states).
+22:11:42 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:11:42 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:11:42 [MovementHistory] [INFO] GameState pushed to history (39 total states).
+22:11:42 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:42 [GameController] [INFO] Player moved to empty tile (6, 3)
+22:11:42 [MovementHistory] [INFO] GameState pushed to history (40 total states).
+22:11:42 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:11:42 [GameController] [INFO] Movement blocked: wall at (7, 3)
+22:11:43 [MovementHistory] [INFO] GameState pushed to history (41 total states).
+22:11:43 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:43 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:11:43 [MovementHistory] [INFO] GameState pushed to history (42 total states).
+22:11:43 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:11:43 [GameController] [INFO] Player moved to empty tile (6, 1)
+22:11:43 [MovementHistory] [INFO] GameState pushed to history (43 total states).
+22:11:43 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:11:43 [GameController] [INFO] Player moved to empty tile (5, 1)
+22:11:43 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:11:43 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:11:43 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:11:43 [MovementHistory] [INFO] Movement history initialized.
+22:11:43 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:18 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:12:18 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:12:18 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:12:19 [MovementHistory] [INFO] Movement history initialized.
+22:12:19 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:19 [MovementHistory] [INFO] Movement history initialized.
+22:12:19 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:20 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:12:20 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:20 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:12:20 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:12:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:20 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:12:20 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:12:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:20 [GameController] [INFO] Movement blocked: wall at (2, 3)
+22:12:20 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:12:20 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:20 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:12:20 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:12:20 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:20 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:12:21 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:12:21 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:21 [GameController] [INFO] Player moved to empty tile (1, 2)
+22:12:21 [MovementHistory] [INFO] GameState popped from history (5 remaining).
+22:12:21 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:12:22 [MovementHistory] [INFO] GameState popped from history (4 remaining).
+22:12:22 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:12:22 [MovementHistory] [INFO] GameState popped from history (3 remaining).
+22:12:22 [GameController] [INFO] Move undone. Restored to position (3, 3)
+22:12:23 [MovementHistory] [INFO] GameState popped from history (2 remaining).
+22:12:23 [GameController] [INFO] Move undone. Restored to position (3, 3)
+22:12:23 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+22:12:23 [GameController] [INFO] Move undone. Restored to position (4, 3)
+22:12:23 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+22:12:23 [GameController] [INFO] Move undone. Restored to position (4, 2)
+22:12:24 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:12:24 [GameController] [WARN] No moves to undo.
+22:12:24 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:12:24 [GameController] [WARN] No moves to undo.
+22:12:24 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:12:24 [GameController] [WARN] No moves to undo.
+22:12:43 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:12:43 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:12:43 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:12:44 [MovementHistory] [INFO] Movement history initialized.
+22:12:44 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:44 [MovementHistory] [INFO] Movement history initialized.
+22:12:44 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:44 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+22:12:44 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:44 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:12:44 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+22:12:44 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:44 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:45 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:12:45 [GameController] [INFO] Player moved to empty tile (1, 1)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:12:45 [GameController] [INFO] Player moved to empty tile (2, 1)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:45 [GameController] [INFO] Player moved to empty tile (2, 2)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:12:45 [GameController] [INFO] Player moved to empty tile (3, 2)
+22:12:45 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+22:12:45 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:45 [GameController] [INFO] Player moved to empty tile (3, 3)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:12:46 [GameController] [INFO] Player moved to empty tile (4, 3)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:46 [GameController] [INFO] Movement blocked: wall at (4, 4)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:12:46 [GameController] [INFO] Player moved to empty tile (5, 3)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (5, 1)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (15 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (5, 1)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (16 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+22:12:46 [GameController] [INFO] Player moved to empty tile (6, 1)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (17 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:12:46 [MovementHistory] [INFO] GameState pushed to history (18 total states).
+22:12:46 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+22:12:46 [GameController] [INFO] Player moved to empty tile (6, 1)
+22:12:53 [GameController] [INFO] Saving game to: Prueba 3
+22:12:53 [GameController] [INFO] Game saved successfully.
+22:12:54 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:12:54 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:12:54 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:12:54 [MovementHistory] [INFO] Movement history initialized.
+22:12:54 [GameController] [INFO] Player initialized at position (4, 2)
+22:12:59 [MovementHistory] [INFO] Movement history initialized.
+22:12:59 [GameController] [INFO] Loading game from: Prueba 3
+22:12:59 [GameController] [INFO] Player located at (6, 1) after load
+22:12:59 [GameController] [INFO] Game loaded successfully.
+22:12:59 [MovementHistory] [INFO] GameState pushed to history (19 total states).
+22:12:59 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+22:12:59 [GameController] [INFO] Player moved to empty tile (6, 2)
+22:13:00 [MovementHistory] [INFO] GameState pushed to history (20 total states).
+22:13:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:13:00 [GameController] [INFO] Player moved to empty tile (5, 2)
+22:13:00 [MovementHistory] [INFO] GameState pushed to history (21 total states).
+22:13:00 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+22:13:00 [GameController] [INFO] Player moved to empty tile (4, 2)
+22:13:01 [MovementHistory] [INFO] GameState popped from history (20 remaining).
+22:13:01 [GameController] [INFO] Move undone. Restored to position (5, 2)
+22:13:01 [MovementHistory] [INFO] GameState popped from history (19 remaining).
+22:13:01 [GameController] [INFO] Move undone. Restored to position (6, 2)
+22:13:01 [MovementHistory] [INFO] GameState popped from history (18 remaining).
+22:13:01 [GameController] [INFO] Move undone. Restored to position (6, 1)
+22:13:01 [MovementHistory] [INFO] GameState popped from history (17 remaining).
+22:13:01 [GameController] [INFO] Move undone. Restored to position (6, 2)
+22:13:02 [MovementHistory] [INFO] GameState popped from history (16 remaining).
+22:13:02 [GameController] [INFO] Move undone. Restored to position (6, 1)
+22:13:02 [MovementHistory] [INFO] GameState popped from history (15 remaining).
+22:13:02 [GameController] [INFO] Move undone. Restored to position (5, 1)
+22:13:02 [MovementHistory] [INFO] GameState popped from history (14 remaining).
+22:13:02 [GameController] [INFO] Move undone. Restored to position (5, 2)
+22:13:02 [MovementHistory] [INFO] GameState popped from history (13 remaining).
+22:13:02 [GameController] [INFO] Move undone. Restored to position (5, 1)
+22:13:02 [MovementHistory] [INFO] GameState popped from history (12 remaining).
+22:13:02 [GameController] [INFO] Move undone. Restored to position (5, 2)
+22:13:03 [MovementHistory] [INFO] GameState popped from history (11 remaining).
+22:13:03 [GameController] [INFO] Move undone. Restored to position (5, 3)
+22:13:03 [MovementHistory] [INFO] GameState popped from history (10 remaining).
+22:13:03 [GameController] [INFO] Move undone. Restored to position (4, 3)
+22:13:03 [MovementHistory] [INFO] GameState popped from history (9 remaining).
+22:13:03 [GameController] [INFO] Move undone. Restored to position (4, 3)
+22:13:03 [MovementHistory] [INFO] GameState popped from history (8 remaining).
+22:13:03 [GameController] [INFO] Move undone. Restored to position (3, 3)
+22:13:03 [MovementHistory] [INFO] GameState popped from history (7 remaining).
+22:13:03 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:13:04 [MovementHistory] [INFO] GameState popped from history (6 remaining).
+22:13:04 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:13:04 [MovementHistory] [INFO] GameState popped from history (5 remaining).
+22:13:04 [GameController] [INFO] Move undone. Restored to position (2, 1)
+22:13:04 [MovementHistory] [INFO] GameState popped from history (4 remaining).
+22:13:04 [GameController] [INFO] Move undone. Restored to position (1, 1)
+22:13:04 [MovementHistory] [INFO] GameState popped from history (3 remaining).
+22:13:04 [GameController] [INFO] Move undone. Restored to position (2, 1)
+22:13:04 [MovementHistory] [INFO] GameState popped from history (2 remaining).
+22:13:04 [GameController] [INFO] Move undone. Restored to position (2, 2)
+22:13:05 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+22:13:05 [GameController] [INFO] Move undone. Restored to position (3, 2)
+22:13:05 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+22:13:05 [GameController] [INFO] Move undone. Restored to position (4, 2)
+22:13:05 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:05 [GameController] [WARN] No moves to undo.
+22:13:05 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:05 [GameController] [WARN] No moves to undo.
+22:13:05 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:05 [GameController] [WARN] No moves to undo.
+22:13:06 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:06 [GameController] [WARN] No moves to undo.
+22:13:06 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:06 [GameController] [WARN] No moves to undo.
+22:13:06 [MovementHistory] [WARN] Attempted to pop from empty history.
+22:13:06 [GameController] [WARN] No moves to undo.
+22:13:06 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:13:06 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:13:06 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:13:06 [MovementHistory] [INFO] Movement history initialized.
+22:13:06 [GameController] [INFO] Player initialized at position (4, 2)
+22:13:07 [LevelParser] [INFO] Parsing level from file: level1.txt
+22:13:07 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+22:13:07 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+22:13:07 [MovementHistory] [INFO] Movement history initialized.
+22:13:07 [GameController] [INFO] Player initialized at position (4, 2)
+10:27:10 [LevelParser] [INFO] Parsing level from file: level1.txt
+10:27:10 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+10:27:10 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+10:27:11 [MovementHistory] [INFO] Movement history initialized.
+10:27:11 [GameController] [INFO] Player initialized at position (4, 2)
+10:27:11 [MovementHistory] [INFO] Movement history initialized.
+10:27:11 [GameController] [INFO] Player initialized at position (4, 2)
+10:27:13 [MovementHistory] [WARN] Attempted to pop from empty history.
+10:27:13 [GameController] [WARN] No moves to undo.
+10:27:28 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:27:28 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:27:28 [GameController] [INFO] Player moved to empty tile (3, 2)
+10:27:29 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+10:27:29 [GameController] [INFO] Move undone. Restored to position (4, 2)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:27:38 [GameController] [INFO] Player moved to empty tile (3, 2)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (2 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+10:27:38 [GameController] [INFO] Player moved to empty tile (3, 3)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (3 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+10:27:38 [GameController] [INFO] Player moved to empty tile (3, 4)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (4 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+10:27:38 [GameController] [INFO] Player moved to empty tile (3, 5)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (5 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+10:27:38 [GameController] [INFO] Player moved to empty tile (3, 6)
+10:27:38 [MovementHistory] [INFO] GameState pushed to history (6 total states).
+10:27:38 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+10:27:38 [GameController] [INFO] Player moved to empty tile (4, 6)
+10:27:39 [MovementHistory] [INFO] GameState pushed to history (7 total states).
+10:27:39 [GameController] [INFO] Attempting to move player: dx=0, dy=1
+10:27:39 [GameController] [INFO] Player moved to empty tile (5, 6)
+10:27:39 [MovementHistory] [INFO] GameState pushed to history (8 total states).
+10:27:39 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+10:27:39 [GameController] [INFO] Player moved to empty tile (5, 5)
+10:27:39 [MovementHistory] [INFO] GameState pushed to history (9 total states).
+10:27:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:27:39 [GameController] [INFO] Player pushed box to (3, 5) and moved to (4, 5)
+10:27:39 [MovementHistory] [INFO] GameState pushed to history (10 total states).
+10:27:39 [GameController] [INFO] Attempting to move player: dx=1, dy=0
+10:27:39 [GameController] [INFO] Player moved to empty tile (4, 6)
+10:27:39 [MovementHistory] [INFO] GameState pushed to history (11 total states).
+10:27:39 [GameController] [INFO] Attempting to move player: dx=0, dy=-1
+10:27:39 [GameController] [INFO] Player moved to empty tile (3, 6)
+10:27:40 [MovementHistory] [INFO] GameState pushed to history (12 total states).
+10:27:40 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+10:27:40 [GameController] [INFO] Player pushed box to (3, 4) and moved to (3, 5)
+10:27:40 [MovementHistory] [INFO] GameState pushed to history (13 total states).
+10:27:40 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+10:27:40 [GameController] [INFO] Player pushed box to (3, 3) and moved to (3, 4)
+10:27:40 [MovementHistory] [INFO] GameState pushed to history (14 total states).
+10:27:40 [GameController] [INFO] Attempting to move player: dx=-1, dy=0
+10:27:40 [GameController] [INFO] Player pushed box to (3, 2) and moved to (3, 3)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (13 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (3, 4)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (12 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (3, 5)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (11 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (3, 6)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (10 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (4, 6)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (9 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (4, 5)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (8 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (5, 5)
+10:27:41 [MovementHistory] [INFO] GameState popped from history (7 remaining).
+10:27:41 [GameController] [INFO] Move undone. Restored to position (5, 6)
+10:27:42 [MovementHistory] [INFO] GameState popped from history (6 remaining).
+10:27:42 [GameController] [INFO] Move undone. Restored to position (4, 6)
+10:27:42 [MovementHistory] [INFO] GameState popped from history (5 remaining).
+10:27:42 [GameController] [INFO] Move undone. Restored to position (3, 6)
+10:27:42 [MovementHistory] [INFO] GameState popped from history (4 remaining).
+10:27:42 [GameController] [INFO] Move undone. Restored to position (3, 5)
+10:27:42 [MovementHistory] [INFO] GameState popped from history (3 remaining).
+10:27:42 [GameController] [INFO] Move undone. Restored to position (3, 4)
+10:27:42 [MovementHistory] [INFO] GameState popped from history (2 remaining).
+10:27:42 [GameController] [INFO] Move undone. Restored to position (3, 3)
+10:27:43 [MovementHistory] [INFO] GameState popped from history (1 remaining).
+10:27:43 [GameController] [INFO] Move undone. Restored to position (3, 2)
+10:27:43 [MovementHistory] [INFO] GameState popped from history (0 remaining).
+10:27:43 [GameController] [INFO] Move undone. Restored to position (4, 2)
+10:27:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+10:27:43 [GameController] [WARN] No moves to undo.
+10:27:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+10:27:43 [GameController] [WARN] No moves to undo.
+10:27:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+10:27:43 [GameController] [WARN] No moves to undo.
+10:27:43 [MovementHistory] [WARN] Attempted to pop from empty history.
+10:27:43 [GameController] [WARN] No moves to undo.

@@ -1,7 +1,9 @@
 package es.upm.pproject.sokoban.model;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +26,18 @@ public class MovementHistory {
     public MovementHistory() {
         history = new ArrayDeque<>();
         logger.info("[INFO] Movement history initialized.");
+    }
+
+    /**
+     * Creates a new movement history from a previously saved list of game states.
+     * This constructor is used when restoring a saved game, allowing the undo stack
+     * to be fully reconstructed.
+     *
+     * @param savedHistory a list of GameState instances representing the undo
+     *                     history
+     */
+    public MovementHistory(List<GameState> savedHistory) {
+        history = new ArrayDeque<>(savedHistory);
     }
 
     /**
@@ -64,6 +78,16 @@ public class MovementHistory {
     }
 
     /**
+     * Returns all stored game states in the undo history as a list.
+     * This is used when saving the game to persist the full undo stack.
+     *
+     * @return a list containing all GameState instances in the history
+     */
+    public List<GameState> getAll() {
+        return new ArrayList<>(history);
+    }
+
+    /**
      * Checks whether the history is empty.
      *
      * @return true if no states are stored, false otherwise
@@ -73,4 +97,5 @@ public class MovementHistory {
         logger.info("[INFO] History is empty: {}", empty);
         return empty;
     }
+
 }
