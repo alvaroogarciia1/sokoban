@@ -18,6 +18,7 @@ class GameControllerTest {
     @BeforeEach
     public void setUp() {
         // Creamos un nivel simple: 3x3 con jugador al centro
+    	System.setProperty("java.awt.headless", "true");
         Tile[][] board = new Tile[3][3];
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)

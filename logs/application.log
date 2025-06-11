@@ -14347,3 +14347,23 @@
 21:04:49 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
 21:04:49 [MovementHistory] [INFO] Movement history initialized.
 21:04:49 [GameController] [INFO] Player initialized at position (4, 2)
+21:08:34 [LevelParser] [INFO] Parsing level from file: level1.txt
+21:08:34 [LevelParser] [INFO] Level dimensions: 8 rows x 8 columns
+21:08:34 [LevelParser] [INFO] Level loaded successfully from file: level1.txt
+21:08:34 [LevelValidator] [INFO] Validating level...
+21:08:34 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 0
+21:08:34 [LevelValidator] [INFO] Validating level...
+21:08:34 [LevelValidator] [ERROR] Invalid level: expected 1 player, found 2
+21:08:34 [LevelValidator] [INFO] Validating level...
+21:08:34 [LevelValidator] [INFO] Level is valid: 1 player, 1 boxes, 1 goals
+21:08:34 [LevelValidator] [INFO] Validating level...
+21:08:34 [LevelValidator] [ERROR] Invalid level: 1 boxes vs 0 goal tiles
+21:08:34 [MovementHistory] [INFO] Movement history initialized.
+21:08:34 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:08:34 [MovementHistory] [INFO] Movement history cleared.
+21:08:34 [MovementHistory] [INFO] History is empty: true
+21:08:34 [MovementHistory] [INFO] Movement history initialized.
+21:08:34 [MovementHistory] [INFO] History is empty: true
+21:08:34 [MovementHistory] [INFO] Movement history initialized.
+21:08:34 [MovementHistory] [INFO] GameState pushed to history (1 total states).
+21:08:34 [MovementHistory] [INFO] GameState popped from history (0 remaining).
