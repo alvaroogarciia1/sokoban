@@ -32,7 +32,7 @@ class GameControllerTest {
         panel = new BoardPanel(level, null, null);
         try {
 			GameFrame dummyFrame = new DummyGameFrame();
-			controller = new GameController(level, panel, dummyFrame);
+			controller = new GameController(level, panel, null);
 		} catch (InvalidLevelException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
