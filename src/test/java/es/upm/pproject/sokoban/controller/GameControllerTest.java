@@ -6,6 +6,7 @@ import org.junit.jupiter.api.*;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.*;
 import es.upm.pproject.sokoban.view.BoardPanel;
+import es.upm.pproject.sokoban.view.DummyGameFrame;
 import es.upm.pproject.sokoban.view.GameFrame;
 
 class GameControllerTest {
@@ -13,18 +14,6 @@ class GameControllerTest {
     private GameController controller;
     private Level level;
     private BoardPanel panel;
-
-    private static class DummyGameFrame extends GameFrame {
-        public DummyGameFrame() throws InvalidLevelException{
-        }
-
-        @Override
-        protected void initializeUI(Level level) {
-        }
-
-        @Override
-        public void repaint() {}
-    }
     
     @BeforeEach
     public void setUp() {

@@ -16,18 +16,6 @@ class BoardPanelTest {
     private BoardPanel boardPanel;
     private GameController controller;
     private Level level;
-
-    private static class DummyGameFrame extends GameFrame {
-        public DummyGameFrame() throws InvalidLevelException{
-        }
-
-        @Override
-        protected void initializeUI(Level level) {
-        }
-
-        @Override
-        public void repaint() {}
-    }
     
     
     @BeforeEach
