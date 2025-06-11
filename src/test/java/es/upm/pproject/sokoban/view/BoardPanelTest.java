@@ -23,7 +23,7 @@ class BoardPanelTest {
         level = new Level(5, 5);
         boardPanel = new BoardPanel(level, null, null);
         try {
-			GameFrame dummyFrame = new DummyGameFrame();
+			GameFrame dummyFrame = new GameFrame();
 		    controller = new GameController(level, boardPanel, dummyFrame);
 		} catch (InvalidLevelException e) {
 			// TODO Auto-generated catch block

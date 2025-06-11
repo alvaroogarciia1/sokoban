@@ -18,7 +18,6 @@ class GameControllerTest {
     @BeforeEach
     public void setUp() {
         // Creamos un nivel simple: 3x3 con jugador al centro
-    	System.setProperty("java.awt.headless", "true");
         Tile[][] board = new Tile[3][3];
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)
@@ -32,8 +31,8 @@ class GameControllerTest {
 
         panel = new BoardPanel(level, null, null);
         try {
-			GameFrame dummyFrame = new DummyGameFrame();
-			controller = new GameController(level, panel, null);
+			GameFrame dummyFrame = new GameFrame();
+			controller = new GameController(level, panel, dummyFrame);
 		} catch (InvalidLevelException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
