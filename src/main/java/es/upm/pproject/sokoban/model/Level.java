@@ -1,12 +1,16 @@
 package es.upm.pproject.sokoban.model;
 
+import java.io.Serializable;
+
 /**
  * Class representing a Sokoban level, composed of a board of tiles.
  * A level contains a 2D array of tiles, where each tile represents either
  * a wall, a floor, or a goal. Floor tiles may also contain entities
  * such as the player or boxes.
  */
-public class Level {
+public class Level implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * The width (number of columns) of the level board.
@@ -23,11 +27,6 @@ public class Level {
      * Each cell contains a {@link Tile}.
      */
     private Tile[][] board;
-    
-    /**
-     * Tracks the number of valid player movements made in this level.
-     */
-    private int moveCount = 0;
 
     /**
      * Creates a new Level with the given dimensions.
@@ -152,111 +151,38 @@ public class Level {
         }
         return true;
     }
-    
-    /**
-     * Attempts to move the player in the specified direction.
-     * This includes pushing a box if one is in the way and the next tile is free.
-     *
-     * @param dir the direction in which the player attempts to move
-     * @return true if the player moved (with or without pushing a box), false otherwise
-     */
-    public boolean movePlayer(Direction dir) {
-        int playerRow = -1;
-        int playerCol = -1;
 
-        // Find the current position of the player
-        outer:
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Level ").append(width).append("x").append(height).append("\n");
+
         for (int row = 0; row < height; row++) {
             for (int col = 0; col < width; col++) {
                 Tile tile = board[row][col];
-                if (tile instanceof FloorTile floor && floor.getEntity() instanceof Player) {
-                    playerRow = row;
-                    playerCol = col;
-                    break outer;
+
+                if (tile instanceof WallTile) {
+                    sb.append('+');
+                } else if (tile instanceof FloorTile) {
+                    FloorTile floor = (FloorTile) tile;
+                    Entity entity = floor.getEntity();
+                    if (entity instanceof Player) {
+                        sb.append('W'); // jugador sobre suelo normal
+                    } else if (entity instanceof Box) {
+                        sb.append('*'); // caja sobre suelo normal
+                    } else if (floor.isGoal()) {
+                        sb.append('#'); // meta vacía
+                    } else {
+                        sb.append(' '); // suelo vacío
+                    }
+                } else {
+                    sb.append('?'); // tile desconocido (por seguridad)
                 }
             }
+            sb.append('\n');
         }
 
-        if (playerRow == -1 || playerCol == -1) {
-            return false; // No player found
-        }
-
-        int newRow = playerRow + dir.dx;
-        int newCol = playerCol + dir.dy;
-
-        if (!inBounds(newRow, newCol)) {
-            return false;
-        }
-
-        Tile nextTile = board[newRow][newCol];
-
-        if (nextTile instanceof WallTile) {
-            return false; // Cannot move into walls
-        }
-
-        if (nextTile instanceof FloorTile nextFloor) {
-            Entity nextEntity = nextFloor.getEntity();
-
-            if (nextEntity == null) {
-                // Simple move to empty floor tile
-                moveEntity(playerRow, playerCol, newRow, newCol);
-                moveCount++;
-                return true;
-            } else if (nextEntity instanceof Box) {
-                int boxRow = newRow + dir.dx;
-                int boxCol = newCol + dir.dy;
-
-                if (!inBounds(boxRow, boxCol)) {
-                    return false;
-                }
-
-                Tile afterBoxTile = board[boxRow][boxCol];
-                if (afterBoxTile instanceof FloorTile afterFloor && afterFloor.getEntity() == null) {
-                    // Push the box and move the player
-                    moveEntity(newRow, newCol, boxRow, boxCol);     // Move box
-                    moveEntity(playerRow, playerCol, newRow, newCol); // Move player
-                    moveCount++;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    /**
-     * Moves an entity from one floor tile to another.
-     *
-     * @param fromRow the source row
-     * @param fromCol the source column
-     * @param toRow   the destination row
-     * @param toCol   the destination column
-     */
-    private void moveEntity(int fromRow, int fromCol, int toRow, int toCol) {
-        FloorTile from = (FloorTile) board[fromRow][fromCol];
-        FloorTile to = (FloorTile) board[toRow][toCol];
-        to.setEntity(from.getEntity());
-        from.setEntity(null);
-    }
-
-    /**
-     * Checks if the specified coordinates are within the bounds of the board.
-     *
-     * @param row the row index
-     * @param col the column index
-     * @return true if the position is within bounds; false otherwise
-     */
-    private boolean inBounds(int row, int col) {
-        return row >= 0 && row < height && col >= 0 && col < width;
-    }
-
-    /**
-     * Returns the number of movements made by the player.
-     *
-     * @return the move count
-     */
-    public int getMoveCount() {
-        return moveCount;
+        return sb.toString();
     }
 
 }

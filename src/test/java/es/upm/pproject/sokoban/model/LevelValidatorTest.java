@@ -62,7 +62,7 @@ class LevelValidatorTest {
     }
 
     @Test
-    public void testIsLevelCompleted_AllBoxesOnGoals_ShouldReturnTrue() {
+    void testIsLevelCompleted_AllBoxesOnGoals_ShouldReturnTrue() {
         Level level = new Level(2, 2);
         FloorTile goal1 = new FloorTile(true);
         goal1.setEntity(new Box());
@@ -77,7 +77,7 @@ class LevelValidatorTest {
     }
 
     @Test
-    public void testIsLevelCompleted_NotAllGoalsHaveBoxes_ShouldReturnFalse() {
+    void testIsLevelCompleted_NotAllGoalsHaveBoxes_ShouldReturnFalse() {
         Level level = new Level(2, 2);
         FloorTile goal1 = new FloorTile(true);
         goal1.setEntity(new Box());

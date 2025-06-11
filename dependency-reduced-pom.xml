@@ -70,6 +70,9 @@
             <goals>
               <goal>prepare-agent</goal>
             </goals>
+            <configuration>
+              <destFile>${project.build.directory}/jacoco.execaa</destFile>
+            </configuration>
           </execution>
           <execution>
             <id>report</id>
@@ -134,25 +137,18 @@
   </dependencies>
   <properties>
     <maven.compiler.release>${java.version}</maven.compiler.release>
-    <maven.clean>3.1.0</maven.clean>
     <junit>5.6.2</junit>
     <sonar.language>java</sonar.language>
     <sonar.projectName>${project.name}-${sonar.id}</sonar.projectName>
     <java.version>11</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <sonar.host.url>https://costa.ls.fi.upm.es/sonar</sonar.host.url>
-    <maven.jar>3.2.0</maven.jar>
     <jacoco.version>0.8.6</jacoco.version>
-    <maven.compiler>3.8.1</maven.compiler>
     <maven.shade>3.2.2</maven.shade>
     <sonar.scm.provider>git</sonar.scm.provider>
-    <maven.install>3.0.0-M1</maven.install>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <sonar.projectKey>${project.groupId}:${project.artifactId}:${sonar.projectName}:${sonar.id}</sonar.projectKey>
     <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
-    <maven.resources>3.1.0</maven.resources>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.surefire>3.0.0-M5</maven.surefire>
-    <sonar.coverage.exclusions>**/view/**,**/controller/**</sonar.coverage.exclusions>
   </properties>
 </project>

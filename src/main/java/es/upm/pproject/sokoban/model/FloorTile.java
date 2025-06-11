@@ -6,6 +6,7 @@ package es.upm.pproject.sokoban.model;
  * such as a player or a box.
  */
 public class FloorTile extends Tile {
+    private static final long serialVersionUID = 1L;
 
     /**
      * Indicates whether this floor tile is a goal tile.
