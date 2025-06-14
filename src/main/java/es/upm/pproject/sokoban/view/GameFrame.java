@@ -8,6 +8,7 @@ import es.upm.pproject.sokoban.controller.GameController;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.Level;
 import es.upm.pproject.sokoban.model.LevelParser;
+import es.upm.pproject.sokoban.model.LevelValidator;
 
 /**
  * Main window (JFrame) for the Sokoban game.
@@ -154,6 +155,13 @@ public class GameFrame extends JFrame {
 		try {
 			i++;
 			Level nextLevel = LevelParser.parse("level" + i + ".txt");
+			try {
+			    LevelValidator.validate(nextLevel);
+			} catch (InvalidLevelException ex) {
+			    JOptionPane.showMessageDialog(this, "Nivel inválido detectado. Saltando al siguiente...", "Error de nivel", JOptionPane.WARNING_MESSAGE);
+			    loadNextLevel();
+			    return;
+			}
 			boardPanel.setLevel(nextLevel);
 			GameController newController = new GameController(nextLevel, boardPanel, this);
 			newController.setSavedLevel(i);
