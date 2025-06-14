@@ -238,6 +238,8 @@ public class GameController implements Serializable {
             this.history = new MovementHistory(saveData.getHistory());
             this.level = loaded.getLevel();
             this.moveCount = loaded.getMoveCount();
+            GameFrame.restartTotalScore();
+            GameFrame.addToTotalScore(moveCount);
 
             // Buscar la posición real del jugador en el tablero cargado
             for (int row = 0; row < level.getHeight(); row++) {
