@@ -20051,3 +20051,329 @@
 [INFO] 2025-06-14 14:04:49,501 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
 [INFO] 2025-06-14 14:04:49,501 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
 [INFO] 2025-06-14 14:04:49,501 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:42,011 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:42,013 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:42,015 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:42,221 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:42,221 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:42,366 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:42,366 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:36:42,378 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:42,378 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:36:42,378 es.upm.pproject.sokoban.controller.GameController - [INFO] Box push blocked: out of bounds.
+[INFO] 2025-06-14 14:36:42,621 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:42,621 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:42,621 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:42,814 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:42,814 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:42,848 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:42,848 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:36:42,849 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:42,849 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (2 total states).
+[INFO] 2025-06-14 14:36:42,849 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:36:42,849 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:36:43,049 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:43,049 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:43,049 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:43,239 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:43,239 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (2 total states).
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState popped from history (1 remaining).
+[INFO] 2025-06-14 14:36:43,279 es.upm.pproject.sokoban.controller.GameController - [INFO] Move undone. Restored to position (1, 1)
+[INFO] 2025-06-14 14:36:43,485 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:43,487 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:43,487 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:43,683 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:43,683 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:43,733 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:43,733 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:36:43,733 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:43,733 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:36:43,733 es.upm.pproject.sokoban.controller.GameController - [INFO] Movement blocked: wall at (0, 1)
+[INFO] 2025-06-14 14:36:43,955 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:43,955 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:43,955 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:44,161 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,161 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:44,197 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,197 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:36:44,198 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:44,199 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:36:44,199 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:36:44,259 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:44,261 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:44,261 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:44,284 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:36:44,288 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: expected 1 player, found 0
+[INFO] 2025-06-14 14:36:44,292 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:36:44,292 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: expected 1 player, found 2
+[INFO] 2025-06-14 14:36:44,300 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[INFO] 2025-06-14 14:36:44,300 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Level is valid: 1 player, 1 boxes, 1 goals
+[INFO] 2025-06-14 14:36:44,304 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:36:44,306 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: 1 boxes vs 0 goal tiles
+[INFO] 2025-06-14 14:36:44,324 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,324 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:44,326 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history cleared.
+[INFO] 2025-06-14 14:36:44,326 es.upm.pproject.sokoban.model.MovementHistory - [INFO] History is empty: true
+[INFO] 2025-06-14 14:36:44,328 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,330 es.upm.pproject.sokoban.model.MovementHistory - [INFO] History is empty: true
+[INFO] 2025-06-14 14:36:44,342 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,342 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:36:44,342 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState popped from history (0 remaining).
+[INFO] 2025-06-14 14:36:44,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:44,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:44,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:44,544 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,544 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:44,544 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:44,544 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:44,544 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:44,582 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,583 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:44,792 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:44,804 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:44,854 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:45,109 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:45,109 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:45,109 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:45,323 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:45,323 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:45,375 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:45,611 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:45,611 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:45,611 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:45,824 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:45,824 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:45,878 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:46,117 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:46,117 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:46,117 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:46,334 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:46,334 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:46,396 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:46,661 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:46,661 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:46,664 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:46,847 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:46,847 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:46,903 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:46,929 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:46,929 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:46,930 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:47,154 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:47,154 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:47,212 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:47,212 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:47,212 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:47,456 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:47,458 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:47,509 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:47,518 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:47,520 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:47,749 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:47,749 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:47,796 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level2.txt
+[INFO] 2025-06-14 14:36:47,800 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 9 rows x 7 columns
+[INFO] 2025-06-14 14:36:47,800 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level2.txt
+[INFO] 2025-06-14 14:36:47,800 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:47,800 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 3)
+[INFO] 2025-06-14 14:36:47,809 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level3.txt
+[INFO] 2025-06-14 14:36:47,809 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 9 rows x 10 columns
+[INFO] 2025-06-14 14:36:47,809 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level3.txt
+[INFO] 2025-06-14 14:36:47,809 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:47,809 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (7, 4)
+[INFO] 2025-06-14 14:36:47,818 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level4.txt
+[ERROR] 2025-06-14 14:36:47,818 es.upm.pproject.sokoban.model.LevelParser - [ERROR] File not found: level4.txt
+[INFO] 2025-06-14 14:36:49,204 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:49,215 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:49,215 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:49,427 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:49,427 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:49,484 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:49,484 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:49,484 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:49,719 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:49,719 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:49,767 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:49,767 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:49,767 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:49,770 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:49,770 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:49,789 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:49,789 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:49,789 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:49,986 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:49,986 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:36:50,037 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:36:50,039 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:36:50,039 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:36:50,041 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:36:50,041 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:46,751 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:46,760 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:46,760 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:46,959 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:46,959 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:47,094 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:47,094 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:37:47,094 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:47,094 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:37:47,094 es.upm.pproject.sokoban.controller.GameController - [INFO] Box push blocked: out of bounds.
+[INFO] 2025-06-14 14:37:47,336 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:47,336 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:47,336 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:47,511 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:47,511 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (2 total states).
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:37:47,548 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:37:47,759 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:47,759 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:47,759 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:47,953 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:47,955 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (2 total states).
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState popped from history (1 remaining).
+[INFO] 2025-06-14 14:37:47,982 es.upm.pproject.sokoban.controller.GameController - [INFO] Move undone. Restored to position (1, 1)
+[INFO] 2025-06-14 14:37:48,195 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:48,197 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:48,197 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:48,388 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:48,388 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:48,424 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:48,424 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:37:48,425 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:48,425 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:37:48,425 es.upm.pproject.sokoban.controller.GameController - [INFO] Movement blocked: wall at (0, 1)
+[INFO] 2025-06-14 14:37:48,660 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:48,662 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:48,662 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:48,877 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:48,877 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:48,926 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:48,926 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 1)
+[INFO] 2025-06-14 14:37:48,926 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:48,926 es.upm.pproject.sokoban.controller.GameController - [INFO] Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-14 14:37:48,926 es.upm.pproject.sokoban.controller.GameController - [INFO] Player moved to empty tile (0, 1)
+[INFO] 2025-06-14 14:37:48,987 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:48,994 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:48,994 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:48,994 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:48,996 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:48,998 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:49,020 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:37:49,022 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: expected 1 player, found 0
+[INFO] 2025-06-14 14:37:49,031 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:37:49,033 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: expected 1 player, found 2
+[INFO] 2025-06-14 14:37:49,045 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[INFO] 2025-06-14 14:37:49,045 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Level is valid: 1 player, 1 boxes, 1 goals
+[INFO] 2025-06-14 14:37:49,047 es.upm.pproject.sokoban.model.LevelValidator - [INFO] Validating level...
+[ERROR] 2025-06-14 14:37:49,047 es.upm.pproject.sokoban.model.LevelValidator - [ERROR] Invalid level: 1 boxes vs 0 goal tiles
+[INFO] 2025-06-14 14:37:49,061 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,061 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:49,065 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history cleared.
+[INFO] 2025-06-14 14:37:49,067 es.upm.pproject.sokoban.model.MovementHistory - [INFO] History is empty: true
+[INFO] 2025-06-14 14:37:49,069 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,069 es.upm.pproject.sokoban.model.MovementHistory - [INFO] History is empty: true
+[INFO] 2025-06-14 14:37:49,069 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,069 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState pushed to history (1 total states).
+[INFO] 2025-06-14 14:37:49,069 es.upm.pproject.sokoban.model.MovementHistory - [INFO] GameState popped from history (0 remaining).
+[INFO] 2025-06-14 14:37:49,243 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,243 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:49,276 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,276 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:49,306 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:49,306 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:49,310 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:49,537 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,537 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:49,586 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:49,834 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:49,834 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:49,834 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:50,031 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:50,031 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:50,076 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:50,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:50,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:50,350 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:50,547 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:50,547 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:50,587 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:50,854 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:50,854 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:50,854 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:51,070 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:51,070 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:51,129 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:51,389 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:51,389 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:51,389 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:51,592 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:51,592 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:51,636 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:51,667 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:51,667 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:51,667 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:51,905 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:51,905 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:51,956 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:51,957 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:51,957 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:52,185 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:52,185 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:52,252 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:52,263 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:52,263 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:52,486 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:52,486 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:52,532 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level2.txt
+[INFO] 2025-06-14 14:37:52,532 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 9 rows x 7 columns
+[INFO] 2025-06-14 14:37:52,532 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level2.txt
+[INFO] 2025-06-14 14:37:52,532 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:52,532 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (1, 3)
+[INFO] 2025-06-14 14:37:52,539 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level3.txt
+[INFO] 2025-06-14 14:37:52,539 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 9 rows x 10 columns
+[INFO] 2025-06-14 14:37:52,539 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level3.txt
+[INFO] 2025-06-14 14:37:52,539 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:52,539 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (7, 4)
+[INFO] 2025-06-14 14:37:52,550 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level4.txt
+[ERROR] 2025-06-14 14:37:52,550 es.upm.pproject.sokoban.model.LevelParser - [ERROR] File not found: level4.txt
+[INFO] 2025-06-14 14:37:54,127 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:54,132 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:54,132 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:54,339 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:54,339 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:54,392 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:54,394 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:54,394 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:54,590 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:54,590 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:54,635 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:54,635 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:54,635 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:54,635 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:54,635 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:54,653 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:54,655 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:54,655 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:54,882 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:54,882 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
+[INFO] 2025-06-14 14:37:54,924 es.upm.pproject.sokoban.model.LevelParser - [INFO] Parsing level from file: level1.txt
+[INFO] 2025-06-14 14:37:54,927 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-14 14:37:54,927 es.upm.pproject.sokoban.model.LevelParser - [INFO] Level loaded successfully from file: level1.txt
+[INFO] 2025-06-14 14:37:54,929 es.upm.pproject.sokoban.model.MovementHistory - [INFO] Movement history initialized.
+[INFO] 2025-06-14 14:37:54,929 es.upm.pproject.sokoban.controller.GameController - [INFO] Player initialized at position (4, 2)
