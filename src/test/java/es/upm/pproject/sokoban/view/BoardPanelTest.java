@@ -16,19 +16,17 @@ class BoardPanelTest {
     private BoardPanel boardPanel;
     private GameController controller;
     private Level level;
-    
-    
+
     @BeforeEach
     public void setUp() {
         level = new Level(5, 5);
         boardPanel = new BoardPanel(level, null, null);
         try {
-			GameFrame gameFrame = new GameFrame();
-		    controller = new GameController(level, boardPanel, gameFrame);
-		} catch (InvalidLevelException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+            GameFrame gameFrame = new GameFrame();
+            controller = new GameController(level, boardPanel, gameFrame);
+        } catch (InvalidLevelException e) {
+            e.printStackTrace();
+        }
 
         boardPanel.setController(controller);
     }

@@ -23,6 +23,8 @@ public class SaveData implements Serializable {
     /** The complete movement history stack, used to enable undo after loading */
     private List<GameState> history;
 
+    private int currentLevel;
+
     /**
      * Constructs a SaveData instance with the provided current state and movement
      * history.
@@ -34,6 +36,12 @@ public class SaveData implements Serializable {
     public SaveData(GameState currentState, List<GameState> history) {
         this.currentState = currentState;
         this.history = history;
+    }
+
+    public SaveData(GameState currentState, List<GameState> history, int currentLevel) {
+        this.currentState = currentState;
+        this.history = history;
+        this.currentLevel = currentLevel;
     }
 
     /**
@@ -53,4 +61,13 @@ public class SaveData implements Serializable {
     public List<GameState> getHistory() {
         return history;
     }
+
+    public int getCurrentLevel() {
+        return currentLevel;
+    }
+
+    public void setCurrentLevel(int currentLevel) {
+        this.currentLevel = currentLevel;
+    }
+
 }

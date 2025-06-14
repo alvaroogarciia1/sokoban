@@ -13,7 +13,7 @@ class GameControllerTest {
     private GameController controller;
     private Level level;
     private BoardPanel panel;
-    
+
     @BeforeEach
     public void setUp() {
         // Creamos un nivel simple: 3x3 con jugador al centro
@@ -30,13 +30,12 @@ class GameControllerTest {
 
         panel = new BoardPanel(level, null, null);
         try {
-			GameFrame gameFrame = new GameFrame();
-			controller = new GameController(level, panel, gameFrame);
-		} catch (InvalidLevelException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-        
+            GameFrame gameFrame = new GameFrame();
+            controller = new GameController(level, panel, gameFrame);
+        } catch (InvalidLevelException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Test

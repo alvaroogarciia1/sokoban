@@ -35,7 +35,6 @@ public class GameFrame extends JFrame {
     private boolean gameFinished = false;
     private static int totalMoves = 0;
 
-
     /**
      * Constructs the main game frame, loads the first level,
      * initializes UI components and game controller.
@@ -107,12 +106,17 @@ public class GameFrame extends JFrame {
                     int result = fileChooser.showOpenDialog(this);
                     if (result == JFileChooser.APPROVE_OPTION) {
                         File file = fileChooser.getSelectedFile();
-                        Level dummyLevel = new Level(1, 1);
-                        GameController newController = new GameController(dummyLevel, boardPanel, this);
-                        newController.loadGame(file);
-                        boardPanel.setController(newController);
-                        updateMoveCount(newController.getMoveCount());
-                        repaint();
+                        GameController loadedController = GameController.loadGame(file, boardPanel, this);
+                        if (loadedController != null) {
+                            boardPanel.setController(loadedController);
+                            updateMoveCount(loadedController.getMoveCount());
+                            i = loadedController.getSavedLevel();
+                            gameFinished = false;
+                            repaint();
+                        } else {
+                            JOptionPane.showMessageDialog(this, "No se pudo cargar la partida", ERROR_TITLE,
+                                    JOptionPane.ERROR_MESSAGE);
+                        }
                     }
                 },
                 e -> System.exit(0));
@@ -152,17 +156,18 @@ public class GameFrame extends JFrame {
             Level nextLevel = LevelParser.parse("level" + i + ".txt");
             boardPanel.setLevel(nextLevel);
             GameController newController = new GameController(nextLevel, boardPanel, this);
+            newController.setSavedLevel(i);
             boardPanel.setController(newController);
             updateMoveCount(0);
             pack();
         } catch (IOException | InvalidLevelException ex) {
             gameFinished = true;
             JOptionPane.showMessageDialog(this,
-                    "Congrats, you completed the game!\nScore: " + totalMoves, "Sokoban", JOptionPane.INFORMATION_MESSAGE);
+                    "Congrats, you completed the game!\nScore: " + totalMoves, "Sokoban",
+                    JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }
     }
-
 
     /**
      * Starts a new game by loading the first level and resetting state.
@@ -171,6 +176,9 @@ public class GameFrame extends JFrame {
      */
     protected void startNewGame() throws InvalidLevelException {
         try {
+            i = 1;
+            gameFinished = false;
+            totalMoves = 0;
             Level level = LevelParser.parse("level1.txt");
             boardPanel.setLevel(level);
             GameController controller = new GameController(level, boardPanel, this);
@@ -228,9 +236,9 @@ public class GameFrame extends JFrame {
     public JLabel getMoveCountLabel() {
         return moveCountLabel;
     }
+
     public static void addToTotalScore(int moves) {
         totalMoves += moves;
     }
-
 
 }

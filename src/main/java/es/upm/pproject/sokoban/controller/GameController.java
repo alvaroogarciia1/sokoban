@@ -43,8 +43,10 @@ public class GameController implements Serializable {
 
     /** Stack-based history to enable undoing moves. */
     private transient MovementHistory history;
-    
+
     private transient GameFrame gameFrame;
+
+    private int savedLevel = 1;
 
     /**
      * Creates a new GameController for the given level and board panel.
@@ -148,16 +150,16 @@ public class GameController implements Serializable {
             playerCol = newCol;
             moveCount++;
             boardPanel.repaint();
-            
+
             logger.info("[INFO] Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
             if (level.isLevelCompleted()) {
                 logger.info("[INFO] Level completed!");
                 int levelMoves = moveCount;
-                JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
                 if (gameFrame != null) {
-                	
+
                     GameFrame.addToTotalScore(levelMoves);
-                	gameFrame.loadNextLevel();
+                    gameFrame.loadNextLevel();
                 }
             }
             return true;
@@ -213,7 +215,8 @@ public class GameController implements Serializable {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             SaveData saveData = new SaveData(
                     new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
-                    controller.history.getAll());
+                    controller.history.getAll(),
+                    controller.savedLevel);
             out.writeObject(saveData);
             logger.info("[INFO] Game saved successfully.");
         } catch (IOException e) {
@@ -231,7 +234,7 @@ public class GameController implements Serializable {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
             SaveData saveData = (SaveData) in.readObject();
             GameState loaded = saveData.getCurrentState();
-
+            this.savedLevel = saveData.getCurrentLevel();
             this.history = new MovementHistory(saveData.getHistory());
             this.level = loaded.getLevel();
             this.moveCount = loaded.getMoveCount();
@@ -303,4 +306,38 @@ public class GameController implements Serializable {
     public void setHistory(MovementHistory history) {
         this.history = history;
     }
+
+    public int getSavedLevel() {
+        return savedLevel;
+    }
+
+    public static GameController loadGame(File file, BoardPanel boardPanel, GameFrame gameFrame) {
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
+            SaveData saveData = (SaveData) in.readObject();
+            GameState state = saveData.getCurrentState();
+
+            GameController controller = new GameController(
+                    state.getLevel(), boardPanel, gameFrame);
+
+            controller.setPlayerPosition(state.getPlayerRow(), state.getPlayerCol());
+            controller.setMoveCount(state.getMoveCount());
+            controller.setHistory(new MovementHistory(saveData.getHistory()));
+            controller.savedLevel = saveData.getCurrentLevel(); // ← importante
+
+            controller.boardPanel.setLevel(state.getLevel());
+            controller.boardPanel.setController(controller);
+            controller.boardPanel.repaint();
+
+            return controller;
+        } catch (IOException | ClassNotFoundException e) {
+            LoggerFactory.getLogger(GameController.class).error("[ERROR] No se pudo cargar la partida: {}",
+                    e.getMessage());
+            return null;
+        }
+    }
+
+    public void setSavedLevel(int savedLevel) {
+        this.savedLevel = savedLevel;
+    }
+
 }
