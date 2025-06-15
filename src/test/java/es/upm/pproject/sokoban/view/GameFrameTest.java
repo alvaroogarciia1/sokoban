@@ -76,6 +76,9 @@ class GameFrameTest {
         method.invoke(gameFrame);
         method.invoke(gameFrame);
         method.invoke(gameFrame);
+        method.invoke(gameFrame);
+        method.invoke(gameFrame);
+        method.invoke(gameFrame);
         assertFalse(gameFrame.isDisplayable(), "GameFrame should be disposed when no next level exists.");
     }
 }
