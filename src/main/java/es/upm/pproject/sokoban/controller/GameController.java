@@ -155,6 +155,7 @@ public class GameController implements Serializable {
             if (level.isLevelCompleted()) {
                 logger.info("[INFO] Level completed!");
                 int levelMoves = moveCount;
+                gameFrame.updateMoveCount(moveCount);
                 JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
                 if (gameFrame != null) {
 

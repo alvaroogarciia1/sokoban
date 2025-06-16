@@ -32,7 +32,7 @@ class GameFrameTest {
     void testMoveCountUpdatesLabel() {
         gameFrame.updateMoveCount(3);
         JLabel label = gameFrame.getMoveCountLabel();
-        assertEquals("Movimientos: 3", label.getText());
+        assertEquals("Level 1 | Movimientos del nivel: 3 | Movimientos totales: 0", label.getText());
     }
 
     @Test
@@ -51,7 +51,7 @@ class GameFrameTest {
 
         int newHash = gameFrame.getBoardPanel().getLevel().hashCode();
         assertNotEquals(oldHash, newHash, "New game should reset the level.");
-        assertEquals("Movimientos: 0", gameFrame.getMoveCountLabel().getText());
+        assertEquals("Level 1 | Movimientos del nivel: 0 | Movimientos totales: 0", gameFrame.getMoveCountLabel().getText());
     }
 
     @Test

@@ -54,7 +54,7 @@ public class GameFrame extends JFrame {
 	}
 
 	protected void initializeUI(Level level) throws InvalidLevelException {
-		moveCountLabel = new JLabel("Movimientos: 0", SwingConstants.CENTER);
+		moveCountLabel = new JLabel("Level " + i +" | Movimientos del nivel: 0 | Movimientos totales: " + totalMoves, SwingConstants.CENTER);
 		moveCountLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
 		moveCountLabel.setForeground(Color.WHITE);
 		moveCountLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -112,6 +112,7 @@ public class GameFrame extends JFrame {
 							boardPanel.setController(loadedController);
 							updateMoveCount(loadedController.getMoveCount());
 							i = loadedController.getSavedLevel();
+							updateMoveCount(loadedController.getMoveCount());
 							gameFinished = false;
 							repaint();
 						} else {
@@ -171,9 +172,7 @@ public class GameFrame extends JFrame {
 			pack();
 		} catch (IOException | InvalidLevelException ex) {
 			gameFinished = true;
-			JOptionPane.showMessageDialog(this,
-					"Congrats, you completed the game!\nScore: " + totalMoves, "Sokoban",
-					JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Congrats, you completed the game!\nScore: " + totalMoves, "Sokoban", JOptionPane.INFORMATION_MESSAGE);
 			dispose();
 		}
 	}
@@ -234,7 +233,7 @@ public class GameFrame extends JFrame {
 	 * @param count current number of moves.
 	 */
 	public void updateMoveCount(int count) {
-		moveCountLabel.setText("Movimientos: " + count);
+		moveCountLabel.setText( "Level " + i +" | Movimientos del nivel: " + count + " | Movimientos totales: " + totalMoves);
 	}
 
 	/**
