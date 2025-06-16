@@ -25,6 +25,8 @@ public class SaveData implements Serializable {
 
     private int currentLevel;
 
+    private int totalScore;
+
     /**
      * Constructs a SaveData instance with the provided current state and movement
      * history.
@@ -38,10 +40,11 @@ public class SaveData implements Serializable {
         this.history = history;
     }
 
-    public SaveData(GameState currentState, List<GameState> history, int currentLevel) {
+    public SaveData(GameState currentState, List<GameState> history, int currentLevel, int totalScore) {
         this.currentState = currentState;
         this.history = history;
         this.currentLevel = currentLevel;
+        this.totalScore = totalScore;
     }
 
     /**
@@ -68,6 +71,14 @@ public class SaveData implements Serializable {
 
     public void setCurrentLevel(int currentLevel) {
         this.currentLevel = currentLevel;
+    }
+
+    public int getTotalScore() {
+        return totalScore;
+    }
+
+    public void setTotalScore(int totalScore) {
+        this.totalScore = totalScore;
     }
 
 }

@@ -156,11 +156,12 @@ public class GameFrame extends JFrame {
 			i++;
 			Level nextLevel = LevelParser.parse("level" + i + ".txt");
 			try {
-			    LevelValidator.validate(nextLevel);
+				LevelValidator.validate(nextLevel);
 			} catch (InvalidLevelException ex) {
-			    JOptionPane.showMessageDialog(this, "Nivel inválido detectado. Saltando al siguiente...", "Error de nivel", JOptionPane.WARNING_MESSAGE);
-			    loadNextLevel();
-			    return;
+				JOptionPane.showMessageDialog(this, "Nivel inválido detectado. Saltando al siguiente...",
+						"Error de nivel", JOptionPane.WARNING_MESSAGE);
+				loadNextLevel();
+				return;
 			}
 			boardPanel.setLevel(nextLevel);
 			GameController newController = new GameController(nextLevel, boardPanel, this);
@@ -244,11 +245,17 @@ public class GameFrame extends JFrame {
 	public JLabel getMoveCountLabel() {
 		return moveCountLabel;
 	}
+
 	public static void restartTotalScore() {
 		totalMoves = 0;
 	}
+
 	public static void addToTotalScore(int moves) {
 		totalMoves += moves;
+	}
+
+	public static int getTotalScore() {
+		return totalMoves;
 	}
 
 }

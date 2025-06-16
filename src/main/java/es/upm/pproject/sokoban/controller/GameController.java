@@ -216,7 +216,8 @@ public class GameController implements Serializable {
             SaveData saveData = new SaveData(
                     new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
                     controller.history.getAll(),
-                    controller.savedLevel);
+                    controller.savedLevel,
+                    GameFrame.getTotalScore());
             out.writeObject(saveData);
             logger.info("[INFO] Game saved successfully.");
         } catch (IOException e) {
@@ -323,6 +324,9 @@ public class GameController implements Serializable {
 
             controller.setPlayerPosition(state.getPlayerRow(), state.getPlayerCol());
             controller.setMoveCount(state.getMoveCount());
+            GameFrame.restartTotalScore();
+            GameFrame.addToTotalScore(saveData.getTotalScore());
+
             controller.setHistory(new MovementHistory(saveData.getHistory()));
             controller.savedLevel = saveData.getCurrentLevel(); // ← importante
 
