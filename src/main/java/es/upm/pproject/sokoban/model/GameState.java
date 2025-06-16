@@ -22,8 +22,6 @@ public class GameState implements Serializable {
 
     /** Total number of moves made when this state was saved. */
     private final int moveCount;
-    
-    private final int moves;
 
     /**
      * Creates a new GameState from the given level, player position and move count.
@@ -34,7 +32,7 @@ public class GameState implements Serializable {
      * @param playerCol the column position of the player
      * @param moveCount number of moves made at the moment of saving
      */
-    public GameState(Level level, int playerRow, int playerCol, int moveCount, int moves) {
+    public GameState(Level level, int playerRow, int playerCol, int moveCount) {
         // Clone the level board
         Tile[][] originalBoard = level.getBoard();
         boardCopy = new Tile[originalBoard.length][originalBoard[0].length];
@@ -68,7 +66,6 @@ public class GameState implements Serializable {
         this.playerRow = playerRow;
         this.playerCol = playerCol;
         this.moveCount = moveCount;
-        this.moves = moves;
     }
 
     /**
@@ -107,9 +104,5 @@ public class GameState implements Serializable {
      */
     public int getMoveCount() {
         return moveCount;
-    }
-    
-    public int getMoves() {
-    	return moves;
     }
 }

@@ -8,7 +8,7 @@ class MovementHistoryTest {
     @Test
     void testPushAndPop() {
         MovementHistory history = new MovementHistory();
-        GameState state = new GameState(new Level(2, 2), 1, 1, 3, 3);
+        GameState state = new GameState(new Level(2, 2), 1, 1, 3);
         history.push(state);
         GameState popped = history.pop();
         assertEquals(state, popped, "Popped state should be the same as pushed.");
@@ -23,7 +23,7 @@ class MovementHistoryTest {
     @Test
     void testClear() {
         MovementHistory history = new MovementHistory();
-        history.push(new GameState(new Level(2, 2), 1, 1, 2, 2));
+        history.push(new GameState(new Level(2, 2), 1, 1, 2));
         history.clear();
         assertTrue(history.isEmpty(), "History should be empty after clear().");
     }

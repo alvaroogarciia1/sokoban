@@ -34,7 +34,7 @@ public class GameFrame extends JFrame {
 	private BoardPanel boardPanel;
 	private int i = 1;
 	private boolean gameFinished = false;
-	private int totalMoves = 0;
+	private static int totalMoves = 0;
 
 	/**
 	 * Constructs the main game frame, loads the first level,
@@ -244,14 +244,11 @@ public class GameFrame extends JFrame {
 	public JLabel getMoveCountLabel() {
 		return moveCountLabel;
 	}
-	public void restartTotalScore() {
+	public static void restartTotalScore() {
 		totalMoves = 0;
 	}
-	public void addToTotalScore(int moves) {
+	public static void addToTotalScore(int moves) {
 		totalMoves += moves;
-	}
-	public int getTotalMoves() {
-		return totalMoves;
 	}
 
 }
