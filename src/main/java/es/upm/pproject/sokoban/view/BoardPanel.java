@@ -265,7 +265,6 @@ public class BoardPanel extends JPanel {
     public void setLevel(Level level) {
         this.level = level;
         setPreferredSize(new Dimension(level.getWidth() * TILESIZE, level.getHeight() * TILESIZE));
-        revalidate();
         repaint();
         requestFocusInWindow();
     }
