@@ -34,7 +34,7 @@ public class GameFrame extends JFrame {
 	private BoardPanel boardPanel;
 	private int i = 1;
 	private boolean gameFinished = false;
-	private static int totalMoves = 0;
+	private int totalMoves = 0;
 
 	/**
 	 * Constructs the main game frame, loads the first level,
@@ -123,9 +123,9 @@ public class GameFrame extends JFrame {
 				e -> System.exit(0));
 		menuBar.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-		JPanel boardWrapper = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 0));
+		JPanel boardWrapper = new JPanel(new BorderLayout());
 		boardWrapper.setOpaque(false);
-		boardWrapper.add(boardPanel);
+		boardWrapper.add(boardPanel, BorderLayout.CENTER);
 
 		contentPanel.add(menuBar);
 		contentPanel.add(Box.createRigidArea(new Dimension(0, 10)));
@@ -244,11 +244,14 @@ public class GameFrame extends JFrame {
 	public JLabel getMoveCountLabel() {
 		return moveCountLabel;
 	}
-	public static void restartTotalScore() {
+	public void restartTotalScore() {
 		totalMoves = 0;
 	}
-	public static void addToTotalScore(int moves) {
+	public void addToTotalScore(int moves) {
 		totalMoves += moves;
+	}
+	public int getTotalMoves() {
+		return totalMoves;
 	}
 
 }

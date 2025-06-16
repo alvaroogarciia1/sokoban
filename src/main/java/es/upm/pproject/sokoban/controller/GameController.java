@@ -158,7 +158,7 @@ public class GameController implements Serializable {
                 JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
                 if (gameFrame != null) {
 
-                    GameFrame.addToTotalScore(levelMoves);
+                    gameFrame.addToTotalScore(levelMoves);
                     gameFrame.loadNextLevel();
                 }
             }
@@ -214,7 +214,7 @@ public class GameController implements Serializable {
         logger.info("[INFO] Saving game to: {}", file.getName());
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             SaveData saveData = new SaveData(
-                    new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
+                    new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount, controller.gameFrame.getTotalMoves()),
                     controller.history.getAll(),
                     controller.savedLevel);
             out.writeObject(saveData);
@@ -238,8 +238,9 @@ public class GameController implements Serializable {
             this.history = new MovementHistory(saveData.getHistory());
             this.level = loaded.getLevel();
             this.moveCount = loaded.getMoveCount();
-            GameFrame.restartTotalScore();
-            GameFrame.addToTotalScore(moveCount);
+            int moves = loaded.getMoves();
+            gameFrame.restartTotalScore();
+            gameFrame.addToTotalScore(moves);
 
             // Buscar la posición real del jugador en el tablero cargado
             for (int row = 0; row < level.getHeight(); row++) {
@@ -277,7 +278,7 @@ public class GameController implements Serializable {
      * Saves the current state to the move history for undo functionality.
      */
     private void saveState() {
-        history.push(new GameState(level, playerRow, playerCol, moveCount));
+        history.push(new GameState(level, playerRow, playerCol, moveCount, gameFrame.getTotalMoves()));
     }
 
     /**
@@ -324,8 +325,9 @@ public class GameController implements Serializable {
             controller.setPlayerPosition(state.getPlayerRow(), state.getPlayerCol());
             controller.setMoveCount(state.getMoveCount());
             controller.setHistory(new MovementHistory(saveData.getHistory()));
-            controller.savedLevel = saveData.getCurrentLevel(); // ← importante
-
+            controller.savedLevel = saveData.getCurrentLevel();
+            controller.gameFrame.restartTotalScore();
+            controller.gameFrame.addToTotalScore(state.getMoves());
             controller.boardPanel.setLevel(state.getLevel());
             controller.boardPanel.setController(controller);
             controller.boardPanel.repaint();
