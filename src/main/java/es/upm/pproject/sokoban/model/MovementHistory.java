@@ -25,7 +25,7 @@ public class MovementHistory {
      */
     public MovementHistory() {
         history = new ArrayDeque<>();
-        logger.info("[INFO] Movement history initialized.");
+        logger.info(" Movement history initialized.");
     }
 
     /**
@@ -48,9 +48,9 @@ public class MovementHistory {
     public void push(GameState state) {
         if (state != null) {
             history.push(state);
-            logger.info("[INFO] GameState pushed to history ({} total states).", history.size());
+            logger.info(" GameState pushed to history ({} total states).", history.size());
         } else {
-            logger.warn("[WARN] Attempted to push null GameState.");
+            logger.warn(" Attempted to push null GameState.");
         }
     }
 
@@ -62,10 +62,10 @@ public class MovementHistory {
     public GameState pop() {
         if (!history.isEmpty()) {
             GameState state = history.pop();
-            logger.info("[INFO] GameState popped from history ({} remaining).", history.size());
+            logger.info(" GameState popped from history ({} remaining).", history.size());
             return state;
         }
-        logger.warn("[WARN] Attempted to pop from empty history.");
+        logger.warn(" Attempted to pop from empty history.");
         return null;
     }
 
@@ -74,7 +74,7 @@ public class MovementHistory {
      */
     public void clear() {
         history.clear();
-        logger.info("[INFO] Movement history cleared.");
+        logger.info(" Movement history cleared.");
     }
 
     /**
@@ -94,7 +94,7 @@ public class MovementHistory {
      */
     public boolean isEmpty() {
         boolean empty = history.isEmpty();
-        logger.info("[INFO] History is empty: {}", empty);
+        logger.info(" History is empty: {}", empty);
         return empty;
     }
 

@@ -32,7 +32,7 @@ public class Main {
                 boardPanel.setController(controller);
 
             } catch (InvalidLevelException e) {
-                logger.error("[ERROR] Error while loading the Sokoban game.");
+                logger.error(" Error while loading the Sokoban game.");
             }
         });
     }

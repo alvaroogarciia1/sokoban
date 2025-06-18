@@ -3,6 +3,7 @@ package es.upm.pproject.sokoban.view;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.Level;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,11 @@ import static org.junit.jupiter.api.Assumptions.assumeFalse;
 class GameFrameTest {
 
     private GameFrame gameFrame;
+
+    @BeforeAll
+    public static void setupHeadlessMode() {
+        System.setProperty("java.awt.headless", "true");
+    }
 
     @BeforeEach
     public void setUp() throws InvalidLevelException {
@@ -51,7 +57,8 @@ class GameFrameTest {
 
         int newHash = gameFrame.getBoardPanel().getLevel().hashCode();
         assertNotEquals(oldHash, newHash, "New game should reset the level.");
-        assertEquals("Level 1 | Movimientos del nivel: 0 | Movimientos totales: 0", gameFrame.getMoveCountLabel().getText());
+        assertEquals("Level 1 | Movimientos del nivel: 0 | Movimientos totales: 0",
+                gameFrame.getMoveCountLabel().getText());
     }
 
     @Test

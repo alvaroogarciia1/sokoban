@@ -3,6 +3,8 @@ package es.upm.pproject.sokoban.controller;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.awt.GraphicsEnvironment;
+import java.io.File;
+import java.io.IOException;
 
 import org.junit.jupiter.api.*;
 
@@ -16,6 +18,11 @@ class GameControllerTest {
     private GameController controller;
     private Level level;
     private BoardPanel panel;
+
+    @BeforeAll
+    public static void setupHeadlessMode() {
+        System.setProperty("java.awt.headless", "true");
+    }
 
     @BeforeEach
     public void setUp() {
@@ -34,9 +41,9 @@ class GameControllerTest {
         panel = new BoardPanel(level, null, null);
         GameFrame gameFrame = null;
         try {
-        	if(!GraphicsEnvironment.isHeadless()) {
-				gameFrame = new GameFrame();
-			}
+            if (!GraphicsEnvironment.isHeadless()) {
+                gameFrame = new GameFrame();
+            }
             controller = new GameController(level, panel, gameFrame);
         } catch (InvalidLevelException e) {
         }
@@ -99,6 +106,52 @@ class GameControllerTest {
 
         controller.undoMove();
         assertEquals(0, controller.getMoveCount());
+    }
+
+    @Test
+    void testSetAndGetSavedLevel() {
+        controller.setSavedLevel(3);
+        assertEquals(3, controller.getSavedLevel());
+    }
+
+    @Test
+    void testSetPlayerPosition() {
+        controller.setPlayerPosition(2, 2);
+        // No hay getter, pero podemos invocar movePlayer en dirección inversa para
+        // validar
+        assertFalse(controller.movePlayer(-1, -1)); // se mueve de (2,2) a (1,1)
+    }
+
+    @Test
+    void testSetMoveCount() {
+        controller.setMoveCount(5);
+        assertEquals(5, controller.getMoveCount());
+    }
+
+    @Test
+    void testSetHistory() {
+        MovementHistory newHistory = new MovementHistory();
+        newHistory.push(new GameState(level, 1, 1, 3));
+        controller.setHistory(newHistory);
+        controller.undoMove();
+        assertEquals(3, controller.getMoveCount());
+    }
+
+    @Test
+    void testSaveGameAndLoadGameStatic() throws IOException, ClassNotFoundException {
+        File tempFile = File.createTempFile("sokoban_test", ".save");
+
+        // Mueve jugador
+        controller.movePlayer(0, -1); // mueve arriba
+        GameController.saveGame(tempFile, controller);
+        assertTrue(tempFile.exists());
+
+        // Carga desde archivo
+        GameController loadedController = GameController.loadGame(tempFile, panel, null);
+        assertNotNull(loadedController);
+        assertEquals(controller.getMoveCount(), loadedController.getMoveCount());
+
+        tempFile.delete();
     }
 
 }

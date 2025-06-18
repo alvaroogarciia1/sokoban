@@ -3,6 +3,8 @@ package es.upm.pproject.sokoban.view;
 import es.upm.pproject.sokoban.controller.GameController;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.*;
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,13 +19,18 @@ class BoardPanelTest {
 	private GameController controller;
 	private Level level;
 
+	@BeforeAll
+	public static void setupHeadlessMode() {
+		System.setProperty("java.awt.headless", "true");
+	}
+
 	@BeforeEach
 	public void setUp() {
 		level = new Level(5, 5);
 		boardPanel = new BoardPanel(level, null, null);
 		GameFrame gameFrame = null;
 		try {
-			if(!GraphicsEnvironment.isHeadless()) {
+			if (!GraphicsEnvironment.isHeadless()) {
 				gameFrame = new GameFrame();
 			}
 			controller = new GameController(level, boardPanel, gameFrame);

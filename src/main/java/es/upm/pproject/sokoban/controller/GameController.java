@@ -73,7 +73,7 @@ public class GameController implements Serializable {
                 if (tile instanceof FloorTile && ((FloorTile) tile).getEntity() instanceof Player) {
                     playerRow = row;
                     playerCol = col;
-                    logger.info("[INFO] Player initialized at position ({}, {})", row, col);
+                    logger.info(" Player initialized at position ({}, {})", row, col);
                     return;
                 }
             }
@@ -90,13 +90,13 @@ public class GameController implements Serializable {
      */
     public boolean movePlayer(int dx, int dy) {
         saveState();
-        logger.info("[INFO] Attempting to move player: dx={}, dy={}", dx, dy);
+        logger.info(" Attempting to move player: dx={}, dy={}", dx, dy);
 
         int newRow = playerRow + dy;
         int newCol = playerCol + dx;
 
         if (newRow < 0 || newRow >= level.getHeight() || newCol < 0 || newCol >= level.getWidth()) {
-            logger.warn("[WARN] Movement blocked: out of bounds.");
+            logger.warn(" Movement blocked: out of bounds.");
             return false;
         }
 
@@ -104,7 +104,7 @@ public class GameController implements Serializable {
         Tile targetTile = level.getTile(newRow, newCol);
 
         if (targetTile instanceof WallTile) {
-            logger.info("[INFO] Movement blocked: wall at ({}, {})", newRow, newCol);
+            logger.info(" Movement blocked: wall at ({}, {})", newRow, newCol);
             return false;
         }
 
@@ -120,7 +120,7 @@ public class GameController implements Serializable {
             moveCount++;
             boardPanel.repaint();
             sfx.playEffect(SoundEffectsController.Effect.MOVE);
-            logger.info("[INFO] Player moved to empty tile ({}, {})", newRow, newCol);
+            logger.info(" Player moved to empty tile ({}, {})", newRow, newCol);
             return true;
         }
 
@@ -129,7 +129,7 @@ public class GameController implements Serializable {
             int boxCol = newCol + dx;
 
             if (boxRow < 0 || boxRow >= level.getHeight() || boxCol < 0 || boxCol >= level.getWidth()) {
-                logger.info("[INFO] Box push blocked: out of bounds.");
+                logger.info(" Box push blocked: out of bounds.");
                 return false;
             }
 
@@ -137,7 +137,7 @@ public class GameController implements Serializable {
 
             if (nextTile instanceof WallTile ||
                     (nextTile instanceof FloorTile && ((FloorTile) nextTile).getEntity() != null)) {
-                logger.info("[INFO] Box push blocked: destination occupied.");
+                logger.info(" Box push blocked: destination occupied.");
                 return false;
             }
 
@@ -154,10 +154,10 @@ public class GameController implements Serializable {
             sfx.playEffect(effect);
 
             boardPanel.repaint();
-            logger.info("[INFO] Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
+            logger.info(" Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
 
             if (level.isLevelCompleted()) {
-                logger.info("[INFO] Level completed!");
+                logger.info(" Level completed!");
                 if (gameFrame != null) {
                     gameFrame.updateMoveCount(moveCount);
                     JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
@@ -192,9 +192,9 @@ public class GameController implements Serializable {
             this.playerCol = previous.getPlayerCol();
             this.moveCount = previous.getMoveCount();
             updateView();
-            logger.info("[INFO] Move undone. Restored to position ({}, {})", playerRow, playerCol);
+            logger.info(" Move undone. Restored to position ({}, {})", playerRow, playerCol);
         } else {
-            logger.warn("[WARN] No moves to undo.");
+            logger.warn(" No moves to undo.");
         }
     }
 
@@ -214,7 +214,7 @@ public class GameController implements Serializable {
      * @param file the file where the game is saved
      */
     public static void saveGame(File file, GameController controller) {
-        logger.info("[INFO] Saving game to: {}", file.getName());
+        logger.info(" Saving game to: {}", file.getName());
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             SaveData saveData = new SaveData(
                     new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
@@ -222,9 +222,9 @@ public class GameController implements Serializable {
                     controller.savedLevel,
                     GameFrame.getTotalScore());
             out.writeObject(saveData);
-            logger.info("[INFO] Game saved successfully.");
+            logger.info(" Game saved successfully.");
         } catch (IOException e) {
-            logger.error("[ERROR] Failed to save game: {}", e.getMessage());
+            logger.error(" Failed to save game: {}", e.getMessage());
         }
     }
 
@@ -233,9 +233,8 @@ public class GameController implements Serializable {
      *
      * @param file the file to load the game from
      */
-    @Deprecated
     public void loadGame(File file) {
-        logger.info("[INFO] Loading game from: {}", file.getName());
+        logger.info(" Loading game from: {}", file.getName());
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
             SaveData saveData = (SaveData) in.readObject();
             GameState loaded = saveData.getCurrentState();
@@ -253,17 +252,17 @@ public class GameController implements Serializable {
                     if (tile instanceof FloorTile && ((FloorTile) tile).getEntity() instanceof Player) {
                         this.playerRow = row;
                         this.playerCol = col;
-                        logger.info("[INFO] Player located at ({}, {}) after load", row, col);
+                        logger.info(" Player located at ({}, {}) after load", row, col);
                         break;
                     }
                 }
             }
 
             updateView();
-            logger.info("[INFO] Game loaded successfully.");
+            logger.info(" Game loaded successfully.");
 
         } catch (IOException | ClassNotFoundException e) {
-            logger.error("[ERROR] Failed to load game: {}", e.getMessage());
+            logger.error(" Failed to load game: {}", e.getMessage());
         }
     }
 
@@ -340,7 +339,7 @@ public class GameController implements Serializable {
 
             return controller;
         } catch (IOException | ClassNotFoundException e) {
-            LoggerFactory.getLogger(GameController.class).error("[ERROR] No se pudo cargar la partida: {}",
+            LoggerFactory.getLogger(GameController.class).error(" No se pudo cargar la partida: {}",
                     e.getMessage());
             return null;
         }
