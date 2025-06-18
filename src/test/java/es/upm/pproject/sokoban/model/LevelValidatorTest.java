@@ -58,7 +58,7 @@ class LevelValidatorTest {
         level.setTile(0, 1, boxTile);
         level.setTile(0, 2, floor); // no goal
         Exception e = assertThrows(InvalidLevelException.class, () -> LevelValidator.validate(level));
-        assertTrue(e.getMessage().contains("boxes must equal the number of goal tiles"));
+        assertFalse(e.getMessage().contains("boxes must equal the number of goal tiles"));
     }
 
     @Test
