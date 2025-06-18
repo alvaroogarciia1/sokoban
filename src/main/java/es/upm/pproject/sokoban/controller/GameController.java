@@ -1,10 +1,14 @@
 package es.upm.pproject.sokoban.controller;
 
 import java.io.*;
+
+import javax.swing.JOptionPane;
+
 import org.slf4j.*;
 
 import es.upm.pproject.sokoban.model.*;
 import es.upm.pproject.sokoban.view.BoardPanel;
+import es.upm.pproject.sokoban.view.GameFrame;
 
 /**
  * GameController is responsible for handling all the logic of the Sokoban game.
@@ -40,6 +44,12 @@ public class GameController implements Serializable {
     /** Stack-based history to enable undoing moves. */
     private transient MovementHistory history;
 
+    private transient GameFrame gameFrame;
+
+    private int savedLevel = 1;
+    
+    private transient SoundEffectsController sfx = new SoundEffectsController();
+
     /**
      * Creates a new GameController for the given level and board panel.
      * 
@@ -49,11 +59,12 @@ public class GameController implements Serializable {
      * @param level      the current level
      * @param boardPanel the board panel for repainting
      */
-    public GameController(Level level, BoardPanel boardPanel) {
+    public GameController(Level level, BoardPanel boardPanel, GameFrame gameFrame) {
         this.level = level;
         this.boardPanel = boardPanel;
         this.history = new MovementHistory();
         this.moveCount = 0;
+        this.gameFrame = gameFrame;
 
         // Search the initial position of the player in the level grid
         for (int row = 0; row < level.getHeight(); row++) {
@@ -110,6 +121,7 @@ public class GameController implements Serializable {
             playerCol = newCol;
             moveCount++;
             boardPanel.repaint();
+            sfx.playEffect(SoundEffectsController.Effect.MOVE);
             logger.info("[INFO] Player moved to empty tile ({}, {})", newRow, newCol);
             return true;
         }
@@ -140,8 +152,25 @@ public class GameController implements Serializable {
             playerRow = newRow;
             playerCol = newCol;
             moveCount++;
+            if (((FloorTile) nextTile).isGoal()) {
+            	sfx.playEffect(SoundEffectsController.Effect.GOAL);
+            	
+            }
+            else sfx.playEffect(SoundEffectsController.Effect.PUSH);
             boardPanel.repaint();
+
             logger.info("[INFO] Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
+            if (level.isLevelCompleted()) {
+                logger.info("[INFO] Level completed!");
+                int levelMoves = moveCount;
+                gameFrame.updateMoveCount(moveCount);
+                JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
+                if (gameFrame != null) {
+
+                    GameFrame.addToTotalScore(levelMoves);
+                    gameFrame.loadNextLevel();
+                }
+            }
             return true;
         }
 
@@ -195,7 +224,9 @@ public class GameController implements Serializable {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))) {
             SaveData saveData = new SaveData(
                     new GameState(controller.level, controller.playerRow, controller.playerCol, controller.moveCount),
-                    controller.history.getAll());
+                    controller.history.getAll(),
+                    controller.savedLevel,
+                    GameFrame.getTotalScore());
             out.writeObject(saveData);
             logger.info("[INFO] Game saved successfully.");
         } catch (IOException e) {
@@ -213,10 +244,12 @@ public class GameController implements Serializable {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
             SaveData saveData = (SaveData) in.readObject();
             GameState loaded = saveData.getCurrentState();
-
+            this.savedLevel = saveData.getCurrentLevel();
             this.history = new MovementHistory(saveData.getHistory());
             this.level = loaded.getLevel();
             this.moveCount = loaded.getMoveCount();
+            GameFrame.restartTotalScore();
+            GameFrame.addToTotalScore(moveCount);
 
             // Buscar la posición real del jugador en el tablero cargado
             for (int row = 0; row < level.getHeight(); row++) {
@@ -284,5 +317,41 @@ public class GameController implements Serializable {
      */
     public void setHistory(MovementHistory history) {
         this.history = history;
+    }
+
+    public int getSavedLevel() {
+        return savedLevel;
+    }
+
+    public static GameController loadGame(File file, BoardPanel boardPanel, GameFrame gameFrame) {
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {
+            SaveData saveData = (SaveData) in.readObject();
+            GameState state = saveData.getCurrentState();
+
+            GameController controller = new GameController(
+                    state.getLevel(), boardPanel, gameFrame);
+
+            controller.setPlayerPosition(state.getPlayerRow(), state.getPlayerCol());
+            controller.setMoveCount(state.getMoveCount());
+            GameFrame.restartTotalScore();
+            GameFrame.addToTotalScore(saveData.getTotalScore());
+
+            controller.setHistory(new MovementHistory(saveData.getHistory()));
+            controller.savedLevel = saveData.getCurrentLevel(); // ← importante
+
+            controller.boardPanel.setLevel(state.getLevel());
+            controller.boardPanel.setController(controller);
+            controller.boardPanel.repaint();
+
+            return controller;
+        } catch (IOException | ClassNotFoundException e) {
+            LoggerFactory.getLogger(GameController.class).error("[ERROR] No se pudo cargar la partida: {}",
+                    e.getMessage());
+            return null;
+        }
+    }
+
+    public void setSavedLevel(int savedLevel) {
+        this.savedLevel = savedLevel;
     }
 }

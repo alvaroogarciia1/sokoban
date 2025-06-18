@@ -26,7 +26,7 @@ public class Main {
                 Level level = boardPanel.getLevel();
 
                 // Crear controlador con referencias reales
-                GameController controller = new GameController(level, boardPanel);
+                GameController controller = new GameController(level, boardPanel, gameFrame);
 
                 // Asignarlo al frame y al panel
                 boardPanel.setController(controller);

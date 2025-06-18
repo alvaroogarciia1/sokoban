@@ -104,6 +104,12 @@ public class LevelValidator {
             throw new InvalidLevelException(
                     "The number of boxes must equal the number of goal tiles (" +
                             boxCount + " boxes vs " + goalCount + " goals).");
+        }else if(boxCount == 0) {
+        	logger.error("[ERROR] Invalid level: {} boxes", boxCount);
+        	throw new InvalidLevelException("The number of boxes can't be 0");
+        }else if(goalCount == 0) {
+        	logger.error("[ERROR] Invalid level: {} boxes", goalCount);
+        	throw new InvalidLevelException("The number of goal tiles can't be 0");
         }
     }
 }

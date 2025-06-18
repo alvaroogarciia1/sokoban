@@ -1,10 +1,15 @@
 package es.upm.pproject.sokoban.controller;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.awt.GraphicsEnvironment;
+
 import org.junit.jupiter.api.*;
 
+import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.*;
 import es.upm.pproject.sokoban.view.BoardPanel;
+import es.upm.pproject.sokoban.view.GameFrame;
 
 class GameControllerTest {
 
@@ -27,7 +32,16 @@ class GameControllerTest {
         level.setBoard(board);
 
         panel = new BoardPanel(level, null, null);
-        controller = new GameController(level, panel);
+        GameFrame gameFrame = null;
+        try {
+        	if(!GraphicsEnvironment.isHeadless()) {
+				gameFrame = new GameFrame();
+			}
+            controller = new GameController(level, panel, gameFrame);
+        } catch (InvalidLevelException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Test
