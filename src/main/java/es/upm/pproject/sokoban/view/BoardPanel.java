@@ -140,7 +140,7 @@ public class BoardPanel extends JPanel {
                         return;
                     }
 
-                    JOptionPane pane = new JOptionPane("¡Level complete!", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane pane = new JOptionPane("Thanks for playing!", JOptionPane.INFORMATION_MESSAGE);
                     JDialog dialog = pane.createDialog(BoardPanel.this, "Sokoban");
                     dialog.setModal(false);
                     dialog.addWindowListener(new java.awt.event.WindowAdapter() {
@@ -204,25 +204,52 @@ public class BoardPanel extends JPanel {
 
         if (tile instanceof WallTile) {
             g2d.drawImage(wallImage.getImage(), x, y, TILESIZE, TILESIZE, null);
+
+            // Detectar muros vecinos y pintar uniones
+            boolean right = isWall(row, col + 1);
+            boolean down = isWall(row + 1, col);
+
+            g2d.setColor(new Color(0, 0, 0, 128)); // negro semitransparente para suavizar uniones
+
+            if (right) {
+                g2d.fillRect(x + TILESIZE - 1, y, 2, TILESIZE); // unión horizontal
+            }
+            if (down) {
+                g2d.fillRect(x, y + TILESIZE - 1, TILESIZE, 2); // unión vertical
+            }
         } else if (tile instanceof FloorTile) {
             FloorTile floor = (FloorTile) tile;
-            if (floor.isGoal()) {
+            boolean isGoal = floor.isGoal();
+            if (isGoal) {
                 g2d.drawImage(goalImage, x, y, TILESIZE, TILESIZE, null);
             } else {
                 int rIndex = RANDOM.nextInt(9);
                 g2d.drawImage(floorImages[rIndex], x, y, TILESIZE, TILESIZE, null);
             }
-
-            drawEntity(g2d, floor.getEntity(), x, y);
+            drawEntity(g2d, floor.getEntity(), x, y, isGoal);
         }
     }
 
-    private void drawEntity(Graphics2D g2d, Entity entity, int x, int y) {
+    private void drawEntity(Graphics2D g2d, Entity entity, int x, int y, boolean isGoal) {
         if (entity instanceof Player) {
             g2d.drawImage(playerImage, x, y, TILESIZE, TILESIZE, null);
         } else if (entity instanceof Box) {
             g2d.drawImage(boxImage, x, y, TILESIZE, TILESIZE, null);
+            if (isGoal) {
+                // Pinta un borde dorado o un overlay semitransparente
+                g2d.setColor(new Color(240, 240, 100, 180)); // Dorado semitransparente
+                g2d.setStroke(new java.awt.BasicStroke(5));
+                g2d.drawRect(x + 4, y + 4, TILESIZE - 8, TILESIZE - 8);
+            }
         }
+    }
+
+    /**
+     * Método auxiliar para verificar si una celda es un muro.
+     */
+    private boolean isWall(int row, int col) {
+        if (row < 0 || row >= level.getHeight() || col < 0 || col >= level.getWidth()) return false;
+        return level.getTile(row, col) instanceof WallTile;
     }
 
     /**
@@ -259,5 +286,14 @@ public class BoardPanel extends JPanel {
      */
     public void setController(GameController controller) {
         this.controller = controller;
+    }
+
+    /**
+     * Returns the game controller.
+     * 
+     * @return the game controller
+     */
+    public GameController getController() {
+        return controller;
     }
 }

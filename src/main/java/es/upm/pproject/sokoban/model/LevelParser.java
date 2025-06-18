@@ -26,11 +26,11 @@ public class LevelParser {
      * @throws InvalidLevelException if the level format is invalid
      */
     public static Level parse(String filename) throws IOException, InvalidLevelException {
-        logger.info("[INFO] Parsing level from file: {}", filename);
+        logger.info(" Parsing level from file: {}", filename);
 
         InputStream input = LevelParser.class.getClassLoader().getResourceAsStream(filename);
         if (input == null) {
-            logger.error("[ERROR] File not found: {}", filename);
+            logger.error(" File not found: {}", filename);
             throw new FileNotFoundException("Resource '" + filename + "' not found in resources folder.");
         }
 
@@ -39,33 +39,33 @@ public class LevelParser {
             // Line 1: Level name (ignored for now)
             String levelName = br.readLine();
             if (levelName == null) {
-                logger.error("[ERROR] Missing level name line.");
+                logger.error(" Missing level name line.");
                 throw new InvalidLevelException("Missing level name line.");
             }
 
             // Line 2: Dimensions
             String dimensionLine = br.readLine();
             if (dimensionLine == null) {
-                logger.error("[ERROR] Missing dimension line.");
+                logger.error(" Missing dimension line.");
                 throw new InvalidLevelException("Missing dimension line.");
             }
 
             String[] dimensions = dimensionLine.trim().split("\\s+");
             if (dimensions.length != 2) {
-                logger.error("[ERROR] Invalid dimension format: '{}'", dimensionLine);
+                logger.error(" Invalid dimension format: '{}'", dimensionLine);
                 throw new InvalidLevelException("Invalid dimension format. Expected: '<rows> <columns>'");
             }
 
             int nRows = Integer.parseInt(dimensions[0]);
             int nCols = Integer.parseInt(dimensions[1]);
-            logger.info("[INFO] Level dimensions: {} rows x {} columns", nRows, nCols);
+            logger.info(" Level dimensions: {} rows x {} columns", nRows, nCols);
 
             Level level = new Level(nCols, nRows);
 
             for (int row = 0; row < nRows; row++) {
                 String line = br.readLine();
                 if (line == null || line.length() != nCols) {
-                    logger.error("[ERROR] Invalid or missing line at row {}: expected {} characters", row, nCols);
+                    logger.error(" Invalid or missing line at row {}: expected {} characters", row, nCols);
                     throw new InvalidLevelException(
                             "Invalid or missing line at row " + row + ". Expected " + nCols + " characters.");
                 }
@@ -96,7 +96,7 @@ public class LevelParser {
                             tile = new FloorTile(false);
                             break;
                         default:
-                            logger.error("[ERROR] Invalid symbol '{}' at ({},{})", symbol, row, col);
+                            logger.error(" Invalid symbol '{}' at ({},{})", symbol, row, col);
                             throw new InvalidLevelException(
                                     "Invalid symbol '" + symbol + "' at (" + row + "," + col + ")");
                     }
@@ -104,7 +104,7 @@ public class LevelParser {
                 }
             }
 
-            logger.info("[INFO] Level loaded successfully from file: {}", filename);
+            logger.info(" Level loaded successfully from file: {}", filename);
             return level;
         }
     }

@@ -16,7 +16,6 @@ public class LevelValidator {
      * Private constructor to prevent instantiation.
      */
     private LevelValidator() {
-        // Prevent instantiation
     }
 
     /**
@@ -28,7 +27,7 @@ public class LevelValidator {
      * @throws InvalidLevelException if the level is not valid
      */
     public static void validate(Level level) throws InvalidLevelException {
-        logger.info("[INFO] Validating level...");
+        logger.info(" Validating level...");
 
         // Count players, boxes and goals in the level
         LevelStats stats = countElements(level);
@@ -39,7 +38,7 @@ public class LevelValidator {
         // Validate balance between boxes and goals
         validateBoxGoalBalance(stats.boxes, stats.goals);
 
-        logger.info("[INFO] Level is valid: 1 player, {} boxes, {} goals", stats.boxes, stats.goals);
+        logger.info(" Level is valid: 1 player, {} boxes, {} goals", stats.boxes, stats.goals);
     }
 
     /**
@@ -85,7 +84,7 @@ public class LevelValidator {
      */
     private static void validatePlayerCount(int playerCount) throws InvalidLevelException {
         if (playerCount != 1) {
-            logger.error("[ERROR] Invalid level: expected 1 player, found {}", playerCount);
+            logger.error(" Invalid level: expected 1 player, found {}", playerCount);
             throw new InvalidLevelException(
                     "Level must contain exactly one player (found " + playerCount + ").");
         }
@@ -99,11 +98,19 @@ public class LevelValidator {
      * @throws InvalidLevelException if counts do not match
      */
     private static void validateBoxGoalBalance(int boxCount, int goalCount) throws InvalidLevelException {
-        if (boxCount != goalCount) {
-            logger.error("[ERROR] Invalid level: {} boxes vs {} goal tiles", boxCount, goalCount);
-            throw new InvalidLevelException(
-                    "The number of boxes must equal the number of goal tiles (" +
-                            boxCount + " boxes vs " + goalCount + " goals).");
-        }
+        if (boxCount == 0) {
+    logger.error(" Invalid level: {} boxes", boxCount);
+    throw new InvalidLevelException("The number of boxes can't be 0");
+} else if (goalCount == 0) {
+    logger.error(" Invalid level: {} goal tiles", goalCount);
+    throw new InvalidLevelException("The number of goal tiles can't be 0");
+} else if (boxCount != goalCount) {
+    logger.error(" Invalid level: {} boxes vs {} goal tiles", boxCount, goalCount);
+    throw new InvalidLevelException(
+        "The number of boxes must equal the number of goal tiles (" +
+        boxCount + " boxes vs " + goalCount + " goals)."
+    );
+}
+
     }
 }

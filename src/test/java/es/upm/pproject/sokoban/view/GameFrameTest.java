@@ -3,6 +3,7 @@ package es.upm.pproject.sokoban.view;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.Level;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,11 @@ import static org.junit.jupiter.api.Assumptions.assumeFalse;
 class GameFrameTest {
 
     private GameFrame gameFrame;
+
+    @BeforeAll
+    public static void setupHeadlessMode() {
+        System.setProperty("java.awt.headless", "true");
+    }
 
     @BeforeEach
     public void setUp() throws InvalidLevelException {
@@ -32,7 +38,7 @@ class GameFrameTest {
     void testMoveCountUpdatesLabel() {
         gameFrame.updateMoveCount(3);
         JLabel label = gameFrame.getMoveCountLabel();
-        assertEquals("Movimientos: 3", label.getText());
+        assertEquals("Level 1 | Movimientos del nivel: 3 | Movimientos totales: 0", label.getText());
     }
 
     @Test
@@ -51,7 +57,8 @@ class GameFrameTest {
 
         int newHash = gameFrame.getBoardPanel().getLevel().hashCode();
         assertNotEquals(oldHash, newHash, "New game should reset the level.");
-        assertEquals("Movimientos: 0", gameFrame.getMoveCountLabel().getText());
+        assertEquals("Level 1 | Movimientos del nivel: 0 | Movimientos totales: 0",
+                gameFrame.getMoveCountLabel().getText());
     }
 
     @Test
@@ -73,6 +80,10 @@ class GameFrameTest {
     void testLoadNextLevelWhenNoNextLevelExists() throws Exception {
         Method method = GameFrame.class.getDeclaredMethod("loadNextLevel");
         method.setAccessible(true);
+        method.invoke(gameFrame);
+        method.invoke(gameFrame);
+        method.invoke(gameFrame);
+        method.invoke(gameFrame);
         method.invoke(gameFrame);
         method.invoke(gameFrame);
         assertFalse(gameFrame.isDisplayable(), "GameFrame should be disposed when no next level exists.");

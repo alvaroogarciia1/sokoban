@@ -2,18 +2,27 @@ package es.upm.pproject.sokoban.controller;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.awt.GraphicsEnvironment;
 import java.io.File;
+import java.io.IOException;
 
 import org.junit.jupiter.api.*;
 
+import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.*;
 import es.upm.pproject.sokoban.view.BoardPanel;
+import es.upm.pproject.sokoban.view.GameFrame;
 
 class GameControllerTest {
 
     private GameController controller;
     private Level level;
     private BoardPanel panel;
+
+    @BeforeAll
+    public static void setupHeadlessMode() {
+        System.setProperty("java.awt.headless", "true");
+    }
 
     @BeforeEach
     public void setUp() {
@@ -30,7 +39,15 @@ class GameControllerTest {
         level.setBoard(board);
 
         panel = new BoardPanel(level, null, null);
-        controller = new GameController(level, panel);
+        GameFrame gameFrame = null;
+        try {
+            if (!GraphicsEnvironment.isHeadless()) {
+                gameFrame = new GameFrame();
+            }
+            controller = new GameController(level, panel, gameFrame);
+        } catch (InvalidLevelException e) {
+        }
+
     }
 
     @Test
@@ -46,30 +63,30 @@ class GameControllerTest {
     }
 
     @Test
-void testPushBox() {
-    // Colocar jugador en (2,1), caja en (1,1), destino libre en (0,1)
-    Tile[][] board = new Tile[3][3];
-    for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 3; j++)
-            board[i][j] = new FloorTile(false);
+    void testPushBox() {
+        // Colocar jugador en (2,1), caja en (1,1), destino libre en (0,1)
+        Tile[][] board = new Tile[3][3];
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                board[i][j] = new FloorTile(false);
 
-    FloorTile tilePlayer = new FloorTile(false);
-    tilePlayer.setEntity(new Player());
-    board[2][1] = tilePlayer;
+        FloorTile tilePlayer = new FloorTile(false);
+        tilePlayer.setEntity(new Player());
+        board[2][1] = tilePlayer;
 
-    FloorTile tileBox = new FloorTile(false);
-    tileBox.setEntity(new Box());
-    board[1][1] = tileBox;
+        FloorTile tileBox = new FloorTile(false);
+        tileBox.setEntity(new Box());
+        board[1][1] = tileBox;
 
-    board[0][1] = new FloorTile(false); // destino libre
+        board[0][1] = new FloorTile(false); // destino libre
 
-    level.setBoard(board);
-    controller.loadLevel(level); // esto hace saveState()
+        level.setBoard(board);
+        controller.loadLevel(level); // esto hace saveState()
 
-    boolean moved = controller.movePlayer(0, -1); // arriba
-    assertTrue(moved);
-    assertEquals(1, controller.getMoveCount());
-}
+        boolean moved = controller.movePlayer(0, -1); // arriba
+        assertTrue(moved);
+        assertEquals(1, controller.getMoveCount());
+    }
 
     @Test
     void testPushBoxIntoWallFails() {
@@ -81,23 +98,60 @@ void testPushBox() {
     }
 
     @Test
-void testUndoMove() {
-    controller.loadLevel(level); // hace saveState()
+    void testUndoMove() {
+        controller.loadLevel(level); // hace saveState()
 
-    boolean moved = controller.movePlayer(0, -1);
-    assertTrue(moved);
+        boolean moved = controller.movePlayer(0, -1);
+        assertTrue(moved);
 
-    controller.undoMove();
-    assertEquals(0, controller.getMoveCount());
-}
-
-    @Test
-    void testSaveAndLoad() {
-        controller.saveGame();
-        assertTrue(new File("savegame.dat").exists());
-
-        controller.movePlayer(0, -1); // move once
-        controller.loadGame(); // back to initial
+        controller.undoMove();
         assertEquals(0, controller.getMoveCount());
     }
+
+    @Test
+    void testSetAndGetSavedLevel() {
+        controller.setSavedLevel(3);
+        assertEquals(3, controller.getSavedLevel());
+    }
+
+    @Test
+    void testSetPlayerPosition() {
+        controller.setPlayerPosition(2, 2);
+        // No hay getter, pero podemos invocar movePlayer en dirección inversa para
+        // validar
+        assertFalse(controller.movePlayer(-1, -1)); // se mueve de (2,2) a (1,1)
+    }
+
+    @Test
+    void testSetMoveCount() {
+        controller.setMoveCount(5);
+        assertEquals(5, controller.getMoveCount());
+    }
+
+    @Test
+    void testSetHistory() {
+        MovementHistory newHistory = new MovementHistory();
+        newHistory.push(new GameState(level, 1, 1, 3));
+        controller.setHistory(newHistory);
+        controller.undoMove();
+        assertEquals(3, controller.getMoveCount());
+    }
+
+    @Test
+    void testSaveGameAndLoadGameStatic() throws IOException, ClassNotFoundException {
+        File tempFile = File.createTempFile("sokoban_test", ".save");
+
+        // Mueve jugador
+        controller.movePlayer(0, -1); // mueve arriba
+        GameController.saveGame(tempFile, controller);
+        assertTrue(tempFile.exists());
+
+        // Carga desde archivo
+        GameController loadedController = GameController.loadGame(tempFile, panel, null);
+        assertNotNull(loadedController);
+        assertEquals(controller.getMoveCount(), loadedController.getMoveCount());
+
+        tempFile.delete();
+    }
+
 }

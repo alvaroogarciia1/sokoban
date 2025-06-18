@@ -1,18 +1,19 @@
 maven_build:
   image: maven:3.6.3-jdk-11
+  variables:
+    _JAVA_OPTIONS: "-Djava.awt.headless=true"
   script: mvn test
 
 sonarqube-check:
   image: maven:3.6.3-jdk-11
   variables:
-    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
-    GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar" # Defines the location of the analysis task cache
+    GIT_DEPTH: "0" # Tells git to fetch all the branches of the project, required by the analysis task
+    _JAVA_OPTIONS: "-Djava.awt.headless=true"
   cache:
     key: "${CI_JOB_NAME}"
     paths:
       - .sonar/cache
-  script: 
-    - mvn verify sonar:sonar -Dsonar.login=210363 -Dsonar.id=squ_a342a0d44d8edf0dd77835ba1e87e10d29ddd0dd
+  script:
+    - mvn clean verify sonar:sonar -Dsonar.id=210363 -Dsonar.login=squ_c4196f3895e40218936f017a922e3e4f241d6b30
   allow_failure: true
-  only:
-    - main # or master (the name of your main branch)

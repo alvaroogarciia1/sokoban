@@ -1,13 +1,17 @@
 package es.upm.pproject.sokoban.view;
 
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
-import javax.swing.*;
+import java.util.Arrays;
 
+import javax.swing.*;
 import es.upm.pproject.sokoban.controller.GameController;
+import es.upm.pproject.sokoban.controller.MusicController;
 import es.upm.pproject.sokoban.exceptions.InvalidLevelException;
 import es.upm.pproject.sokoban.model.Level;
 import es.upm.pproject.sokoban.model.LevelParser;
+import es.upm.pproject.sokoban.model.LevelValidator;
 
 /**
  * Main window (JFrame) for the Sokoban game.
@@ -31,8 +35,14 @@ public class GameFrame extends JFrame {
     private static final String ERROR_TITLE = "Error";
     private JLabel moveCountLabel;
     private BoardPanel boardPanel;
+    private MusicController musicController = new MusicController(Arrays.asList(
+            "music/particles-revo-main-version-17674-02-28.mp3",
+            "music/universal-revo-main-version.mp3",
+            "music/voyager-mountaineer-main-version-01-30-19608.mp3"
+        ));
     private int i = 1;
     private boolean gameFinished = false;
+    private static int totalMoves = 0;
 
     /**
      * Constructs the main game frame, loads the first level,
@@ -43,75 +53,108 @@ public class GameFrame extends JFrame {
     public GameFrame() throws InvalidLevelException {
         try {
             Level level = LevelParser.parse("level1.txt");
-
-            moveCountLabel = new JLabel("Movimientos: 0", SwingConstants.CENTER);
-            moveCountLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
-            moveCountLabel.setForeground(Color.WHITE);
-            moveCountLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-
-            boardPanel = new BoardPanel(level, null, this);
-            GameController controller = new GameController(level, boardPanel);
-            boardPanel.setController(controller);
-
-            AnimatedBackgroundPanel animatedBackground = new AnimatedBackgroundPanel();
-
-            JPanel contentPanel = new JPanel();
-            contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
-            contentPanel.setOpaque(false);
-            contentPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
-
-            MenuBar menuBar = new MenuBar(
-                    e -> {
-                        try {
-                            startNewGame();
-                        } catch (InvalidLevelException e1) {
-                            JOptionPane.showMessageDialog(this, "Error al iniciar un nuevo juego: " + e1.getMessage(),
-                                    ERROR_TITLE,
-                                    JOptionPane.ERROR_MESSAGE);
-                        }
-                    },
-                    e -> {
-                        try {
-                            restartGame();
-                        } catch (InvalidLevelException e1) {
-                            JOptionPane.showMessageDialog(this, "Error al reiniciar el juego: " + e1.getMessage(),
-                                    ERROR_TITLE,
-                                    JOptionPane.ERROR_MESSAGE);
-                        }
-                    },
-                    e -> {
-                        controller.undoMove();
-                        repaint();
-                    },
-                    e -> controller.saveGame(),
-                    e -> controller.loadGame(),
-                    e -> System.exit(0));
-            menuBar.setAlignmentX(Component.CENTER_ALIGNMENT);
-
-            JPanel boardWrapper = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 0));
-            boardWrapper.setOpaque(false);
-            boardWrapper.add(boardPanel);
-
-            contentPanel.add(menuBar);
-            contentPanel.add(Box.createRigidArea(new Dimension(0, 10)));
-            contentPanel.add(moveCountLabel);
-            contentPanel.add(Box.createRigidArea(new Dimension(0, 10)));
-            contentPanel.add(boardWrapper);
-
-            animatedBackground.add(contentPanel, BorderLayout.CENTER);
-
-            setTitle("Sokoban");
-            setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-            setContentPane(animatedBackground);
-            pack();
-            setLocationRelativeTo(null);
-            setVisible(true);
-
+            musicController.startMusic();
+            initializeUI(level);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(this, "Error cargando nivel: " + e.getMessage(), ERROR_TITLE,
                     JOptionPane.ERROR_MESSAGE);
             dispose();
         }
+    }
+
+    private void initializeUI(Level level) throws InvalidLevelException {
+        moveCountLabel = new JLabel(
+                "Level " + i + " | Movimientos del nivel: 0 | Movimientos totales: " + totalMoves,
+                SwingConstants.CENTER);
+        moveCountLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        moveCountLabel.setForeground(Color.WHITE);
+        moveCountLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        boardPanel = new BoardPanel(level, null, this);
+        GameController controller = new GameController(level, boardPanel, this);
+        boardPanel.setController(controller);
+
+        AnimatedBackgroundPanel animatedBackground = new AnimatedBackgroundPanel();
+
+        JPanel contentPanel = new JPanel();
+        contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
+        contentPanel.setOpaque(false);
+        contentPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        MenuBar menuBar = new MenuBar(
+                e -> {
+                    try {
+                        startNewGame();
+                    } catch (InvalidLevelException e1) {
+                        JOptionPane.showMessageDialog(this, "Error al iniciar un nuevo juego: " + e1.getMessage(),
+                                ERROR_TITLE,
+                                JOptionPane.ERROR_MESSAGE);
+                    }
+                },
+                e -> {
+                    try {
+                        restartGame();
+                    } catch (InvalidLevelException e1) {
+                        JOptionPane.showMessageDialog(this, "Error al reiniciar el juego: " + e1.getMessage(),
+                                ERROR_TITLE,
+                                JOptionPane.ERROR_MESSAGE);
+                    }
+                },
+                e -> {
+                    boardPanel.getController().undoMove();
+                    updateMoveCount(boardPanel.getController().getMoveCount());
+                    repaint();
+                },
+                e -> {
+                    JFileChooser fileChooser = new JFileChooser();
+                    int result = fileChooser.showSaveDialog(this);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        File file = fileChooser.getSelectedFile();
+                        GameController.saveGame(file, boardPanel.getController());
+                    }
+                },
+                e -> {
+                    JFileChooser fileChooser = new JFileChooser();
+                    int result = fileChooser.showOpenDialog(this);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        File file = fileChooser.getSelectedFile();
+                        GameController loadedController = GameController.loadGame(file, boardPanel, this);
+                        if (loadedController != null) {
+                            boardPanel.setController(loadedController);
+                            updateMoveCount(loadedController.getMoveCount());
+                            i = loadedController.getSavedLevel();
+                            updateMoveCount(loadedController.getMoveCount());
+                            gameFinished = false;
+                            repaint();
+                        } else {
+                            JOptionPane.showMessageDialog(this, "No se pudo cargar la partida", ERROR_TITLE,
+                                    JOptionPane.ERROR_MESSAGE);
+                        }
+                    }
+                },
+                e -> System.exit(0),
+                musicController
+        );
+        menuBar.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        JPanel boardWrapper = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 0));
+        boardWrapper.setOpaque(false);
+        boardWrapper.add(boardPanel);
+
+        contentPanel.add(menuBar);
+        contentPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+        contentPanel.add(moveCountLabel);
+        contentPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+        contentPanel.add(boardWrapper);
+
+        animatedBackground.add(contentPanel, BorderLayout.CENTER);
+
+        setTitle("Sokoban");
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setContentPane(animatedBackground);
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 
     /**
@@ -126,14 +169,26 @@ public class GameFrame extends JFrame {
         try {
             i++;
             Level nextLevel = LevelParser.parse("level" + i + ".txt");
+            try {
+                LevelValidator.validate(nextLevel);
+            } catch (InvalidLevelException ex) {
+                JOptionPane.showMessageDialog(this, "Nivel inválido detectado. Saltando al siguiente...",
+                        "Error de nivel", JOptionPane.WARNING_MESSAGE);
+                loadNextLevel();
+                return;
+            }
             boardPanel.setLevel(nextLevel);
-            GameController newController = new GameController(nextLevel, boardPanel);
+            GameController newController = new GameController(nextLevel, boardPanel, this);
+            newController.setSavedLevel(i);
             boardPanel.setController(newController);
             updateMoveCount(0);
             pack();
         } catch (IOException | InvalidLevelException ex) {
             gameFinished = true;
-            JOptionPane.showMessageDialog(this, "¡Congratulations, game complete!", "Sokoban",
+            if (musicController != null) {
+                musicController.stopMusic();
+            }
+            JOptionPane.showMessageDialog(this, "Congrats, you completed the game!\nScore: " + totalMoves, "Sokoban",
                     JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }
@@ -144,11 +199,14 @@ public class GameFrame extends JFrame {
      * 
      * @throws InvalidLevelException if level parsing fails.
      */
-    protected void startNewGame() throws InvalidLevelException {
+    private void startNewGame() throws InvalidLevelException {
         try {
+            i = 1;
+            gameFinished = false;
+            totalMoves = 0;
             Level level = LevelParser.parse("level1.txt");
             boardPanel.setLevel(level);
-            GameController controller = new GameController(level, boardPanel);
+            GameController controller = new GameController(level, boardPanel, this);
             boardPanel.setController(controller);
             updateMoveCount(0);
             pack();
@@ -163,11 +221,11 @@ public class GameFrame extends JFrame {
      * 
      * @throws InvalidLevelException if level parsing fails.
      */
-    protected void restartGame() throws InvalidLevelException {
+    private void restartGame() throws InvalidLevelException {
         try {
             Level level = LevelParser.parse("level" + i + ".txt");
             boardPanel.setLevel(level);
-            GameController controller = new GameController(level, boardPanel);
+            GameController controller = new GameController(level, boardPanel, this);
             boardPanel.setController(controller);
             updateMoveCount(0);
             pack();
@@ -192,7 +250,8 @@ public class GameFrame extends JFrame {
      * @param count current number of moves.
      */
     public void updateMoveCount(int count) {
-        moveCountLabel.setText("Movimientos: " + count);
+        moveCountLabel.setText(
+                "Level " + i + " | Movimientos del nivel: " + count + " | Movimientos totales: " + totalMoves);
     }
 
     /**
@@ -202,5 +261,17 @@ public class GameFrame extends JFrame {
      */
     public JLabel getMoveCountLabel() {
         return moveCountLabel;
+    }
+
+    public static void restartTotalScore() {
+        totalMoves = 0;
+    }
+
+    public static void addToTotalScore(int moves) {
+        totalMoves += moves;
+    }
+
+    public static int getTotalScore() {
+        return totalMoves;
     }
 }
