@@ -71,7 +71,7 @@
               <goal>prepare-agent</goal>
             </goals>
             <configuration>
-              <destFile>${project.build.directory}/jacoco.execaa</destFile>
+              <destFile>${project.build.directory}/jacoco.exec</destFile>
             </configuration>
           </execution>
           <execution>
@@ -140,7 +140,7 @@
     <junit>5.6.2</junit>
     <sonar.language>java</sonar.language>
     <sonar.projectName>${project.name}-${sonar.id}</sonar.projectName>
-    <java.version>11</java.version>
+    <java.version>21</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <sonar.host.url>https://costa.ls.fi.upm.es/sonar</sonar.host.url>
     <jacoco.version>0.8.6</jacoco.version>
