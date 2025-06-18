@@ -40746,3 +40746,80 @@
 [INFO] 2025-06-18 18:25:05,021 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
 [INFO] 2025-06-18 18:25:05,205 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
 [INFO] 2025-06-18 18:25:05,357 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,102 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,102 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:08,118 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:08,118 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=-1, dy=-1
+[INFO] 2025-06-18 18:33:08,367 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,367 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:08,367 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:08,367 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:08,367 es.upm.pproject.sokoban.controller.GameController -  Box push blocked: out of bounds.
+[INFO] 2025-06-18 18:33:08,570 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,570 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.model.MovementHistory -  GameState popped from history (0 remaining).
+[INFO] 2025-06-18 18:33:08,766 es.upm.pproject.sokoban.controller.GameController -  Move undone. Restored to position (1, 1)
+[INFO] 2025-06-18 18:33:08,935 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:08,935 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:09,087 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:09,087 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:09,087 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:09,087 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (2 total states).
+[INFO] 2025-06-18 18:33:09,087 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:09,140 es.upm.pproject.sokoban.controller.GameController -  Player moved to empty tile (0, 1)
+[INFO] 2025-06-18 18:33:09,375 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:09,375 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:09,377 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:09,377 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:09,377 es.upm.pproject.sokoban.controller.GameController -  Player moved to empty tile (0, 1)
+[INFO] 2025-06-18 18:33:09,377 es.upm.pproject.sokoban.controller.GameController -  Saving game to: sokoban_test16838772371009370212.save
+[INFO] 2025-06-18 18:33:09,416 es.upm.pproject.sokoban.controller.GameController -  Game saved successfully.
+[INFO] 2025-06-18 18:33:09,428 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:09,428 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (0, 1)
+[INFO] 2025-06-18 18:33:09,629 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:09,629 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:09,631 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:09,631 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (2 total states).
+[INFO] 2025-06-18 18:33:09,632 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:09,632 es.upm.pproject.sokoban.controller.GameController -  Player moved to empty tile (0, 1)
+[INFO] 2025-06-18 18:33:09,634 es.upm.pproject.sokoban.model.MovementHistory -  GameState popped from history (1 remaining).
+[INFO] 2025-06-18 18:33:09,636 es.upm.pproject.sokoban.controller.GameController -  Move undone. Restored to position (1, 1)
+[INFO] 2025-06-18 18:33:09,878 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:09,878 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:09,878 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:09,879 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:09,879 es.upm.pproject.sokoban.controller.GameController -  Movement blocked: wall at (0, 1)
+[INFO] 2025-06-18 18:33:10,067 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,067 es.upm.pproject.sokoban.controller.GameController -  Player initialized at position (1, 1)
+[INFO] 2025-06-18 18:33:10,068 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:10,068 es.upm.pproject.sokoban.controller.GameController -  Attempting to move player: dx=0, dy=-1
+[INFO] 2025-06-18 18:33:10,069 es.upm.pproject.sokoban.controller.GameController -  Player moved to empty tile (0, 1)
+[INFO] 2025-06-18 18:33:10,091 es.upm.pproject.sokoban.model.LevelParser -  Parsing level from file: level1.txt
+[INFO] 2025-06-18 18:33:10,093 es.upm.pproject.sokoban.model.LevelParser -  Level dimensions: 8 rows x 8 columns
+[INFO] 2025-06-18 18:33:10,093 es.upm.pproject.sokoban.model.LevelParser -  Level loaded successfully from file: level1.txt
+[INFO] 2025-06-18 18:33:10,107 es.upm.pproject.sokoban.model.LevelValidator -  Validating level...
+[ERROR] 2025-06-18 18:33:10,109 es.upm.pproject.sokoban.model.LevelValidator -  Invalid level: expected 1 player, found 0
+[INFO] 2025-06-18 18:33:10,113 es.upm.pproject.sokoban.model.LevelValidator -  Validating level...
+[ERROR] 2025-06-18 18:33:10,113 es.upm.pproject.sokoban.model.LevelValidator -  Invalid level: expected 1 player, found 2
+[INFO] 2025-06-18 18:33:10,122 es.upm.pproject.sokoban.model.LevelValidator -  Validating level...
+[INFO] 2025-06-18 18:33:10,123 es.upm.pproject.sokoban.model.LevelValidator -  Level is valid: 1 player, 1 boxes, 1 goals
+[INFO] 2025-06-18 18:33:10,127 es.upm.pproject.sokoban.model.LevelValidator -  Validating level...
+[ERROR] 2025-06-18 18:33:10,128 es.upm.pproject.sokoban.model.LevelValidator -  Invalid level: 0 goal tiles
+[INFO] 2025-06-18 18:33:10,153 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,154 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:10,154 es.upm.pproject.sokoban.model.MovementHistory -  Movement history cleared.
+[INFO] 2025-06-18 18:33:10,154 es.upm.pproject.sokoban.model.MovementHistory -  History is empty: true
+[INFO] 2025-06-18 18:33:10,158 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,158 es.upm.pproject.sokoban.model.MovementHistory -  History is empty: true
+[INFO] 2025-06-18 18:33:10,160 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,161 es.upm.pproject.sokoban.model.MovementHistory -  GameState pushed to history (1 total states).
+[INFO] 2025-06-18 18:33:10,161 es.upm.pproject.sokoban.model.MovementHistory -  GameState popped from history (0 remaining).
+[INFO] 2025-06-18 18:33:10,420 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,597 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,778 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:10,953 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
+[INFO] 2025-06-18 18:33:11,169 es.upm.pproject.sokoban.model.MovementHistory -  Movement history initialized.
