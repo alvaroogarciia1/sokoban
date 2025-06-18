@@ -47,7 +47,7 @@ public class GameController implements Serializable {
     private transient GameFrame gameFrame;
 
     private int savedLevel = 1;
-    
+
     private transient SoundEffectsController sfx = new SoundEffectsController();
 
     /**
@@ -95,7 +95,6 @@ public class GameController implements Serializable {
         int newRow = playerRow + dy;
         int newCol = playerCol + dx;
 
-        // Validate bounds
         if (newRow < 0 || newRow >= level.getHeight() || newCol < 0 || newCol >= level.getWidth()) {
             logger.warn("[WARN] Movement blocked: out of bounds.");
             return false;
@@ -104,7 +103,6 @@ public class GameController implements Serializable {
         Tile currentTile = level.getTile(playerRow, playerCol);
         Tile targetTile = level.getTile(newRow, newCol);
 
-        // Check if movement is blocked by a wall
         if (targetTile instanceof WallTile) {
             logger.info("[INFO] Movement blocked: wall at ({}, {})", newRow, newCol);
             return false;
@@ -112,9 +110,9 @@ public class GameController implements Serializable {
 
         FloorTile currentFloor = (FloorTile) currentTile;
         FloorTile targetFloor = (FloorTile) targetTile;
+        Entity targetEntity = targetFloor.getEntity();
 
-        // Move to empty tile
-        if (targetFloor.getEntity() == null) {
+        if (targetEntity == null) {
             targetFloor.setEntity(currentFloor.getEntity());
             currentFloor.setEntity(null);
             playerRow = newRow;
@@ -126,49 +124,46 @@ public class GameController implements Serializable {
             return true;
         }
 
-        // Try to push a box
-        if (targetFloor.getEntity() instanceof Box) {
+        if (targetEntity instanceof Box) {
             int boxRow = newRow + dy;
             int boxCol = newCol + dx;
 
-            // Check bounds for box movement
             if (boxRow < 0 || boxRow >= level.getHeight() || boxCol < 0 || boxCol >= level.getWidth()) {
                 logger.info("[INFO] Box push blocked: out of bounds.");
                 return false;
             }
 
             Tile nextTile = level.getTile(boxRow, boxCol);
-            // Ensure destination is not a wall or already occupied
+
             if (nextTile instanceof WallTile ||
                     (nextTile instanceof FloorTile && ((FloorTile) nextTile).getEntity() != null)) {
                 logger.info("[INFO] Box push blocked: destination occupied.");
                 return false;
             }
 
-            // Perform the box push
-            ((FloorTile) nextTile).setEntity(targetFloor.getEntity());
+            ((FloorTile) nextTile).setEntity(targetEntity);
             targetFloor.setEntity(currentFloor.getEntity());
             currentFloor.setEntity(null);
             playerRow = newRow;
             playerCol = newCol;
             moveCount++;
-            if (((FloorTile) nextTile).isGoal()) {
-            	sfx.playEffect(SoundEffectsController.Effect.GOAL);
-            	
-            }
-            else sfx.playEffect(SoundEffectsController.Effect.PUSH);
-            boardPanel.repaint();
 
+            SoundEffectsController.Effect effect = ((FloorTile) nextTile).isGoal()
+                    ? SoundEffectsController.Effect.GOAL
+                    : SoundEffectsController.Effect.PUSH;
+            sfx.playEffect(effect);
+
+            boardPanel.repaint();
             logger.info("[INFO] Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
+
             if (level.isLevelCompleted()) {
                 logger.info("[INFO] Level completed!");
-                int levelMoves = moveCount;
                 if (gameFrame != null) {
-        gameFrame.updateMoveCount(moveCount);
-        JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
-        GameFrame.addToTotalScore(levelMoves);
-        gameFrame.loadNextLevel();
-    }
+                    gameFrame.updateMoveCount(moveCount);
+                    JOptionPane.showMessageDialog(null, "Level completed!", "Sokoban", JOptionPane.INFORMATION_MESSAGE);
+                    GameFrame.addToTotalScore(moveCount);
+                    gameFrame.loadNextLevel();
+                }
             }
             return true;
         }
@@ -238,6 +233,7 @@ public class GameController implements Serializable {
      *
      * @param file the file to load the game from
      */
+    @Deprecated
     public void loadGame(File file) {
         logger.info("[INFO] Loading game from: {}", file.getName());
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) {

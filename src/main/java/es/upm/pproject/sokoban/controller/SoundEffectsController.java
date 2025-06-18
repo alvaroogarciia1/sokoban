@@ -25,7 +25,6 @@ public class SoundEffectsController {
                 Player player = new Player(is);
                 player.play();
             } catch (Exception e) {
-                e.printStackTrace();
             }
         }).start();
     }

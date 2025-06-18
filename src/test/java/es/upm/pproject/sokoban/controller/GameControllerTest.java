@@ -39,7 +39,6 @@ class GameControllerTest {
 			}
             controller = new GameController(level, panel, gameFrame);
         } catch (InvalidLevelException e) {
-            e.printStackTrace();
         }
 
     }

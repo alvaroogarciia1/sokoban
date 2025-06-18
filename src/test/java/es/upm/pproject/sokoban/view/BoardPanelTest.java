@@ -28,7 +28,6 @@ class BoardPanelTest {
 			}
 			controller = new GameController(level, boardPanel, gameFrame);
 		} catch (InvalidLevelException e) {
-			e.printStackTrace();
 		}
 
 		boardPanel.setController(controller);

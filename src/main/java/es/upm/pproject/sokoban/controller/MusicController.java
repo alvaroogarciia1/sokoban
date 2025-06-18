@@ -35,7 +35,6 @@ public class MusicController {
                 playerThread.interrupt();
             }
         } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
@@ -98,7 +97,6 @@ public class MusicController {
                 } while (isPlaying && !isPaused);
             } catch (Exception e) {
                 isPlaying = false;
-                e.printStackTrace();
             }
         });
         playerThread.start();
