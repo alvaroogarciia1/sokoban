@@ -47,6 +47,8 @@ public class GameController implements Serializable {
     private transient GameFrame gameFrame;
 
     private int savedLevel = 1;
+    
+    private transient SoundEffectsController sfx = new SoundEffectsController();
 
     /**
      * Creates a new GameController for the given level and board panel.
@@ -119,6 +121,7 @@ public class GameController implements Serializable {
             playerCol = newCol;
             moveCount++;
             boardPanel.repaint();
+            sfx.playEffect(SoundEffectsController.Effect.MOVE);
             logger.info("[INFO] Player moved to empty tile ({}, {})", newRow, newCol);
             return true;
         }
@@ -149,6 +152,11 @@ public class GameController implements Serializable {
             playerRow = newRow;
             playerCol = newCol;
             moveCount++;
+            if (((FloorTile) nextTile).isGoal()) {
+            	sfx.playEffect(SoundEffectsController.Effect.GOAL);
+            	
+            }
+            else sfx.playEffect(SoundEffectsController.Effect.PUSH);
             boardPanel.repaint();
 
             logger.info("[INFO] Player pushed box to ({}, {}) and moved to ({}, {})", boxRow, boxCol, newRow, newCol);
@@ -346,5 +354,4 @@ public class GameController implements Serializable {
     public void setSavedLevel(int savedLevel) {
         this.savedLevel = savedLevel;
     }
-
 }
