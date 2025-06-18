@@ -17,5 +17,3 @@ sonarqube-check:
   script:
     - mvn clean verify sonar:sonar -Dsonar.id=210363 -Dsonar.login=squ_b420bdd6cc64edc983feea8c21a01bf26c9b4a65
   allow_failure: true
-  only:
-    - main # or master (the name of your main branch)
