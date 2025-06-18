@@ -15,5 +15,5 @@ sonarqube-check:
     paths:
       - .sonar/cache
   script:
-    - mvn clean verify sonar:sonar -Dsonar.id=210363 -Dsonar.login=sqp_a00556d98f0b2164bdb3d02edcacd20e06182f68
+    - mvn clean verify sonar:sonar -Dsonar.id=210363 -Dsonar.login=squ_c4196f3895e40218936f017a922e3e4f241d6b30
   allow_failure: true
