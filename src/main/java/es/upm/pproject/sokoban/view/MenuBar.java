@@ -1,6 +1,9 @@
 package es.upm.pproject.sokoban.view;
 
 import javax.swing.*;
+
+import es.upm.pproject.sokoban.controller.MusicController;
+
 import java.awt.*;
 import java.awt.event.ActionListener;
 
@@ -33,7 +36,8 @@ public class MenuBar extends JMenuBar {
             ActionListener onUndo,
             ActionListener onSave,
             ActionListener onLoad,
-            ActionListener onExit) {
+            ActionListener onExit,
+            MusicController musicController) {
 
         setBackground(new Color(50, 50, 50));
 
@@ -54,6 +58,13 @@ public class MenuBar extends JMenuBar {
         buttonPanel.add(createStyledButton("Load", onLoad));
         buttonPanel.add(Box.createRigidArea(new Dimension(10, 0)));
         buttonPanel.add(createStyledButton("Exit", onExit));
+        buttonPanel.add(Box.createRigidArea(new Dimension(10, 0)));
+        JButton musicButton = createStyledButton(musicController.isPlaying() ? "Música: ON" : "Música: OFF", null);
+        musicButton.addActionListener(e -> {
+            musicController.toggleMusic();
+            musicButton.setText(musicController.isPlaying() ? "Música: ON" : "Música: OFF");
+        });
+        buttonPanel.add(musicButton);
         buttonPanel.add(Box.createHorizontalGlue());
 
         add(buttonPanel, BorderLayout.CENTER);
