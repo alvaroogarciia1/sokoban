@@ -1,2 +1,4 @@
-# Carpeta target
+.classpath
+.project
+.settings/
 target/
