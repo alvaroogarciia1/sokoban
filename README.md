@@ -32,18 +32,73 @@ For the development of this project, we have used:
    mvn clean verify sonar:sonar -Dsonar.id=$XXX -Dsonar.login=$YYY
    ```
 
-### Application Information
+### Sokoban's features
 
-#### Files Read/Written
-- **Level files**: Read from `src/main/resources/levelX.txt`.
-- **Log file**: Written to `logs/application.log` using Log4j.
-- **Saved games**: Written/read from `savegame.dat`.
+#### 1. Game Logic
+- Level loading and parsing from `.txt` files
+- Movement tracking and undo system
+- Victory detection and scoring system
+- Box-goal matching logic
+- Level validation before loading
 
-#### Game Controls
-- **Arrow Keys or W,A,S,D** → Move the player (↑==W ↓==S ←==A →==D).
-- **Main buttons** → Use different actions of the main window of the game (not all implemented right now!).
+#### 2. Interface
+- Graphical interface built with Swing
+- Responsive to `WASD` or arrow keys
+- Menu for game options (pause, reset, quit, etc.)
 
-#### File Formats
-- **Level files**: Plain text, using characters like `#` (wall), `.` (goal), `@` (player), `$` (box), and space (floor).
-- **Log file**: Structured plain text (one event per line).
-- **Savegame**: Java-serialized object storing player, boxes, and level info.
+#### 3. Extras
+- Logging with SLF4J+Log4j at `logs/application.log`
+- Game state saving and loading with serialization
+- Audio effects and background music controllers
+
+---
+
+### File Structure Overview
+
+#### `src/main/java/`
+- `controller/`: Manages input and game flow
+- `model/`: Core logic and entities like `Player`, `Box`, `Tile`, `Level`, etc.
+- `view/`: GUI implementation
+- `exceptions/`: Custom exception classes
+
+#### `src/main/resources/`
+- Level files (`level1.txt`, `level2.txt`, …)
+- Audio files (`glitch.mp3`, …)
+- Image files (`box.jpg`, `floor1.jpg`, …)
+
+#### `logs/`
+- Application logs saved here
+
+#### `deliverables/`
+- CSVs for backlogs and sprint tracking
+
+---
+
+### Game Controls
+- `↑/↓/←/→` or `W/A/S/D`: Move the player
+- Menu buttons: Access save/load, reset, undo, and exit
+
+---
+
+### Level File Format
+Each level is a plain text file with the following characters:
+- `#` = Wall  
+- `.` = Goal  
+- `@` = Player  
+- `$` = Box  
+- Space = Floor
+
+Example:
+```
+#####
+#@$.#
+#####
+```
+
+---
+
+### CI/CD Pipeline
+Configured with `.gitlab-ci.yml` for:
+- Automatic testing
+- Build checks
+- SonarQube integration
