@@ -99,17 +99,19 @@ public class LevelValidator {
      * @throws InvalidLevelException if counts do not match
      */
     private static void validateBoxGoalBalance(int boxCount, int goalCount) throws InvalidLevelException {
-        if (boxCount != goalCount) {
-            logger.error("[ERROR] Invalid level: {} boxes vs {} goal tiles", boxCount, goalCount);
-            throw new InvalidLevelException(
-                    "The number of boxes must equal the number of goal tiles (" +
-                            boxCount + " boxes vs " + goalCount + " goals).");
-        }else if(boxCount == 0) {
-        	logger.error("[ERROR] Invalid level: {} boxes", boxCount);
-        	throw new InvalidLevelException("The number of boxes can't be 0");
-        }else if(goalCount == 0) {
-        	logger.error("[ERROR] Invalid level: {} boxes", goalCount);
-        	throw new InvalidLevelException("The number of goal tiles can't be 0");
-        }
+        if (boxCount == 0) {
+    logger.error("[ERROR] Invalid level: {} boxes", boxCount);
+    throw new InvalidLevelException("The number of boxes can't be 0");
+} else if (goalCount == 0) {
+    logger.error("[ERROR] Invalid level: {} goal tiles", goalCount);
+    throw new InvalidLevelException("The number of goal tiles can't be 0");
+} else if (boxCount != goalCount) {
+    logger.error("[ERROR] Invalid level: {} boxes vs {} goal tiles", boxCount, goalCount);
+    throw new InvalidLevelException(
+        "The number of boxes must equal the number of goal tiles (" +
+        boxCount + " boxes vs " + goalCount + " goals)."
+    );
+}
+
     }
 }

@@ -62,7 +62,7 @@ public class GameFrame extends JFrame {
         }
     }
 
-    protected void initializeUI(Level level) throws InvalidLevelException {
+    private void initializeUI(Level level) throws InvalidLevelException {
         moveCountLabel = new JLabel(
                 "Level " + i + " | Movimientos del nivel: 0 | Movimientos totales: " + totalMoves,
                 SwingConstants.CENTER);
@@ -199,7 +199,7 @@ public class GameFrame extends JFrame {
      * 
      * @throws InvalidLevelException if level parsing fails.
      */
-    protected void startNewGame() throws InvalidLevelException {
+    private void startNewGame() throws InvalidLevelException {
         try {
             i = 1;
             gameFinished = false;
@@ -221,7 +221,7 @@ public class GameFrame extends JFrame {
      * 
      * @throws InvalidLevelException if level parsing fails.
      */
-    protected void restartGame() throws InvalidLevelException {
+    private void restartGame() throws InvalidLevelException {
         try {
             Level level = LevelParser.parse("level" + i + ".txt");
             boardPanel.setLevel(level);
