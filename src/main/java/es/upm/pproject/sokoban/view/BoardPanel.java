@@ -219,22 +219,28 @@ public class BoardPanel extends JPanel {
             }
         } else if (tile instanceof FloorTile) {
             FloorTile floor = (FloorTile) tile;
-            if (floor.isGoal()) {
+            boolean isGoal = floor.isGoal();
+            if (isGoal) {
                 g2d.drawImage(goalImage, x, y, TILESIZE, TILESIZE, null);
             } else {
                 int rIndex = RANDOM.nextInt(9);
                 g2d.drawImage(floorImages[rIndex], x, y, TILESIZE, TILESIZE, null);
             }
-
-            drawEntity(g2d, floor.getEntity(), x, y);
+            drawEntity(g2d, floor.getEntity(), x, y, isGoal);
         }
     }
 
-    private void drawEntity(Graphics2D g2d, Entity entity, int x, int y) {
+    private void drawEntity(Graphics2D g2d, Entity entity, int x, int y, boolean isGoal) {
         if (entity instanceof Player) {
             g2d.drawImage(playerImage, x, y, TILESIZE, TILESIZE, null);
         } else if (entity instanceof Box) {
             g2d.drawImage(boxImage, x, y, TILESIZE, TILESIZE, null);
+            if (isGoal) {
+                // Pinta un borde dorado o un overlay semitransparente
+                g2d.setColor(new Color(240, 240, 100, 180)); // Dorado semitransparente
+                g2d.setStroke(new java.awt.BasicStroke(5));
+                g2d.drawRect(x + 4, y + 4, TILESIZE - 8, TILESIZE - 8);
+            }
         }
     }
 
