@@ -53,6 +53,7 @@ public class GameFrame extends JFrame {
     public GameFrame() throws InvalidLevelException {
         try {
             Level level = LevelParser.parse("level1.txt");
+            LevelValidator.validate(level);
             musicController.startMusic();
             initializeUI(level);
         } catch (IOException e) {
