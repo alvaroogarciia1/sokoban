@@ -109,6 +109,35 @@ The project was originally developed as part of the **Programming Project** cour
 ```bash
 mvn clean test
 ```
+
 ### Run the application
 ```bash
 mvn exec:java
+```
+
+---
+
+## 🏫 Academic Context & Repository History
+
+This project was **originally developed and maintained in a private GitLab repository** provided by the Universidad Politécnica de Madrid, as required by the course guidelines.  
+That original repository includes:
+- A complete commit history
+- Multiple milestones and tags (Sprint 1, Sprint 2)
+- Continuous Integration configuration
+- Backlog management using issues
+
+For portfolio and public sharing purposes, the project was **reinitialized and migrated to GitHub**, starting a new Git history.  
+As a result, the commit history in this repository does **not reflect the full original development timeline**, but the source code corresponds to the final and fully functional version of the project.
+
+---
+
+## 📎 Notes
+- This repository is intended for **portfolio and demonstration purposes**
+- The original academic repository remains private
+
+---
+
+## 🏫 Course Information
+**Programming Project**  
+Escuela Técnica Superior de Ingenieros en Informática  
+Universidad Politécnica de Madrid (UPM)
